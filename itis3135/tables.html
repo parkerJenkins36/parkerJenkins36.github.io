@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parkerJenkins36 HTML Tables</title>
+    <link rel="stylesheet" >
+    <style type="text/css">
+        html {
+            box-sizing: border-box;
+          }
+        main{
+            display: block;
+            text-align: center;
+        }
+        h2{
+          display: block;
+          font-size: 2em;
+          font-weight: bold;
+          margin: auto;
+          text-align: center;
+        }
+        h3{
+          display: block;
+          font-size: 20px;
+          font-weight: bold;
+          margin-left: 1em;
+          margin-right: 1em;
+          text-align: center;
+        }
+        li{
+            margin: 2px 550px;
+            text-align: left;
+        }
+        table {
+         border-collapse: seperate;
+         border-spacing: 4px;
+         text-indent: initial;
+         position: relative;
+         margin: 2px 500px;
+         border:2px solid yellow;
+       }
+       table[class="first_table"]{
+         display: table;
+          border-collapse: seperate;
+          border-top-width: 3px;
+          border-bottom-width: 3px;
+          border-left-width: 3px;
+          border-right-width: 3px;
+          margin: 2px 400px;
+       }
+       tr{
+        display:table-row;
+        border-collapse: seperate;
+        vertical-align: middle;
+       }
+       tr:nth-child(odd){
+        background-color: grey;
+       }
+       tr:nth-child(even){
+        background-color: rgb(32, 32, 127);
+       }
+       th{
+        background-color: black;
+        display:table-cell;
+        text-align:center;
+        vertical-align: middle;
+       }
+       tbody{
+        display: table-row-group;
+        vertical-align: middle;
+        border-collapse: seperate;
+        }
+        td{
+            display: table-cell;
+            border-collapse: separate;
+            vertical-align: middle;
+        }
+        figure{
+            display: block;
+            width: 40px;
+            text-align: center;
+            margin: 1rem 5em;
+        }
+        figcaption{
+            text-align:center;
+            margin: 1em 600px;
+        }
+        body{
+            display: block;
+           background-color:  #006633;
+           color: white;
+           margin: 10px;
+           text-align: center;
+        }
+        a:hover{
+             color:crimson;
+             text-decoration: line;
+           }
+        a{
+              color:aliceblue;
+              text-decoration: none;
+          }
+        </style>
+</head>
+<body>
+    <header>
+     <h1> Parker Jenkins Patient Jackal
+      <nav>
+        <a href="./">Home</a>
+        ||
+        <a href="introduction.html">Introduction</a>
+        ||
+        <a href="contract.html">Contract</a>
+        ||
+        <a href="tables.html">Tables</a>
+       </nav>
+     </h1>
+    </header>
+    <main>
+     <h2>HTML Tables</h2>
+     <h3> My Tabular Data</h3>
+     <ol>
+        <li>Romeo Doubs rDoubs87@gmail.com 2</li>
+        <li>Christian Watson cWatson@yahoo.com 3</li>
+        <li>Aaron Jones showtymjones@gmail.com 6</li>
+        <li>Luke Musgrave lMusgrave88@uncc.edu 1</li>
+        <li>Zach Tom zTom74@gmail.com  5</li>
+        <li>Bo Melton boMelton@uncc.edu 2</li>
+        <li>Rashan Gary rGary52@yahoo.com 6</li>
+      </ol>
+      <h3>Employee Data in Simple Table</h3>
+      <table>
+        <tbody>
+            <tr>
+             <th><b>Name</b></th>
+             <th><b>Email</b></th>  
+             <th><b>Years of Service</b></th>     
+            </tr>
+            <tr>
+                <td>Romeo Doubs</td>
+                <td>rDoubs87@gmail.com</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Christian Watson</td>
+                <td>cWatson@yahoo.com</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Aaron Jones</td>
+                <td>showtymjones@gmail.com</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Luke Musgrave</td>
+                <td>lMusgrave88@uncc.edu</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Zach Tom</td>
+                <td>zTom74@gmail.com</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Bo Melton</td>
+                <td>boMelton@uncc.edu</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Rashan Gary</td>
+                <td>rGary52@yahoo.com</td>
+                <td>6</td>
+            </tr>
+        </tbody>
+      </table>
+      <h3>Employee Data in Complex Table</h3>
+      <figure>
+      <table class="first_table">
+        <tbody>
+            <tr>
+             <th><b>Category</b></th>
+             <th><b>Name</b></th>
+             <th><b>Email</b></th>  
+             <th><b>Years of Service</b></th> 
+             <th><b>Salary</b></th>    
+            </tr>
+            <tr>
+                <td>CEO</td>
+                <td>Romeo Doubs</td>
+                <td>rDoubs87@gmail.com</td>
+                <td>2</td>
+                <td>$1,000,000</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Hilt Maker</td>
+                <td>Christian Watson</td>
+                <td>cWatson@yahoo.com</td>
+                <td>3</td>
+                <td>$150,000</td>
+            </tr>
+            <tr>
+                <td>Aaron Jones</td>
+                <td>showtymjones@gmail.com</td>
+                <td>6</td>
+                <td>$250,000</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Crystal Collector</td>
+                <td>Luke Musgrave</td>
+                <td>lMusgrave88@uncc.edu</td>
+                <td>1</td>
+                <td>$175,000</td>
+            </tr>
+            <tr>
+                <td>Zach Tom</td>
+                <td>zTom74@gmail.com</td>
+                <td>5</td>
+                <td>$120,000</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Lightsaber maker</td>
+                <td>Bo Melton</td>
+                <td>boMelton@uncc.edu</td>
+                <td>2</td>
+                <td>$95,000</td>
+            </tr>
+            <tr>
+                <td>Rashan Gary</td>
+                <td>rGary52@yahoo.com</td>
+                <td>6</td>
+                <td>$110,000</td>
+            </tr>
+            <tr>
+                <td colspan="2">Total Years of Service:</td>
+                <td colspan="3">25</td>
+            </tr>
+            <tr>
+                <td colspan="2">Total Annual Salaries:</td>
+                <td colspan="3">1,900,000</td>
+            </tr>       
+        </tbody>
+      </table>  
+      <figcaption>Data of Employees</figcaption>
+    </figure>
+    </main>
+    <footer>
+     <nav>
+        <a href="https://webpages.charlotte.edu/pjenki17/">Charlotte.edu</a>
+        ||
+        <a href="https://github.com/parkerJenkins36">Github</a>
+        ||
+        <a href="https://github.com/parkerJenkins36/parkerJenkins36.github.io/tree/main/itis3135">Github.io</a>
+        ||
+        <a href="https://www.freecodecamp.org/ParkerJenkins">freeCodeCamp</a>
+        ||
+        <a href="https://www.codecademy.com/profiles/parker.jenkins">Codecademy</a>
+        ||
+        <a href="https://www.linkedin.com/in/parker-jenkins-6618112a9/">LinkedIn</a>
+    </nav>
+    <p>Page Built By <a href="pjenkiproduction.co/">ParkerProduction <span>&copy; 2024</span></a></p>
+    <p>Never had a better experience</p>
+    <a href="https://validator.w3.org/check?uri=referer">
+        <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+    </a>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
+    </a>
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + loctation.href);
+</script>
+</body>
+</html>
