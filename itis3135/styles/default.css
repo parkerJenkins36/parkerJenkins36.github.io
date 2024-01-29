@@ -6,10 +6,12 @@ body{
 }
 p{
     text-align:center;
+    font-family: sans-serif;
 }
 a{
-    color:aliceblue;
+    color:rgb(255, 213, 0);
     text-decoration: none;
+    font-family: sans-serif;
 }
 
 a:hover{
@@ -25,6 +27,7 @@ main{
 
 h2{
     text-align: center;
+    color:rgb(11, 195, 211);
 }
 
 img{
@@ -33,5 +36,5 @@ img{
 }
 figure{
     text-align: center;
-    font-style: italic;
+    font-family: sans-serif;
 }
