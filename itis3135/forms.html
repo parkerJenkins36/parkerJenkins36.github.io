@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parkerJenkins36 Forms</title>
+    <link rel="stylesheet" >  
+    <link rel="stylesheet" >
+    <style type="text/css">
+        form{
+            width: 80vw;
+           max-width: 500px;
+           min-width: 300px;
+           margin: 0 auto;
+         padding-bottom: 2em;
+        }
+        h2,p{
+            text-align: center;
+        }
+        body {
+        width: 100%;
+        height: 100vh;
+        margin: 10px 20px;
+         background-color: #1b1b32;
+        color: #f5f6f7;
+        font-family: Italic;
+         font-size: 17px;
+      }
+      input,select {
+          margin: 10px 10px 0 0;
+          width: 100%;
+          min-height: 2em;
+          padding:8px;
+        }
+        a{
+    color:aliceblue;
+    text-decoration: none;
+}
+
+a:hover{
+    color:crimson;
+    text-decoration: line;
+}
+        button{
+            padding:10px;
+            cursor: pointer;
+        }
+        input[type="text"], input[type="tel"], input[type="email"], select{
+            border: 1px solid yellow;
+            border-radius: 5px;
+        }
+        input[type="checkbox"] {
+              width:inherit;
+              margin: 2px 20px 1;
+            }
+            label {
+  display: block;
+  margin: 1rem 0 1;
+}
+        .inline {
+  width: unset;
+  margin: 0 1.5em 2px 3px;
+  vertical-align: middle;
+} 
+header, footer{
+    text-align: center;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+fieldset:last-of-type {
+  border-bottom: none;
+}
+legend{
+    padding: 10px 20px 20px;
+}
+
+        </style>
+</head>
+<body>
+    <header>
+     <h1> Parker Jenkins Patient Jackal
+        <nav>
+            <a href="./">Home</a>
+            ||
+            <a href="introduction.html">Introduction</a>
+            ||
+            <a href="contract.html">Contract</a>
+            ||
+            <a href="tables.html">Tables</a>
+            ||
+            <a href="forms.html">Tables</a>
+           </nav>
+     </h1>
+    </header>
+    <main>
+     <h2>Forms</h2>
+     <p>Fill out form for Employment at ParkerProduction</p>
+     <form action="#" method= "post" id="form">
+        <fieldset>
+        <label for="name">Enter Full Name:
+        <input type="text" id="name" name="Name" required placeholder="Luke Skywalker" size="30">
+        </label>
+        <label for="Contact-Number">Enter Contact Number:
+        <input type="tel" id="Contact-Number" name="Contact-Number" pattern="\d{3}-\d{3}-\d{4}" size="15" placeholder="123-456-7891" required>
+        </label>
+        <label for="Prefered-Email">Enter Personal Email:
+            <input type="email" id="Prefered-Email" name="Prefered-Email"  placeholder="@gmail.com" size="30" required>
+         </label>
+        </fieldset>
+
+       <fieldset>
+         <legend> Are you Force sensitive and if so, Sith or Jedi(required):</legend>
+        <label for="No-force"><input id="No-force" type="radio" name="No-force" class="inline" checked /> Not force sensitive</label>
+        <label for="Jedi"><input id="Jedi" type="radio" name="Jedi" class="inline" /> Force sensitive Jedi</label>
+        <label for="Sith"><input id="Sith" type="radio" name="Sith" class="inline" /> Force sensitive Sith</label>
+        <legend>Which Job Preferences fit your fancy:</legend>
+        <input type="checkbox" id="checkbox1" name="Job"> <label for="checkbox1">: Hilt Maker</label>
+        <input type="checkbox" id="checkbox2" name="Job"> <label for="checkbox2">: Light Crystal Collector</label>
+        <input type="checkbox" id="checkbox3" name="Job"> <label for="checkbox3">: LightSaber Maker</label>
+    </fieldset>
+    <fieldset>
+        <label for="location">Which Planet would you like to be stationed at:</label>
+        <select id="location" name="location" required>
+        <option value="">(select one)</option>
+        <option value="1">Coruscant</option>
+        <option value="2">ILUM</option>
+        <option value="3">Naboo</option>
+        <option value="4"> Or All for (Cargo Transport)</option>
+        </select>
+    </fieldset>
+    <button type="reset" style="background-color: darkblue; color: white;">Reset</button>
+    <button type="submit" style="background-color: rgb(194, 153, 49); color: white;">Submit</button>
+    </form>
+    </main>
+    <footer>
+     <nav>
+        <a href="https://webpages.charlotte.edu/pjenki17/">Charlotte.edu</a>
+        ||
+        <a href="https://github.com/parkerJenkins36">Github</a>
+        ||
+        <a href="https://github.com/parkerJenkins36/parkerJenkins36.github.io/tree/main/itis3135">Github.io</a>
+        ||
+        <a href="https://www.freecodecamp.org/ParkerJenkins">freeCodeCamp</a>
+        ||
+        <a href="https://www.codecademy.com/profiles/parker.jenkins">Codecademy</a>
+        ||
+        <a href="https://www.linkedin.com/in/parker-jenkins-6618112a9/">LinkedIn</a>
+    </nav>
+    <p>Page Built By <a href="pjenkiproduction.co/">ParkerProduction <span>&copy; 2024</span></a></p>
+    <p>Never had a better experience</p>
+    <a href="https://validator.w3.org/check?uri=referer">
+        <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+    </a>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
+    </a>
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + loctation.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + loctation.href);
+</script>
+</body>
+</html>
