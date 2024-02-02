@@ -29,11 +29,12 @@ h2{
     text-align: center;
     color:rgb(11, 195, 211);
 }
-
-img{
-    width: 100px;
-    height: 50px;
-
+li{
+    padding: 5px;
+    font-size: 15px;
+}
+.Aaron{
+    width: 60%;
 }
 figure{
     text-align: center;
