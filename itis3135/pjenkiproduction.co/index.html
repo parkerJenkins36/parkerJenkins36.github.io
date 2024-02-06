@@ -6,34 +6,61 @@
                <meta name="viewport" content="width=device-width, initial-scale=1.0">
                <title>Home Page</title>
                <link rel="stylesheet" >
-               <!-- #fff700, #fede80, #ffaff7, hsl(189, 96%, 79%)-->
+               <!-- #fff700, #fede80, #ffaff7, hsl(189, 90%, 77%)-->
                <style type="text/css">
                 *{
                     text-align: center;
+                    color: hsl(189, 90%, 77%);
                 }
                 body {
                     background-color: #3c8b47;
                     color: #fff700, #fede80;
                     margin: 2em 2em 3em 5em;
                     padding: 0;
-                }		
+                }
+                a:hover{
+                    color: yellow;
+                }	
                 a {
-                    color: #ffaff7, hsl(189, 96%, 79%);
+                    color: #ffaff7, hsl(189, 90%, 77%);
+                    text-decoration: none;
                 }
                 .inline{
                      margin-left: -13px;
                      margin-bottom: -5px;
                 }
+                ul{
+                    margin: 0% 35% 5% 25%;
+                }
+                h3 , h2{
+                    color: rgb(248, 101, 101);
+                }
+                p{
+                    padding: 1px;
+                    margin: 9px;
+                    color:hsl(268, 59%, 37%)
+                }
+                .box{
+                    border: 3px double black;
+                     width: 270px;
+                   margin: 20px auto;
+                 padding: 0 7px;
+                }
+                .inline{
+                margin-bottom: 1px;
+                margin-left: -1px;
+            }
                 </style>
            </head>
            <body>
                <header>
-                <h1>PjenkiProduction <img height="30px" width="30px" class="inline" alt="saber-logo" src="https://thumbs.dreamstime.com/b/pj-letter-logo-icon-design-template-elements-vector-friendly-funnytypeface-colorful-alphabet-collection-type-characters-logotype-184329126"></h1>
+                <h1>PjenkiProduction <img  alt="saber-logo" class="inline" width="20px" height="20px" src="https://export-download.canva.com/Asmsw/DAF7_EAsmsw/8/0/0001-2775761072214393552.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20240206%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240206T045949Z&X-Amz-Expires=5184&X-Amz-Signature=03963d80ca864e21a01d8ca6f4dbe046c6c706064dd9260f4c032556937d1997&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27PJ.png&response-expires=Tue%2C%2006%20Feb%202024%2006%3A26%3A13%20GMT"></h1>
                 <h1>PointyJabbySabers</h1>
                </header>
                <main>
                 <h2>PointyJabbySabers Services</h2>
                 <p>The company that manufactures and produces for every home their very own lightsaber. We make it easy and simple for families to have the most fun.</p>
+                <h3>Force essentials</h3>
                 <ul>
                 <li>We offer a wide variety of colors</li>
                 <li>Our hilts have been crafted many from across the stars.</li>
@@ -41,13 +68,28 @@
                 <li>Either you can order online or come to Coruscant to collect your saber.</li>
                 <li>We do all the hard work that goes into lightsaber creation so you don't have to.</li>
                </ul>
-               <p>We would like to offer a fun option for families to have an only need some info to get started:</p>
+               <div class="box">
+               <p>We would like to offer a fun option for families to have, you only need to be an adult to purchase.</p>
               <p>SaberProduction@gmail.com</p>
               <p>Call the Force at: (555)634-2187</p>
-              <p>Address: Upper City, Coruscant, near Jedi Temple</p>
+              <p>Address: Upper City, Coruscant, (near Jedi Temple)</p>
+              </div>
             </main>
                <footer>
-                
-               </footer>
+                <p>Page Built By <a href="pjenkiproduction.co/">PointyJabbySabers <span>&copy;2024</span></a></p>
+                <p>Surf the WWWeb</p>
+                <a href="https://validator.w3.org/check?uri=referer">
+                    <img src="https://jigsaw.w3.org/css-validator/images/vh40.gif" width="130px" height="60px" alt="Link to HTML validator">
+                </a>
+            
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img src="https://jigsaw.w3.org/css-validator/images/vcss" width="130px" height="60px" alt="Link to CSS validator">
+                </a>
+                </footer>
+                <script>
+                    document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + loctation.href);
+                    document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + loctation.href);
+            </script>
+            
            </body>
            </html>
