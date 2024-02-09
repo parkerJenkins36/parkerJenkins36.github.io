@@ -28,7 +28,6 @@ li{
     text-align: left;
 }
 table {
- border-collapse: seperate;
  border-spacing: 4px;
  text-indent: initial;
  position: relative;
@@ -37,7 +36,6 @@ table {
 }
 table[class="first_table"]{
  display: table;
-  border-collapse: seperate;
   border-top-width: 3px;
   border-bottom-width: 3px;
   border-left-width: 3px;
@@ -46,7 +44,6 @@ table[class="first_table"]{
 }
 tr{
 display:table-row;
-border-collapse: seperate;
 vertical-align: middle;
 }
 tr:nth-child(odd){
@@ -64,7 +61,6 @@ vertical-align: middle;
 tbody{
 display: table-row-group;
 vertical-align: middle;
-border-collapse: seperate;
 }
 td{
     display: table-cell;
@@ -90,7 +86,7 @@ body{
 }
 a:hover{
      color:crimson;
-     text-decoration: line;
+     text-decoration:solid;
    }
 a{
       color:rgb(250, 160, 253);
