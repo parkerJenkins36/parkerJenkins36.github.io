@@ -71,6 +71,9 @@ border-bottom: none;
 b{
 padding: 15px 0 0 5px;
 }
+legend{
+    padding: 15px 0 0 5px;
+    }
 label{
 padding: 10px;
 }
