@@ -44,13 +44,13 @@ input[type="text"], input[type="tel"], input[type="email"], select{
     border-radius: 5px;
 }
 input[type="checkbox"] {
-      width:unset;
-      margin: 1em 0 0 0;
+    display:block;
+  margin: 30px -270px -50px;
 }
-    label {
-display: block;
-margin: 1rem 0;
-}
+label {
+    display: block;
+    margin: 1rem 0;
+    }
 .inline {
 width: unset;
 margin: 0 1.5em 2px 3px;
@@ -67,9 +67,6 @@ border-bottom: 3px solid #3b3b4f;
 }
 fieldset:last-of-type {
 border-bottom: none;
-}
-b{
-padding: 15px 0 0 5px;
 }
 legend{
     padding: 15px 0 0 5px;
