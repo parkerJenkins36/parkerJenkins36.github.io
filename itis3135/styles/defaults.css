@@ -166,6 +166,8 @@ height: 70px;
     }
     form{
         width: 80vw;
+       max-width: 500px;
+       min-width: 300px;
        margin: 0 auto;
      padding-bottom: 2em;
     }
@@ -239,6 +241,7 @@ height: 70px;
     width: 80px;
     height: 70px;
     }
+
 }
 /* Rule Overrides For Mobile Devices */
 @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
@@ -322,3 +325,4 @@ height: 70px;
     width: 80px;
     height: 70px;
     }
+}
