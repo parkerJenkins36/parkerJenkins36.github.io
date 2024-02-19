@@ -246,27 +246,28 @@ height: 70px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     form{
-        width: 40vw;
+        width: 80vw;
+       max-width: 500px;
        min-width: 300px;
        margin: 0 auto;
-     padding-bottom: 1em;
+     padding-bottom: 2em;
     }
     h2,p{
         text-align: center;
     }
     body {
     width: 100%;
-    height: 10px;
+    height: 100vh;
     margin: 10px 20px;
      background-color: #1b3229;
     color: #89c4ff;
     font-family: Italic;
-     font-size: 9px;
+     font-size: 17px;
     }
     input,select {
-      margin: 5px 5px 0 0;
+      margin: 10px 10px 0 0;
       width: 100%;
-      min-height: 1em;
+      min-height: 2em;
       padding:8px;
     }
     a{
@@ -305,21 +306,19 @@ height: 70px;
     
     fieldset {
     border: none;
-    padding: 1rem 0;
+    padding: 2rem 0;
     border-bottom: 3px solid #3b3b4f;
     }
     fieldset:last-of-type {
     border-bottom: none;
     }
     legend{
-        padding: 5px 0 0 2px;
+        padding: 15px 0 0 5px;
         }
     label{
-    padding: 5px;
+    padding: 10px;
     }
     img{
-    width: 20px;
-    height: 10px;
+    width: 80px;
+    height: 70px;
     }
-}
-
