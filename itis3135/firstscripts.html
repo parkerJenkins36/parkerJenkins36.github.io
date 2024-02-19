@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parker Jenkins Patient Jackal|| ITIS 3135</title>
+    <link rel="stylesheet" href="styles/default1.css" />
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <main>
+        <h2>JavaScript Time</h2>
+        <h3 id="datetime"></h3>
+        <label for="usersName">Enter your name, follow to next step after:</label>
+        <input type="text" id="usersName">
+        <br>
+        <label for="usersFeeling">Please tell us how you are feeling today:</label>
+        <input type="text" id="usersFeeling">
+        <button class="user" type="button" onclick="userGreeting()">Push</button>
+        <p id="firstresponse"></p>
+        <label for="favNum">Please Enter your preferred number 1-10:</label>
+        <input type="text" id="favNum">
+        <button type="button" onclick="printFavNum()">Push</button>
+        <p id="Numresponse"></p>
+       <label for="trained">Can a Jackal be trained to live as a pet:</label>
+       <select id="trained" name="options">
+        <option value="Yes" selected>Yes</option>
+        <option value="No">No</option>
+      </select>
+      <button type="button" onclick="jackaltrain()">Push</button>
+      <p id="jackalresponse"></p>
+      <label>If you're struggling to pick a color, click here for a generated lightsaber color</label>
+      <button type="button" onclick="randomColor()">Push</button>
+      <p id="Colorresponse"></p>
+      <label for="planetName">If you find a planet with light crystals for sabers you can rename the planet, what name are you choosing:</label>
+      <input type="text" id="planetname"><button type="button" onclick="planetName()">Push</button>
+      <p id="planetresponse"></p>
+      <label>Hit the button here to hear of a famous saber wielder:</label>
+      <button type="button" onclick= "saberMasters()" >Saber Masters</button>
+      <script>
+        const date = document.getElementById('datetime');
+            date.innerHTML= "Date : "+ Date();
+            function userGreeting(){
+                let name = document.getElementById('usersName').value;
+                let mood = document.getElementById('usersFeeling').value;
+               let response;
+               if(isNaN(name) === true ){
+                  response= "PointyJabbySabers welcomes you, "+name+"! We're glad you are doing "+ mood+"!";
+               }
+               else{
+                response="Invalid inputs";
+               }
+               document.getElementById('firstresponse').innerText = response;
+            }
+            function printFavNum() {
+                let sides = ["no", "henagon", "digon", "trigon", "tetragon", "pentagon",
+                    "hexagon", "heptagon", "octagon", "enneagon", "decagon"];
+                let num = document.getElementById('favNum').value;
+                let response;
+                if (isNaN(x) || x > 10) {
+                    response = "invalid input bro."
+                } else {
+                    response = "The name of the polygon with " + num + " sides is: " + sides[num];
+                }
+                alert(response);
+            }
+            function jackaltrain(){
+                let j = document.getElementById('trained').value;
+                if(j ==="No"){
+                    response= "I don't know there have been crazier pets just watch How to Train a Jackal.";
+                }else{
+                    response= "Thank you!! Jackals aren't that bad.";
+                }
+                document.getElementById('jackalresponse').innerText= response;
+            }
+            function randomColor(){
+                const color = ["Red (Sith)", "Green (Jedi)", 
+                "Blue (Jedi) ", "Purple (Jedi/Sith)","Yellow (Rise of Skywalker)", "Black (Mandalorian)"];
+                let response= color[getRandomInt(5)];
+                alert(response);
+                document.getElementById('Colorresponse').value = response;
+            }
+            function planetName(){
+                let planet= document.getElementById('planetName').value;
+                let response;
+                if(isNaN(planet)){
+                    response= "Planet "+ planet+ ", is the new name you chose for its inhabitants!!";
+                }else{
+                    response="Preferred planet name people can say";
+                }
+                alert(response);
+                document.getElementById('planetresponse').value = response;
+            }
+            function saberMasters(){
+                const color = ["Yoda (Jedi)","Obi-Wan (Jedi)", "Mace Windu (Jedi) ", "Chancellor Palpatine (Sith)"
+                ,"Count Dooku (Sith)","General Grievous (Sith)","Anakin Skywalker (Jedi/Sith)"];
+                let x = getRandomInt(6);
+                let response= color[x];
+                if (x<3){
+                    alert(response + ", a great Jedi Master who can be seen during the Clone Wars.");
+                }
+                if (x>=3 && x < 6){
+                   alert(response + ", a Sith who means to use their sabers for destruction.");
+                }
+                else{
+                    alert(response +", the chosen one himself who turned against the Jedi Order.");
+                }
+            }
+            </script>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.js"></script>
+</body>
+</html>

@@ -7,6 +7,7 @@ html {
 main{
     display: block;
     text-align: center;
+    padding-bottom: 50px;;
 }
 h2{
   display: block;
@@ -95,4 +96,7 @@ a{
   img{
     width: 75px;
     height: 50px
+  }
+  input{
+    margin: 10px;
   }
