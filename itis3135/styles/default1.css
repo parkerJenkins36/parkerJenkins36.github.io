@@ -8,7 +8,9 @@ html {
 main{
   display: block;
   text-align: center;
-  padding-bottom: 50px;;
+  padding-bottom: 50px;
+  max-width: 500px;
+  min-width: 300px;
 }
 h2{
 display: block;

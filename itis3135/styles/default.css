@@ -23,6 +23,8 @@ main{
     text-align: left;
     margin-left: 20%;
     margin-right: 20%;
+    max-width: 500px;
+    min-width: 300px;
 }
 
 h2{
@@ -52,6 +54,7 @@ figure{
         text-align: center;
         color:rgb(11, 195, 211);
         font-family: monospace;
+        font-size: 10px;
     }
     p{
         text-align:center;
@@ -80,7 +83,7 @@ figure{
     }
     li{
         padding: 5px;
-        font-size: 15px;
+        font-size: 5px;
     }
     .Aaron{
         width: 60%;
@@ -152,6 +155,7 @@ figure{
         text-align: center;
         color:rgb(11, 195, 211);
         font-family: monospace;
+        font-size: 4%;
     }
     p{
         text-align:center;
