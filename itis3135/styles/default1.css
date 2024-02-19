@@ -1,4 +1,9 @@
-*{
+/* MOBILE QUERIES */
+
+/* Rule Overrides For Laptops / Small Screens */
+@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+
+  *{
     font-family: 'Courier New', Courier, monospace;
 }
 html {
@@ -100,3 +105,217 @@ a{
   input{
     margin: 10px;
   }
+}
+/* Rule Overrides For Tablet Devices */
+@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+
+  *{
+    font-family: 'Courier New', Courier, monospace;
+}
+html {
+    box-sizing: border-box;
+  }
+main{
+    display: block;
+    text-align: center;
+    padding-bottom: 50px;;
+}
+h2{
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  margin: auto;
+  text-align: center;
+}
+h3{
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: center;
+}
+li{
+    margin: 2px 520px;
+    text-align: left;
+}
+table {
+ border-spacing: 4px;
+ text-indent: initial;
+ position: relative;
+ margin: 2px 500px;
+ border:2px solid yellow;
+}
+table[class="first_table"]{
+ display: table;
+  border-top-width: 3px;
+  border-bottom-width: 3px;
+  border-left-width: 3px;
+  border-right-width: 3px;
+  margin: 2px 400px;
+}
+tr{
+display:table-row;
+vertical-align: middle;
+}
+tr:nth-child(odd){
+background-color: grey;
+}
+tr:nth-child(even){
+background-color: rgb(32, 32, 127);
+}
+th{
+background-color: black;
+display:table-cell;
+text-align:center;
+vertical-align: middle;
+}
+tbody{
+display: table-row-group;
+vertical-align: middle;
+}
+td{
+    display: table-cell;
+    border-collapse: separate;
+    vertical-align: middle;
+}
+figure{
+    display: block;
+    width: 40px;
+    text-align: center;
+    margin: 1rem 5em;
+}
+figcaption{
+    text-align:center;
+    margin: 1em 600px;
+}
+body{
+    display: block;
+   background-color:  #006633;
+   color: rgb(227, 246, 53);
+   margin: 10px;
+   text-align: center;
+}
+a:hover{
+     color:crimson;
+     text-decoration:solid;
+   }
+a{
+      color:rgb(250, 160, 253);
+      text-decoration: none;
+  }
+  img{
+    width: 75px;
+    height: 50px
+  }
+  input{
+    margin: 10px;
+  }
+}
+/* Rule Overrides For Mobile Devices */
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+
+  *{
+    font-family: 'Courier New', Courier, monospace;
+}
+html {
+    box-sizing: border-box;
+  }
+main{
+    display: block;
+    text-align: center;
+    padding-bottom: 50px;;
+}
+h2{
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  margin: auto;
+  text-align: center;
+}
+h3{
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: center;
+}
+li{
+    margin: 2px 520px;
+    text-align: left;
+}
+table {
+ border-spacing: 4px;
+ text-indent: initial;
+ position: relative;
+ margin: 2px 500px;
+ border:2px solid yellow;
+}
+table[class="first_table"]{
+ display: table;
+  border-top-width: 3px;
+  border-bottom-width: 3px;
+  border-left-width: 3px;
+  border-right-width: 3px;
+  margin: 2px 400px;
+}
+tr{
+display:table-row;
+vertical-align: middle;
+}
+tr:nth-child(odd){
+background-color: grey;
+}
+tr:nth-child(even){
+background-color: rgb(32, 32, 127);
+}
+th{
+background-color: black;
+display:table-cell;
+text-align:center;
+vertical-align: middle;
+}
+tbody{
+display: table-row-group;
+vertical-align: middle;
+}
+td{
+    display: table-cell;
+    border-collapse: separate;
+    vertical-align: middle;
+}
+figure{
+    display: block;
+    width: 40px;
+    text-align: center;
+    margin: 1rem 5em;
+}
+figcaption{
+    text-align:center;
+    margin: 1em 600px;
+}
+body{
+    display: block;
+   background-color:  #006633;
+   color: rgb(227, 246, 53);
+   margin: 10px;
+   text-align: center;
+}
+a:hover{
+     color:crimson;
+     text-decoration:solid;
+   }
+a{
+      color:rgb(250, 160, 253);
+      text-decoration: none;
+  }
+  img{
+    width: 75px;
+    height: 50px
+  }
+  input{
+    margin: 10px;
+  }
+}
+
