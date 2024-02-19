@@ -1,151 +1,47 @@
-/* Rule Overrides For Laptops / Small Screens */
-@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
-    body{
-        background-color:darkolivegreen;
-        text-align: center;
-        color:rgb(11, 195, 211);
-        font-family: monospace;
-    }
-    p{
-        text-align:center;
-        font-family: sans-serif;
-    }
-    a{
-        color:rgb(255, 213, 0);
-        text-decoration: none;
-        font-family: sans-serif;
-    }
-    
-    a:hover{
-        color:crimson;
-        text-decoration: solid;
-    }
-    
-    main{
-        text-align: left;
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-    
-    h2{
-        text-align: center;
-        color:rgb(11, 195, 211);
-    }
-    li{
-        padding: 5px;
-        font-size: 15px;
-    }
-    .Aaron{
-        width: 60%;
-        margin: 2% 20%; 
-    }
-    img{
-        width: 100px;
-        height: 10%;
-    }
-    figure{
-        text-align: center;
-        font-family: sans-serif;
-    }
+body{
+    background-color:darkolivegreen;
+    text-align: center;
+    color:rgb(11, 195, 211);
+    font-family: monospace;
 }
-/* Rule Overrides For Tablet Devices */
-@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
-    body{
-        background-color:darkolivegreen;
-        text-align: center;
-        color:rgb(11, 195, 211);
-        font-family: monospace;
-    }
-    p{
-        text-align:center;
-        font-family: sans-serif;
-    }
-    a{
-        color:rgb(255, 213, 0);
-        text-decoration: none;
-        font-family: sans-serif;
-    }
-    
-    a:hover{
-        color:crimson;
-        text-decoration: solid;
-    }
-    
-    main{
-        text-align: left;
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-    
-    h2{
-        text-align: center;
-        color:rgb(11, 195, 211);
-    }
-    li{
-        padding: 5px;
-        font-size: 15px;
-    }
-    .Aaron{
-        width: 60%;
-        margin: 2% 20%; 
-    }
-    img{
-        width: 100px;
-        height: 10%;
-    }
-    figure{
-        text-align: center;
-        font-family: sans-serif;
-    }
+p{
+    text-align:center;
+    font-family: sans-serif;
 }
-/* Rule Overrides For Mobile Devices */
-@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
-    body{
-        background-color:darkolivegreen;
-        text-align: center;
-        color:rgb(11, 195, 211);
-        font-family: monospace;
-    }
-    p{
-        text-align:center;
-        font-family: sans-serif;
-    }
-    a{
-        color:rgb(255, 213, 0);
-        text-decoration: none;
-        font-family: sans-serif;
-    }
-    
-    a:hover{
-        color:crimson;
-        text-decoration: solid;
-    }
-    
-    main{
-        text-align: left;
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-    
-    h2{
-        text-align: center;
-        color:rgb(11, 195, 211);
-    }
-    li{
-        padding: 5px;
-        font-size: 15px;
-    }
-    .Aaron{
-        width: 60%;
-        margin: 2% 20%; 
-    }
-    img{
-        width: 100px;
-        height: 10%;
-    }
-    figure{
-        text-align: center;
-        font-family: sans-serif;
-    }
+a{
+    color:rgb(255, 213, 0);
+    text-decoration: none;
+    font-family: sans-serif;
 }
 
+a:hover{
+    color:crimson;
+    text-decoration: solid;
+}
+
+main{
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h2{
+    text-align: center;
+    color:rgb(11, 195, 211);
+}
+li{
+    padding: 5px;
+    font-size: 15px;
+}
+.Aaron{
+    width: 60%;
+    margin: 2% 20%; 
+}
+img{
+    width: 100px;
+    height: 10%;
+}
+figure{
+    text-align: center;
+    font-family: sans-serif;
+}
