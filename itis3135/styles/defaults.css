@@ -5,7 +5,7 @@ form{
     width: 80vw;
    max-width: 500px;
    min-width: 300px;
-   margin: 0 auto;
+   margin: 0% auto;
  padding-bottom: 2em;
 }
 h2,p{
@@ -14,14 +14,14 @@ h2,p{
 body {
 width: 100%;
 height: 100vh;
-margin: 10px 20px;
+margin: 0% auto;
  background-color: #1b3229;
 color: #89c4ff;
 font-family: Italic;
  font-size: 17px;
 }
 input,select {
-  margin: 10px 10px 0 0;
+  margin: 0% auto;
   width: 100%;
   min-height: 2em;
   padding:8px;
