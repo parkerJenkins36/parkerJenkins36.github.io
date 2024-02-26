@@ -24,7 +24,7 @@
         </fieldset>
         <fieldset>
         <label>Add your image</label>
-        <input type="file" name="file" id="introImage"required>
+        <input type="file" name="file" id="introImage" required>
         <button type="button" onclick="loadImage()">Click to Upload Image</button>
         <label for="caption">Write a caption for the image.
             <input type="text" id="caption" name="caption" value="Aaron Rodgers" required>
@@ -49,10 +49,10 @@
         <label for="platform">What is your primary computer platform:
          <input type="text" id="platform" name="platform" required value="Alienware r16M5">
         </label>
-    <label for="courses">Type each course you are taking:</label>
+    <label id="courses">Type each course you are taking:</label>
     <div id="courseInput" class="courseInput"></div>
     <div id="coursesButtons">
-        <input type="button" id="attending" class="attending" value="Enter Course" required>
+        <input type="button" id="attending" class="attending" value="Enter Course">
     </div>
     <label for="funny">Do you have a funny/interesting thought to include:
      <input type="text" id="funny" name="funny" value=": I am only a lefty in baseball and golf.">
