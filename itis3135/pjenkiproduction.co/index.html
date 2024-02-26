@@ -5,16 +5,16 @@
                <meta charset="UTF-8">
                <meta name="viewport" content="width=device-width, initial-scale=1.0">
                <title>Home Page</title>
-               <link rel="stylesheet" >
-               <!-- #fff700, #fede80, #ffaff7, hsl(189, 90%, 77%)-->
-               <style type="text/css">
+               <link rel="stylesheet">
+               <!-- #fff700, #ffaff7-->
+               <style>
                 *{
                     text-align: center;
                     color: hsl(189, 90%, 77%);
                 }
                 body {
                     background-color: #3c8b47;
-                    color: #fff700, #fede80;
+                    color: #fff700;
                     margin: 2em 2em 3em 5em;
                     padding: 0;
                 }
@@ -22,7 +22,7 @@
                     color: yellow;
                 }	
                 a {
-                    color: #ffaff7, hsl(189, 90%, 77%);
+                    color: #ffaff7;
                     text-decoration: none;
                 }
                 .inline{
@@ -54,8 +54,7 @@
            </head>
            <body>
                <header>
-                <h1>PjenkiProduction <img  alt="saber-logo" class="inline" width="20px" height="20px" src="https://www.pngkey.com/png/detail/42-424442_lightsaber-graphic-transparent-stock-free-download-star-wars.png"></h1>
-                <h1>PointyJabbySabers</h1>
+                <h1>PjenkiProduction <img  alt="saber-logo" class="inline" width="20" height="20" src="https://www.pngkey.com/png/detail/42-424442_lightsaber-graphic-transparent-stock-free-download-star-wars.png"></h1>
                </header>
                <main>
                 <h2>PointyJabbySabers Services</h2>
@@ -75,21 +74,7 @@
               <p>Address: Upper City, Coruscant, (near Jedi Temple)</p>
               </div>
             </main>
-               <footer>
-                <p>Page Built By <a href="pjenkiproduction.co/">PointyJabbySabers <span>&copy;2024</span></a></p>
-                <p>Surf the WWWeb</p>
-                <a href="https://validator.w3.org/check?uri=referer">
-                    <img src="https://jigsaw.w3.org/css-validator/images/vh40.gif" width="130px" height="60px" alt="Link to HTML validator">
-                </a>
-            
-                <a href="https://jigsaw.w3.org/css-validator/check/referer">
-                    <img src="https://jigsaw.w3.org/css-validator/images/vcss" width="130px" height="60px" alt="Link to CSS validator">
-                </a>
-                </footer>
-                <script>
-                    document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + loctation.href);
-                    document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + loctation.href);
-            </script>
-            
+                <div data-include="components/footer.html"></div>
+                <script src="scripts/include.js"></script>
            </body>
            </html>
