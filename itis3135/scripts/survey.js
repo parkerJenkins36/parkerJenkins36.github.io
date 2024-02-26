@@ -4,6 +4,7 @@ function  loadImage(){
     var text = "<img src=\""+ imageUrl + "\"+>";
     document.getElementById('loadImage').innerHTML = text;
 }
+
 function checkForm(){
     let name = document.getElementById('name').value();
     let mascot = document.getElementById('Mascot').value();
