@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYO Intro</title>
+    <link rel="stylesheet" href="styles/defaults.css">
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <script src="scripts/include.js"></script>
+    <main>
+     <h2>BYO Intro</h2>
+     <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+     <form action="#" method= "post" id="form">
+        <fieldset>
+        <label for="name">Enter Full Name:
+        <input type="text" id="name" name="Name" required placeholder="Parker Jenkins" size="30">
+        </label>
+        <label for="Mascot">Enter your Mascot:
+            <input type="text" id="Mascot" name="Mascot"  placeholder="Parker Jenkins, (Patient Jackal)" size="40" required>
+         </label>
+        </fieldset>
+        <fieldset>
+        <label>Add your image</label>
+        <input type="file" name="file" id="introImage"required>
+        <button type="button" onclick="loadImage()">Click to Upload Image</button>
+        <label for="caption">Write a caption for the image.
+            <input type="text" id="caption" name="caption" required>
+        </label>
+    </fieldset>
+     <fieldset>
+        <legend>Background about Yourself!</legend>
+       <label for="personal_b">Add Personal background you would like to share, maybe your hobbies:
+        <input type="text" id="personal_b" name="personal_b"  placeholder="....I like" required>
+       </label>
+       <label for="professional_b">Add some Professional background you would like to share:
+        <input type="text" id="professional_b" name="professional_b"  placeholder="....work" required>
+       </label>
+       <label for="academic_b">Add some Academic background you would like to share:
+        <input type="text" id="academic_b" name="academic_b"  placeholder="....studies" required>
+       </label>
+       <label for="web_b">Add some Web development background you would like to share:
+        <input type="text" id="web_b" name="web_b"  placeholder="....Web design" required>
+       </label>
+    </fieldset>
+    <fieldset>
+        <label for="platform">What is your primary computer platform:
+         <input type="text" id="platform" name="platform" required placeholder="... I use">
+        </label>
+    <label for="funny">Do you have a funny/memorable thought to include:
+     <input type="text" id="funny" name="funny" placeholder="... I laughed at">
+    </label>
+    <label for="anything">Anything else you want to add here:
+    <input type="text" id="anything" name="anything" placeholder=" ...I want to add">
+   </label>
+</fieldset>
+   <b>" I understand that what is on this page is not password protected and I will not put anything here that I dont want publicly available. "</b>
+   <input type="checkbox" id="checkbox1" required> <label for="checkbox1">: Check to confirm you agree with statement above.</label>
+   <button type="reset" style="background-color: darkblue; color: rgb(255, 255, 255);" value="Reset">Reset</button>
+   <button type="submit" style="background-color: rgb(194, 153, 49); color: rgb(0, 255, 81);" value="Submit">Submit</button>
+</form>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.js"></script>
+</body>
+</html>

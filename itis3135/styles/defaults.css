@@ -8,8 +8,10 @@ form{
    margin: 0% auto;
  padding-bottom: 2em;
 }
-h2,p{
+h2,p, h3{
+    margin: 0% auto;
     text-align: center;
+    padding: 1%;
 }
 body {
 width: 100%;
@@ -21,10 +23,10 @@ font-family: Italic;
  font-size: 17px;
 }
 input,select {
-  margin: 0% auto;
+  margin: 1% auto;
   width: 100%;
   min-height: 2em;
-  padding:8px;
+  padding: 1%;
 }
 a{
 color:rgb(204, 255, 0);
@@ -50,6 +52,7 @@ input[type="checkbox"] {
 label {
     display: block;
     margin: 1rem 0;
+     padding: 2%;
     }
 .inline {
 width: unset;
@@ -71,9 +74,6 @@ border-bottom: none;
 legend{
     padding: 15px 0 0 5px;
     }
-label{
-padding: 10px;
-}
 img{
 width: 80px;
 height: 70px;
@@ -85,26 +85,30 @@ height: 70px;
     }
     form{
         width: 80vw;
-       margin: 0 auto;
+       max-width: 500px;
+       min-width: 300px;
+       margin: 0% auto;
      padding-bottom: 2em;
     }
-    h2,p{
+    h2,p, h3{
+        margin: 0% auto;
         text-align: center;
+        padding: 2%;
     }
     body {
     width: 100%;
     height: 100vh;
-    margin: 10px 20px;
+    margin: 0% auto;
      background-color: #1b3229;
     color: #89c4ff;
     font-family: Italic;
      font-size: 17px;
     }
     input,select {
-      margin: 10px 10px 0 0;
+      margin: 1% auto;
       width: 100%;
       min-height: 2em;
-      padding:8px;
+      padding: 1%;
     }
     a{
     color:rgb(204, 255, 0);
@@ -130,6 +134,7 @@ height: 70px;
     label {
         display: block;
         margin: 1rem 0;
+         padding: 2%;
         }
     .inline {
     width: unset;
@@ -151,12 +156,12 @@ height: 70px;
     legend{
         padding: 15px 0 0 5px;
         }
-    label{
-    padding: 10px;
-    }
     img{
     width: 80px;
     height: 70px;
+    }
+    b{
+        margin: 0% auto;
     }
 }
 /* Rule Overrides For Tablet Devices */
@@ -168,26 +173,28 @@ height: 70px;
         width: 80vw;
        max-width: 500px;
        min-width: 300px;
-       margin: 0 auto;
+       margin: 0% auto;
      padding-bottom: 2em;
     }
-    h2,p{
+    h2,p, h3{
+        margin: 0% auto;
         text-align: center;
+        padding: 2%;
     }
     body {
     width: 100%;
     height: 100vh;
-    margin: 10px 20px;
+    margin: 0% auto;
      background-color: #1b3229;
     color: #89c4ff;
     font-family: Italic;
      font-size: 17px;
     }
     input,select {
-      margin: 10px 10px 0 0;
+      margin: 1% auto;
       width: 100%;
       min-height: 2em;
-      padding:8px;
+      padding: 1%;
     }
     a{
     color:rgb(204, 255, 0);
@@ -208,11 +215,12 @@ height: 70px;
     }
     input[type="checkbox"] {
         display:block;
-      margin: 30px -270px -50px;
+      margin: 0% auto;
     }
     label {
         display: block;
         margin: 1rem 0;
+         padding: 2%;
         }
     .inline {
     width: unset;
@@ -234,14 +242,10 @@ height: 70px;
     legend{
         padding: 15px 0 0 5px;
         }
-    label{
-    padding: 10px;
-    }
     img{
     width: 80px;
     height: 70px;
     }
-
 }
 /* Rule Overrides For Mobile Devices */
 @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
@@ -252,26 +256,28 @@ height: 70px;
         width: 80vw;
        max-width: 500px;
        min-width: 300px;
-       margin: 0 auto;
+       margin: 0% auto;
      padding-bottom: 2em;
     }
-    h2,p{
+    h2,p, h3{
+        margin: 0% auto;
         text-align: center;
+        padding: 2%;
     }
     body {
     width: 100%;
     height: 100vh;
-    margin: 10px 20px;
+    margin: 0% auto;
      background-color: #1b3229;
     color: #89c4ff;
     font-family: Italic;
      font-size: 17px;
     }
     input,select {
-      margin: 10px 10px 0 0;
+      margin: 1% auto;
       width: 100%;
       min-height: 2em;
-      padding:8px;
+      padding: 1%;
     }
     a{
     color:rgb(204, 255, 0);
@@ -292,11 +298,12 @@ height: 70px;
     }
     input[type="checkbox"] {
         display:block;
-      margin: 30px -270px -50px;
+      margin: 0% auto;
     }
     label {
         display: block;
         margin: 1rem 0;
+         padding: 2%;
         }
     .inline {
     width: unset;
@@ -318,9 +325,6 @@ height: 70px;
     legend{
         padding: 15px 0 0 5px;
         }
-    label{
-    padding: 10px;
-    }
     img{
     width: 80px;
     height: 70px;
