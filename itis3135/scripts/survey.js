@@ -1,7 +1,7 @@
-function  loadImage(){
-    var image = document.getElementById('introImage');
-    const imageUrl = URL.createObjectURL(image);
-    var text = "<img src=\""+ imageUrl + "\"+>";
+function loadImage() {
+    var image = document.getElementById('introImage').files[0]; 
+    const imageUrl = URL.createObjectURL(image); 
+    var text = "<img src=\"" + imageUrl + "\"+>";
     document.getElementById('loadImage').innerHTML = text;
 }
 
@@ -52,7 +52,6 @@ function addCourseField() {
     box.appendChild(courseInput);
     box.appendChild(dltButton);
 }
-
 document.getElementById('form').addEventListener('submit', function(event) {
     if(checkForm()){
     event.preventDefault();
