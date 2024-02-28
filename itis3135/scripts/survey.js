@@ -58,7 +58,9 @@ function addCourseField() {
     box.appendChild(courseInput);
     box.appendChild(dltButton);
 }
-document.getElementById('form').addEventListener('submit', function(event) {
+const sub = document.getElementById('form');
+if(sub){
+    sub.addEventListener('submit', function(event) {
     if(checkForm()){
     event.preventDefault();
 
@@ -100,4 +102,4 @@ document.getElementById('form').addEventListener('submit', function(event) {
     main.innerHTML = '';
     main.appendChild(newForm); 
 } 
-});
+});}
