@@ -24,12 +24,15 @@ function checkForm(){
 }
 return true;
 }
-const resetBtn = document.getElementsById('reset');
+
+
+const resetBtn = document.getElementById('reset');
+
 const reset = () => {
     document.getElementById('form').reset();
     document.getElementById('loadedImage').innerHTML = ''; // Clear any uploaded image
 }
-resetBtn.addEventListener("reset",reset);
+resetBtn.addEventListener("reset", reset);
 
 document.getElementById('attending').addEventListener('click', addCourseField);
 
@@ -88,7 +91,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
         <ul>
          ${courseInputs.map(course => `<li>${course}</li>`).join('')}
         </ul>
-        <button type="reset" style="background-color: darkblue; color: rgb(255, 255, 255);" id="reset" value="reset">Reset</button>
+        <button type="reset" style="background-color: darkblue; color: rgb(255, 255, 255);" id="reset" value="reset">Refresh</button>
     `;
     const main = document.querySelector('main');
     main.innerHTML = '';
