@@ -35,9 +35,10 @@ const reset = () => {
     document.getElementById('loadedImage').innerHTML = ''; // Clear any uploaded image
 }
 
-
-document.getElementById('attending').addEventListener('click', addCourseField);
-
+const attend = document.getElementById('attending');
+if(attend){
+attend.addEventListener('click', addCourseField);
+}
 function addCourseField() {
     const box = document.getElementById('courseInput');
    
