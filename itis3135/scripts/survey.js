@@ -51,10 +51,6 @@ function addCourseField() {
     course.appendChild(dltButton);
 }
 
-
-
-
-
 function submitForm() {
     const name = document.getElementById("name").value;
     const mascot = document.getElementById("Mascot").value;
@@ -68,12 +64,11 @@ function submitForm() {
     const funny = document.getElementById('funny').value;
     const anything = document.getElementById('anything').value;
 
-    const coursesTaking = [];
-    const courseInputs = document.querySelectorAll('[name="courses"]');
-    courseInputs.forEach(courseInput => {
-        coursesTaking.push(courseInput.value);
+    const coursesAt = [];
+    const courseInput = document.querySelectorAll('[name="courses"]');
+    courseInput.forEach(courseInput => {
+        coursesAt.push(courseInput.value);
     });
-
     const result = document.getElementById("form");
     result.innerHTML = `
     <h1>Introduction</h1>
@@ -90,7 +85,7 @@ function submitForm() {
     <li><b>Primary Computer Platform:</b>  ${platform}</li>
     <li><b>Courses I'm Taking & Why:</b>
     <ul>
-    ${courses.map(course => `<li><b>${course}</b></li>`).join("")}
+    ${coursesAt.map(courses => `<li><b>${courses}</b></li>`).join("")}
 </ul>
     </li>
     <li><b>Funny/Interesting Item about me:</b> ${funny}</li> 
