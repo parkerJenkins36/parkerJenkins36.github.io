@@ -13,7 +13,7 @@
     <main>
      <h2>BYO Intro</h2>
      <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
-     <form action="#" method= "post" id="form">     
+     <form id="form" onsubmit="submitForm(); return false;">     
         <fieldset>
         <label for="name">Enter Full Name:
         <input type="text" id="name" name="Name" required placeholder="Parker Jenkins"  value="Parker" size="30">
@@ -54,10 +54,10 @@
          <input type="text" id="platform" name="platform" required value="Alienware r16M5">
         </label>
     <label for="courses">Type each course you are taking:</label>
-    <div id="coursesList">
-        <input type="text" id="courses" class="course" required="">
+    <div id="courses">
+        <label>Courses currently taking:</label><br>
         <button type="button" onclick="addCourseField()">Add Course</button>
-        </div>
+    </div>
     <label for="funny">Do you have a funny/interesting thought to include:
      <input type="text" id="funny" name="funny" value=": I am only a lefty in baseball and golf.">
     </label>
