@@ -60,10 +60,7 @@ function addCourseField() {
 }
 
 const image = document.getElementById("introImage");
-const form = document.getElementById("form");
-form.addEventListener("submit", function(event) {
-    event.preventDefault();
-
+function submitForm() {
     const name = document.getElementById('name').value;
     const mascot = document.getElementById('Mascot').value;
     const caption = document.getElementById('caption').value;
@@ -74,34 +71,38 @@ form.addEventListener("submit", function(event) {
     const platform = document.getElementById('platform').value;
     const funny = document.getElementById('funny').value;
     const anything = document.getElementById('anything').value;
+    const courses = Array.from(document.getElementsByClassName("course"))
+                     .map(course => course.value);
     let imageLoad = image.files[0];
     const imageURL = URL.createObjectURL(imageLoad);
     let text = "<img src=\"" + imageURL + "\" >";
-       form.innerHTML= '';
-        form.innerHTML =` 
-        <h2>Introduction</h2>
-        <h2> ${name} || ${mascot}</h2>
-        <figure>
-            ${text}
-            <figcaption>${caption}</figcaption>
-        </figure>
-            <ol>
-                <li><b>Personal Background:</b> ${personalBackground}</li>
-                <li><b>Professional Background:</b>  ${professionalBackground}</li>
-                <li><b>Academic Background:</b> ${academicBackground}</li>
-                <li><b>Background in this Subject:</b> ${webBackground}</li>
-                <li><b>Primary Computer Platform:</b>  ${platform}</li>
-                <li><b>Courses I'm Taking & Why:</b>
-                    <ul>
-                    ${courses.map(course => `<li><b>${course}</b></li>`).join("")}
-                    </ul>
-                </li>
-                <li><b>Funny/Interesting Item to Remember me by:</b> ${funny}</li> 
-                <li><b>I'd also like to Share:</b> ${anything}</li>
-            </ol>
-            <a href="byo_intro.html">Refresh Form Click Here</a>
-    `;
-    const main = document.querySelector('main');
+    
+    const result = document.getElementById("formResult");
+    
+    result.innerHTML = ` 
+    <h2>Introduction</h2>
+    <h2> ${name} || ${mascot}</h2>
+    <figure>
+        ${text}
+        <figcaption>${caption}</figcaption>
+    </figure>
+        <ol>
+            <li><b>Personal Background:</b> ${personalBackground}</li>
+            <li><b>Professional Background:</b>  ${professionalBackground}</li>
+            <li><b>Academic Background:</b> ${academicBackground}</li>
+            <li><b>Background in this Subject:</b> ${webBackground}</li>
+            <li><b>Primary Computer Platform:</b>  ${platform}</li>
+            <li><b>Courses I'm Taking & Why:</b>
+            <ul>
+            ${courses.map(course => `<li><b>${course}</b></li>`).join("")}
+        </ul>
+            </li>
+            <li><b>Funny/Interesting Item to Remember me by:</b> ${funny}</li> 
+            <li><b>I'd also like to Share:</b> ${anything}</li>
+        </ol>
+        <a href="byo_intro.html">Refresh Form Click Here</a>
+`;
+const main = document.querySelector('main');
     main.innerHTML = '';
-    main.appendChild(newForm); 
-});
+    main.appendChild(result); 
+}
