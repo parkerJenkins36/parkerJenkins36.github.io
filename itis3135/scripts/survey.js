@@ -27,12 +27,14 @@ return true;
 
 
 const resetBtn = document.getElementById('reset');
-
+if(resetBtn){
+resetBtn.addEventListener("reset", reset);
+}
 const reset = () => {
     document.getElementById('form').reset();
     document.getElementById('loadedImage').innerHTML = ''; // Clear any uploaded image
 }
-resetBtn.addEventListener("reset", reset);
+
 
 document.getElementById('attending').addEventListener('click', addCourseField);
 
