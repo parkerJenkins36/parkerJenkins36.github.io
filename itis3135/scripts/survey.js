@@ -35,33 +35,33 @@ const reset = () => {
     document.getElementById('loadedImage').innerHTML = ''; // Clear any uploaded image
 }
 
-const attend = document.getElementById('attending');
-if(attend){
-attend.addEventListener('click', addCourseField);
-}
+const courses= document.getElementById('courses');
+const courseButton = document.getElementById("courseButton");
+const courseInput = document.getElementById("courseInput");
+let check = 0;
+courses.addEventListener("click", addCourseField);
 function addCourseField() {
-    const box = document.getElementById('courseInput');
-   
-    const courseInput = document.createElement('input');
-    courseInput.type = 'text';
-    courseInput.name = 'courses';
-    courseInput.placeholder = 'Name of your course';
-    courseInput.required = true;
+    const coursesList = document.getElementById("coursesList");
+    const newInput = document.createElement("input");
+    newInput.type = "text";
+    newInput.class= "course";
+    newInput.required = true;
 
-    const dltButton = document.createElement('button');
-    dltButton.type = 'button';
-    dltButton.textContent = 'Delete';
-    dltButton.onclick = function() {//delete function
-        box.removeChild(courseInput); 
-        box.removeChild(dltButton); 
+    const dltButton = document.createElement("button");
+    dltButton.type = "button";
+    dltButton.textContent = "Delete";
+    dltButton.onclick = function () {
+        coursesList.removeChild(newInput);
+        coursesList.removeChild(dltButton);
     };
-    box.appendChild(courseInput);
-    box.appendChild(dltButton);
+
+    coursesList.appendChild(newInput);
+    coursesList.appendChild(dltButton);
 }
-const sub = document.getElementById('form');
-if(sub){
-    sub.addEventListener('submit', function(event) {
-    if(checkForm()){
+
+const image = document.getElementById("introImage");
+const form = document.getElementById("form");
+form.addEventListener("submit", function(event) {
     event.preventDefault();
 
     const name = document.getElementById('name').value;
@@ -74,32 +74,34 @@ if(sub){
     const platform = document.getElementById('platform').value;
     const funny = document.getElementById('funny').value;
     const anything = document.getElementById('anything').value;
-    let image = document.getElementById('introImage');
-    const imageUrl = URL.createObjectURL(image);
-    const courseInputs = Array.from(document.getElementsByName('courses[]')).map(input => input.value).trim();
-
-
-    const newForm = document.createElement('div');
-        newForm.innerHTML =`
-        <h1>Submitted Page:</h1>
-        <h2>  ${name} || ${mascot}</h2>
-        <img src= "${imageUrl}" alt="Uploaded Image">
-        <b><strong>Caption:</strong> ${caption}</b>
-        <p><strong>Personal Background: </strong> ${personalBackground}</p>
-        <p><strong>Professional Background: </strong> ${professionalBackground}</p>
-        <p><strong>Academic Background: </strong> ${academicBackground}</p>
-        <p><strong>Web Background: </strong> ${webBackground}</p>
-        <p><strong>Platform: </strong> ${platform}</p>
-        <p><strong>Funny/Memorable Thought: </strong> ${funny}</p>
-        <p><strong>Anything Else: </strong> ${anything}</p>
-        <p><strong>Courses Taking:</strong></p>
-        <ul>
-         ${courseInputs.map(course => `<li>${course}</li>`).join('')}
-        </ul>
-        <button type="reset" style="background-color: darkblue; color: rgb(255, 255, 255);" id="reset" value="reset">Refresh</button>
+    let imageLoad = image.files[0];
+    const imageURL = URL.createObjectURL(imageLoad);
+    let text = "<img src=\"" + imageURL + "\" >";
+       form.innerHTML= '';
+        form.innerHTML =` 
+        <h2>Introduction</h2>
+        <h2> ${name} || ${mascot}</h2>
+        <figure>
+            ${text}
+            <figcaption>${caption}</figcaption>
+        </figure>
+            <ol>
+                <li><b>Personal Background:</b> ${personalBackground}</li>
+                <li><b>Professional Background:</b>  ${professionalBackground}</li>
+                <li><b>Academic Background:</b> ${academicBackground}</li>
+                <li><b>Background in this Subject:</b> ${webBackground}</li>
+                <li><b>Primary Computer Platform:</b>  ${platform}</li>
+                <li><b>Courses I'm Taking & Why:</b>
+                    <ul>
+                    ${courses.map(course => `<li><b>${course}</b></li>`).join("")}
+                    </ul>
+                </li>
+                <li><b>Funny/Interesting Item to Remember me by:</b> ${funny}</li> 
+                <li><b>I'd also like to Share:</b> ${anything}</li>
+            </ol>
+            <a href="byo_intro.html">Refresh Form Click Here</a>
     `;
     const main = document.querySelector('main');
     main.innerHTML = '';
     main.appendChild(newForm); 
-} 
-});}
+});
