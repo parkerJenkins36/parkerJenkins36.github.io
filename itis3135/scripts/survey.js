@@ -58,12 +58,12 @@ function addCourseField() {
     coursesList.appendChild(newInput);
     coursesList.appendChild(dltButton);
 }
-
-const image = document.getElementById("introImage");
-function submitForm() {
+document.getElementById('form').addEventListener('submit', function(event) {
+    event.preventDefault(); 
     const name = document.getElementById('name').value;
     const mascot = document.getElementById('Mascot').value;
-    const caption = document.getElementById('caption').value;
+    const image = document.getElementById('image').files[0]; // Get the file object
+    const caption = document.getElementById('imageCaption').value;
     const personalBackground = document.getElementById('personal_b').value;
     const professionalBackground = document.getElementById('professional_b').value;
     const academicBackground = document.getElementById('academic_b').value;
@@ -71,21 +71,18 @@ function submitForm() {
     const platform = document.getElementById('platform').value;
     const funny = document.getElementById('funny').value;
     const anything = document.getElementById('anything').value;
-    const courses = Array.from(document.getElementsByClassName("course"))
-                     .map(course => course.value);
-    let imageLoad = image.files[0];
-    const imageURL = URL.createObjectURL(imageLoad);
-    let text = "<img src=\"" + imageURL + "\" >";
-    
-    const result = document.getElementById("formResult");
-    
-    result.innerHTML = ` 
+    const coursesInputs = document.querySelectorAll('.course');
+    const courses = [];
+    coursesInputs.forEach(input => {
+        courses.push(input.value);
+    });
+    const result = ` <main>
     <h2>Introduction</h2>
     <h2> ${name} || ${mascot}</h2>
     <figure>
-        ${text}
-        <figcaption>${caption}</figcaption>
-    </figure>
+    <img src="${URL.createObjectURL(image)}" alt="${image.name}">
+    <figcaption>${caption}</figcaption>
+</figure>
         <ol>
             <li><b>Personal Background:</b> ${personalBackground}</li>
             <li><b>Professional Background:</b>  ${professionalBackground}</li>
@@ -101,8 +98,7 @@ function submitForm() {
             <li><b>I'd also like to Share:</b> ${anything}</li>
         </ol>
         <a href="byo_intro.html">Refresh Form Click Here</a>
+</main>
 `;
-const main = document.querySelector('main');
-    main.innerHTML = '';
-    main.appendChild(result); 
-}
+    document.querySelector('main').innerHTML = result;
+});
