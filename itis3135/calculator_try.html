@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles/defaults.css">
+</head>
+<body>
+        <div data-include="components/header.html"></div>
+    <main>
+        <h2>Calculator</h2>
+        <div class="calculator">
+            <div id="result" class="calc_display">0</div>
+            <div class="button_container">
+                <button class="num_button" id="calc-button" onclick="showNum('7')">7</button>
+                <button class="num_button" id="calc-button" onclick="showNum('8')">8</button>
+                <button class="num_button" id="calc-button" onclick="showNum('9')">9</button>
+                <button class="op_button" id="op-button" onclick="addOperator('+')">+</button>
+                <button class="num_button" id="calc-button" onclick="showNum('4')">4</button>
+                <button class="num_button" id="calc-button" onclick="showNum('5')">5</button>
+                <button class="num_button" id="calc-button" onclick="showNum('6')">6</button>
+                <button class="op_button" id="op-button" onclick="addOperator('-')">-</button>
+                <button class="num_button" id="calc-button" onclick="showNum('1')">1</button>
+                <button class="num_button" id="calc-button" onclick="showNum('2')">2</button>
+                <button class="num_button" id="calc-button" onclick="showNum('3')">3</button>
+                <button class="op_button" id="op-button" onclick="addOperator('*')">*</button>
+                <button class="num_button" id="calc-button" onclick="showNum('0')">0</button>
+                <button class="result_button" id="result-button" onclick="calculate()">=</button>
+                <button class="op_button" id="op-button" onclick="addOperator('÷')">÷</button>
+                <button class="clear_button" id="clear-button"onclick="clear()">Clear</button>
+                
+        </div>
+        </div>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/calculator.js"></script>
+</body>
+</html>

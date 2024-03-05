@@ -78,6 +78,54 @@ img{
 width: 80px;
 height: 70px;
 }
+.calculator{
+    width: 300px;
+    margin: 0 auto;
+    padding: 5%;
+    border: 2px solid blue;
+    border-radius: 10%;
+    margin-bottom: 10%;
+    margin-top:8%;
+    background-color: black;
+}
+.calc_display{
+ width: 100%;
+ height: 5%;
+ font-size: 24px;
+ text-align: right;
+ padding: 10px;
+ margin-bottom: 10px;
+ background-color: #f2f2f2;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+}
+.button_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4%;
+  }
+  .num_button, .op_button, .result_button, .clear_button {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .result_button, .clear_button {
+    grid-column: span 2;
+  }
+  
+  .op_button {
+    background-color: #db9825;
+  }
+  
+  .clear_button {
+    background-color: #ff6666;
+    color: #fff;
+    margin-left: 20%;
+  }
 /* Rule Overrides For Laptops / Small Screens */
 @media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
     *{
@@ -163,7 +211,56 @@ height: 70px;
     b{
         margin: 0% auto;
     }
+    .calculator{
+        width: 300px;
+        margin: 0 auto;
+        padding: 5%;
+        border: 2px solid blue;
+        border-radius: 10%;
+        margin-bottom: 10%;
+        margin-top:8%;
+        background-color: black;
+    }
+    .calc_display{
+     width: 100%;
+     height: 5%;
+     font-size: 24px;
+     text-align: right;
+     padding: 10px;
+     margin-bottom: 10px;
+     background-color: #f2f2f2;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+    }
+    .button_container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5%;
+      }
+      .num_button, .op_button, .result_button, .clear_button {
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        cursor: pointer;
+      }
+      .result_button, .clear_button {
+        grid-column: span 2;
+      }
+      
+      .op_button {
+        background-color: #db9825;
+      }
+      
+      .clear_button {
+        background-color: #ff6666;
+        color: #fff;
+        margin-left: 20%;
+      }
 }
+
 /* Rule Overrides For Tablet Devices */
 @media screen and ( min-width: 601px ) and ( max-width: 980px )  {
     *{
@@ -246,7 +343,56 @@ height: 70px;
     width: 80px;
     height: 70px;
     }
+    .calculator{
+        width: 300px;
+        margin: 0 auto;
+        padding: 5%;
+        border: 2px solid blue;
+        border-radius: 10%;
+        margin-bottom: 10%;
+        margin-top:8%;
+        background-color: black;
+    }
+    .calc_display{
+     width: 100%;
+     height: 5%;
+     font-size: 13px;
+     text-align: right;
+     padding: 7px;
+     margin-bottom: 7px;
+     background-color: #f2f2f2;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+    }
+    .button_container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4%;
+      }
+      .num_button, .op_button, .result_button, .clear_button {
+        width: 100%;
+        height: 40px;
+        font-size: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        cursor: pointer;
+      }
+      .result_button, .clear_button {
+        grid-column: span 2;
+      }
+      
+      .op_button {
+        background-color: #db9825;
+      }
+      
+      .clear_button {
+        background-color: #ff6666;
+        color: #fff;
+        margin-left: 20%;
+      }
 }
+
 /* Rule Overrides For Mobile Devices */
 @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
     *{
@@ -329,4 +475,52 @@ height: 70px;
     width: 80px;
     height: 70px;
     }
+    .calculator{
+        width: 300px;
+        margin: 0 auto;
+        padding: 5%;
+        border: 2px solid blue;
+        border-radius: 10%;
+        margin-bottom: 10%;
+        margin-top:8%;
+        background-color: black;
+    }
+    .calc_display{
+     width: 100%;
+     height: 5%;
+     font-size: 24px;
+     text-align: right;
+     padding: 10px;
+     margin-bottom: 10px;
+     background-color: #f2f2f2;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+    }
+    .button_container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4%;
+      }
+      .num_button, .op_button, .result_button, .clear_button {
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        cursor: pointer;
+      }
+      .result_button, .clear_button {
+        grid-column: span 2;
+      }
+      
+      .op_button {
+        background-color: #db9825;
+      }
+      
+      .clear_button {
+        background-color: #ff6666;
+        color: #fff;
+        margin-left: 20%;
+      }
 }
