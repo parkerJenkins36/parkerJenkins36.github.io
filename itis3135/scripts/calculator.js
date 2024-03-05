@@ -4,15 +4,12 @@ function showNum(num) {
     result += num;
     updateDisplay(result);
 }
-
-
-function clear() {
+function clearDisplay() {
     result = '';
-    updateDisplay('');
+    updateDisplay(0);
 }
-
 function updateDisplay(value) {
-    document.getElementById('result').value = value;
+    document.getElementById('result').textContent = value;
 }
 function addOperator(op) {
     result += op;

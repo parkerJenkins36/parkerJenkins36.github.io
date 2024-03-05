@@ -11,7 +11,7 @@ form{
 h2,p, h3{
     margin: 0% auto;
     text-align: center;
-    padding: 1%;
+    padding: 3%;
 }
 body {
 width: 100%;
@@ -81,11 +81,11 @@ height: 70px;
 .calculator{
     width: 300px;
     margin: 0 auto;
-    padding: 5%;
+    padding: 3.5%;
     border: 2px solid blue;
     border-radius: 10%;
     margin-bottom: 10%;
-    margin-top:8%;
+    margin-top:7%;
     background-color: black;
 }
 .calc_display{
@@ -212,13 +212,13 @@ height: 70px;
         margin: 0% auto;
     }
     .calculator{
-        width: 300px;
+        width: 200px;
         margin: 0 auto;
         padding: 5%;
         border: 2px solid blue;
         border-radius: 10%;
         margin-bottom: 10%;
-        margin-top:8%;
+        margin-top:6%;
         background-color: black;
     }
     .calc_display{
