@@ -20,8 +20,11 @@
    </a>
 
    <a href="https://jigsaw.w3.org/css-validator/check/referer">
-       <img src="https://jigsaw.w3.org/css-validator/images/vcss" width="2" height="10" alt="Link to CSS validator">
+    <img src="https://jigsaw.w3.org/css-validator/images/vcss" width="2" height="10" alt="Link to CSS validator">
    </a>
+   <a href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/tguthri2/itis3135/introduction.html" id="validation_accessibility">
+    <img  width="2" height="10" src="images/button_validation_wcag.png" alt="Link to Wave">
+  </a>
    <button class="no_CS" type = "button" onclick = "document.querySelectorAll('link[rel=stylesheet]').forEach(function(e)	{e.setAttribute('href', '');});">No CSS</button>
    <script>
      const validationLink = document.getElementById("validation_link_html");
@@ -31,6 +34,10 @@
    const validation = document.getElementById("validation_link_css");
    if(validation){
     validation.setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + loctation.href);
+   }
+   const valid = document.getElementById("validation_accessibility");
+   if(valid){
+    validation.setAttribute("href", "https://wave.webaim.org/report#/" + loctation.href);
    }
  </script>
 </footer>

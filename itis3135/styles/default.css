@@ -54,6 +54,21 @@ figure{
     font-size: 100%;
     font-family:'Courier New', Courier, monospace ;
   }
+  h3{
+    text-align: center;
+    font-size: 25px;
+  }
+  h4{
+    text-align: center;
+    font-family:'Lucida Sans', Verdana, sans-serif;
+    color: #50abe7;
+    font-size: 30px;
+  }
+  h5{
+    padding-left: 2%;
+    font-size: 20px;
+    color: #e1e471;
+  }
 /* Rule Overrides For Laptops / Small Screens */
 @media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
     body{
