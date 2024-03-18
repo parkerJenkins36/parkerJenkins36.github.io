@@ -1,10 +1,9 @@
 const person = [];
 const salaries = [];
-const addSalary = document.getElementById("addSalary");
-const modifySalary = document.getElementById("modifySalary");
-const displayResults = document.getElementById("displayResults");
-const displaySalary = document.getElementById("displaySalary"); 
-addSalary.addEventListener("click",addSalary);
+document.getElementById("displaySalary").addEventListener("click", displaySalary);
+document.getElementById("displayResults").addEventListener("click", displayResults);
+document.getElementById("modifySalary").addEventListener("click", modifySalary);
+document.getElementById("addSalary").addEventListener("click", addSalary);
 
 function addSalary(){
 const name = document.getElementById("name").value;
@@ -30,8 +29,6 @@ person.forEach((name, index) => {
     selectWorkerDropdown.appendChild(option);
 });
 }
-const newSalaryInput = document.getElementById("modifySalary");
-newSalaryInput.addEventListener("click", modifySalary());
 
 function modifySalary() {
     const selectedEmployee = document.getElementById("selectWorker").selectedIndex;
@@ -49,8 +46,6 @@ function modifySalary() {
     document.getElementById("newSalary").value = "";
     alert("Salary modified successfully.");
 }
-const displayResults = document.getElementById("displayResults");
-displayResults.addEventListener("click", displayResults());
 
 function displayResults() {
     const totalSalary = salaries.reduce((acc, curr) => acc + curr, 0);
@@ -64,6 +59,7 @@ function displayResults() {
     `;
     resultsDiv.innerHTML = content;
 }
+
 function displaySalary() {
     const results = document.getElementById("results_table");
     results.innerHTML = "";
