@@ -48,34 +48,33 @@
 
 
         </main>
-           <footer>
-           <p>Designed By <a href="pjenkiproduction.co/">PointyJabbySabers <span>&copy;2024</span></a><a href="https://www.freecodecamp.org/certification/ParkerJenkins/responsive-web-design"> Certified in RWD.</a></p>
-           <p>Surf the WWWeb</p>
-           <a href="https://validator.w3.org/check?uri=referer" >
-               <img src="https://jigsaw.w3.org/css-validator/images/vh40.gif" width="2" height="10" alt="Link to HTML validator">
-           </a>
-        
-           <a href="https://jigsaw.w3.org/css-validator/check/referer">
-            <img src="https://jigsaw.w3.org/css-validator/images/vcss" width="2" height="10" alt="Link to CSS validator">
-           </a>
-           <a href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/tguthri2/itis3135/introduction.html" id="validation_accessibility">
-            <img  width="2" height="10" src="images/button_validation_wcag.png" alt="Link to Wave">
-          </a>
-           <button class="no_CS" type = "button" onclick = "document.querySelectorAll('link[rel=stylesheet]').forEach(function(e)	{e.setAttribute('href', '');});">No CSS</button>
-           <script>
-             const validationLink = document.getElementById("validation_link_html");
-            if (validationLink) {
-                validationLink.setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
-            }
-           const validation = document.getElementById("validation_link_css");
-           if(validation){
-            validation.setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + loctation.href);
-           }
-           const valid = document.getElementById("validation_accessibility");
-           if(valid){
-            validation.setAttribute("href", "https://wave.webaim.org/report#/" + loctation.href);
-           }
-         </script>
-        </footer>        
+        <footer>
+            <p>Designed By <a href="pjenkiproduction.co/">PointyJabbySabers <span>&copy;2024</span></a><a href="https://www.freecodecamp.org/certification/ParkerJenkins/responsive-web-design"> Certified in RWD.</a></p>
+            <p>Surf the WWWeb</p>
+            <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+                <img src="https://jigsaw.w3.org/css-validator/images/vh40.gif" width="88" height="31" alt="Valid HTML">
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+                <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" width="88" height="31" alt="Valid CSS">
+            </a>
+            <a href="https://wave.webaim.org/report#" id="validation_accessibility">
+                <img  width="88" height="31" src="images/button_validation_wcag.png" alt="Wave Accessibility">
+            </a>
+            <button class="no_CS" type="button" onclick="document.querySelectorAll('link[rel=stylesheet]').forEach(function(e) { e.setAttribute('href', ''); });">No CSS</button>
+            <script>
+                const validationLinkHTML = document.getElementById("validation_link_html");
+                if (validationLinkHTML) {
+                    validationLinkHTML.setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+                }
+                const validationLinkCSS = document.getElementById("validation_link_css");
+                if (validationLinkCSS) {
+                    validationLinkCSS.setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+                }
+                const validationAccessibility = document.getElementById("validation_accessibility");
+                if (validationAccessibility) {
+                    validationAccessibility.setAttribute("href", "https://wave.webaim.org/report#/" + location.href);
+                }
+            </script>
+        </footer>     
 	</body>
 </html>
