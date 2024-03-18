@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+        <div data-include="components/header.html"></div>
+    <main>
+      <h1>Arrays</h1>
+      <label for="name">Enter employee's Full Name:
+    <input type="text" id="name" required placeholder="Parker Jenkins" size="40">
+    </label>
+    <label for="salary">Provide the salary of the employee being entered: 
+    <input type="text" id="salary" required placeholder="1250.80" size="15">
+ </label>
+    <button id="addSalary">Add Salary</button>
+
+    <label for="selectWorker">Select an employee to alter:</label>
+<select id="selectEmployee"></select>
+<label for="newSalary">Enter their new salary:</label>
+<input type="text" id="newSalary" placeholder="2500.99">
+<button id="modifySalary">Modify Employee's Salary</button>
+
+<button id="displayResults">Display Results</button>
+<div id="results"></div>
+
+    <button id="displaySalary">Display Salary</button>
+    <table id="results_table">
+    </table>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/arrays.js"></script>
+</body>
+</html>
