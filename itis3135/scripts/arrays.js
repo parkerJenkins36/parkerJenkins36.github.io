@@ -4,7 +4,7 @@ const addSalary = document.getElementById("addSalary");
 const modifySalary = document.getElementById("modifySalary");
 const displayResults = document.getElementById("displayResults");
 const displaySalary = document.getElementById("displaySalary"); 
-addSalary.addEventListener("click",addSalary());
+addSalary.addEventListener("click",addSalary);
 
 function addSalary(){
 const name = document.getElementById("name").value;
