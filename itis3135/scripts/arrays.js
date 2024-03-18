@@ -5,6 +5,7 @@ const modifySalary = document.getElementById("modifySalary");
 const displayResults = document.getElementById("displayResults");
 const displaySalary = document.getElementById("displaySalary"); 
 addSalary.addEventListener("click",addSalary());
+
 function addSalary(){
 const name = document.getElementById("name").value;
 const salary = document.getElementById("salary").value;
@@ -16,25 +17,22 @@ if (name === "" || salary === "" || isNaN(parseFloat(salary))) {
    salaries.push(parseFloat(salary));
    document.getElementById("name").value = "";
    document.getElementById("salary").value = "";
-
    document.getElementById("name").focus();
-}
-
-
 const selectWorkerDropdown = document.getElementById("selectWorker");
-selectEmployeeDropdown.innerHTML = "";
+selectWorkerDropdown.innerHTML = "";
 const defaultOption = document.createElement("option");
 defaultOption.text = "Select an employee";
-selectEmployeeDropdown.appendChild(defaultOption);
+selectWorkerDropdown.appendChild(defaultOption);
 person.forEach((name, index) => {
     const option = document.createElement("option");
     option.value = index; 
     option.text = name;
     selectWorkerDropdown.appendChild(option);
 });
-
+}
 const newSalaryInput = document.getElementById("modifySalary");
 newSalaryInput.addEventListener("click", modifySalary());
+
 function modifySalary() {
     const selectedEmployee = document.getElementById("selectWorker").selectedIndex;
     if (selectedEmployee === -1) {
@@ -53,6 +51,7 @@ function modifySalary() {
 }
 const displayResults = document.getElementById("displayResults");
 displayResults.addEventListener("click", displayResults());
+
 function displayResults() {
     const totalSalary = salaries.reduce((acc, curr) => acc + curr, 0);
     const averageSalary = totalSalary / salaries.length;
