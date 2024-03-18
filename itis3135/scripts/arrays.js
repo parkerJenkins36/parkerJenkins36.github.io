@@ -53,11 +53,9 @@ function displayResults() {
     const highestSalary = Math.max(...salaries);
     const resultsDiv = document.getElementById("results");
     const content = `
-        <div class="results">
         <h3>Results</h3>
         <p>Average Salary: $${averageSalary.toFixed(2)}</p>
         <p>Highest Salary: $${highestSalary.toFixed(2)}</p>
-        </div>
     `;
     resultsDiv.innerHTML = content;
 }
@@ -68,6 +66,7 @@ function displaySalary() {
     const headerRow = results.insertRow();
     const WorkerName = headerRow.insertCell();
     WorkerName.textContent = "Name";
+    WorkerName.style.paddingRight = "20px"; 
     const salaryHeader = headerRow.insertCell();
     salaryHeader.textContent = "Salary";
 
@@ -75,6 +74,7 @@ function displaySalary() {
         const row = results.insertRow();
         const nameCell = row.insertCell();
         nameCell.textContent = person[i];
+        nameCell.style.paddingRight = "20px";
         const salaryCell = row.insertCell();
         salaryCell.textContent = `$${salaries[i].toFixed(2)}`;
     }
