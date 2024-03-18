@@ -14,20 +14,23 @@
     <input type="text" id="name" required placeholder="Parker Jenkins" size="40">
     </label>
     <label for="salary">Provide the salary of the employee being entered: 
-    <input type="text" id="salary" required placeholder="1250.80" size="15">
- </label>
-    <button id="addSalary">Add Salary</button>
+        <input type="text" id="salary" required placeholder="1250.80" size="15">
+     </label>
+    <button class="addSalary" id="addSalary">Add Salary</button>
+    
 
-    <label for="selectWorker">Select an employee to alter:</label>
-<select id="selectEmployee"></select>
-<label for="newSalary">Enter their new salary:</label>
+    <label for="selectWorker">Select an employee to alter:
+        <select id="selectEmployee"><option value="">(select one)</option></select>
+    </label>
+<label for="newSalary">Enter their new salary:
 <input type="text" id="newSalary" placeholder="2500.99">
-<button id="modifySalary">Modify Employee's Salary</button>
+</label>
+<button id="modifySalary" class="modifySalary">Modify Employee's Salary</button>
 
-<button id="displayResults">Display Results</button>
+<button class="displayResults" id="displayResults">Display Results</button>
 <div id="results"></div>
 
-    <button id="displaySalary">Display Salary</button>
+    <button class="displaySalary" id="displaySalary">Display Salary</button>
     <table id="results_table">
     </table>
     </main>

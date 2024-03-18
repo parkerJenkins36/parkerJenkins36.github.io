@@ -59,7 +59,7 @@ function displayResults() {
     const highestSalary = Math.max(...salaries);
     const resultsDiv = document.getElementById("results");
     const content = `
-        <h2>Results</h2>
+        <h3>Results</h3>
         <p>Average Salary: $${averageSalary.toFixed(2)}</p>
         <p>Highest Salary: $${highestSalary.toFixed(2)}</p>
     `;
