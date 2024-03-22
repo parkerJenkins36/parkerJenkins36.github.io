@@ -159,7 +159,24 @@ img {
     padding: 1%;
 }
 .container {
-    text-align: center; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.location {
+    text-align: center;
+    margin: 0 10px; 
+    flex: 1; 
+}
+
+.location img {
+    max-width: 60%;
+    height: auto;
+}
+
+.location p {
+    margin-top: 10px;
 }
 
 .fig1, .fig2 {
@@ -189,6 +206,8 @@ img {
     margin-top:2%;
     border-radius: 60px;
     background-color: #989809;
+    padding-bottom: 4px;
+    padding-top: 5px;
 }
 .first-line{
     width: 100%;
@@ -227,9 +246,10 @@ header{
     margin-right: 4%;
 }
 #AIprompt img{
-    width: 700em;
+    width:100%;
     height: 12em;
 }
+
     </style>
     </head>
 	<body>
@@ -322,7 +342,7 @@ header{
             <figure>
                 <img src="images/Designer(2).jpeg" alt="AI-generated Opening Season Kickoff">
                 <figcaption>AI-Image (Prompt: "Opening day to nfl season kickoff special teams")</figcaption>
-                <p><i>"AI-generated opening dayy kickoff which starts fantasy football season."</i></p>
+            <i>"AI-generated opening dayy kickoff which starts fantasy football season."</i>
             </figure>
             <label for="team">Enter a Team Name you would make:
                 <input type="text" id="team" required placeholder="Parker Packers..." size="40">
@@ -336,19 +356,19 @@ header{
         <section id="where">
             <h2>Best Locations</h2>
             <h3>Prime hangout spots to sit and watch the Games</h3>
-            <div class="container"></div>
-            <figure class="fig1">
-                <img src="images/Designer(3).jpeg" alt="AI-generated Kickback Jacks Sports Bar">
-                <figcaption>AI-Image (Prompt: "kickback jacks sports bar full of football fans")</figcaption>
-                <i>"AI-generated kickback jack sports bar that filled with many fans able to look at multiple screens."</i>
-            </figure>
-            <figure class="fig2">
-                <img src="images/Designer(4).jpeg" alt="AI-generated Nfl Redzone channel">
-                <figcaption>AI-Image (Prompt: "Nfl redzone channel  on tv at home")</figcaption>
-                <i>"AI-generated of Nfl redzone channel from the comforts at home with family just as I would be on Sundays."</i>
-            </figure>
-           
-        <p class="border">Location is important when watching your team play as each location can help emerse you and make your GameDay Experince even better.
+            <div class="container">
+                <div class="location">
+                    <img src="images/Designer(3).jpeg" alt="AI-generated Kickback Jacks Sports Bar">
+                    <figcaption>AI-Image (Prompt: "kickback jacks sports bar full of football fans")</figcaption>
+                    <p><i>"AI-generated kickback jack sports bar that filled with many fans able to look at multiple screens."</i></p>
+                </div>
+                <div class="location">
+                    <img src="images/Designer(4).jpeg" alt="AI-generated Nfl Redzone channel">
+                    <figcaption>AI-Image (Prompt: "Nfl redzone channel  on tv at home")</figcaption>
+                    <p><i>"AI-generated of Nfl redzone channel from the comforts at home with family just as I would be on Sundays."</i></p>
+                </div>
+            </div>
+            <p class="border">Location is important when watching your team play as each location can help emerse you and make your GameDay Experince even better.
         An easy spot to be with your friends and watch multiple games are at places like sports bars and one that I go most often with my fantasy football friends
         is KickBack Jacks as the food is also great there. Another option is home as the Nfl provides a great channel that is specifically made for fantasy football lover called
         NFL Redzone which can show multiple games at a time and focuses on which ever game has more action at the time.
@@ -414,7 +434,7 @@ header{
         </section>
         </main>
         <footer>
-            <p>Designed By <a href="pjenkiproduction.co/">PointyJabbySabers <span>&copy;2024</span></a><a href="https://www.freecodecamp.org/certification/ParkerJenkins/responsive-web-design"> Certified in RWD.</a></p>
+            <p>Designed By <a href="/pjenkiproduction.co">PointyJabbySabers <span>&copy;2024</span></a><a href="https://www.freecodecamp.org/certification/ParkerJenkins/responsive-web-design"> Certified in RWD.</a></p>
             <p>Surf the WWWeb</p>
             <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
                 <img src="https://jigsaw.w3.org/css-validator/images/vh40.gif" width="88" height="31" alt="Valid HTML">
