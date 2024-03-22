@@ -16,17 +16,20 @@
   }
   html {
     box-sizing: border-box;
+    
   }
   main{
     display: block;
     text-align: center;
-    padding-bottom: 50px;;
+    
+  }
+  h1{
+    padding-top: 5%;
   }
   h2{
   display: block;
   font-size: 2em;
   font-weight: bold;
-  margin: auto;
   text-align: center;
   color:rgb(255, 0, 0);
   }
@@ -41,13 +44,14 @@
   li{
     margin: 2px 520px;
     text-align: left;
-    font-weight: 900;
   }
   table {
   border-spacing: 4px;
   text-indent: initial;
   position: relative;
-  margin: 2px 500px;
+  margin-top: 2px;
+  margin-left: 35%;
+  margin-right: 35%;
   border:2px solid rgb(10, 96, 41);
   }
   tr{
@@ -80,6 +84,8 @@
     text-align: center; 
     margin: 1rem auto; 
     max-width: 400px; 
+    padding-bottom: 2%;
+    padding-top: 2%;
 }
 div{
     padding-top:1%;
@@ -107,6 +113,7 @@ img {
   a{
       color:rgb(100, 48, 11);
       text-decoration: none;
+      font-size: 17px;
   }
   p{
     margin-left: 10%;
@@ -129,6 +136,7 @@ img {
 }
  section{
     padding-bottom: 5%;
+    padding-top: 3%;
  }
  .users-team {
     display: flex; 
@@ -171,31 +179,90 @@ img {
     margin-right: 20%;
     padding: 1%;
 }
-
+.page-border{
+    position: relative;
+    background-color: #0e7f74; 
+    border: 100px solid black; 
+    box-sizing: border-box; 
+    margin: -5%;
+    padding-bottom: 2%;
+}
+.header{
+    border: 10px solid rgb(100, 48, 11); 
+    margin-left: 13%;
+    margin-right: 10%;
+    margin-top:2%;
+    border-radius: 60px;
+    background-color: #989809;
+}
+.first-line{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 10%;
+}
+header{
+    background-color: #04894d;
+    margin-top: -45px;
+    margin-bottom: -10%;
+}
+#why p.border1{
+    background-color: rgb(65, 57, 101);
+    border-radius: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 2%;
+}
+#why p.border2{
+    background-color: rgb(65, 57, 101);
+    border-radius: 20px;
+    margin-top: -1%;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: 2%;
+}
+#how p.border{
+    background-color: rgb(1, 45, 52);
+    border-radius: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 1%;
+}
+#why .fig2{
+    margin-right: 4%;
+}
+#AIprompt img{
+    width: 700em;
+    height: 12em;
+}
     </style>
     </head>
 	<body>
+        <div class="page-border">
         <header>
             <h1>Fantasy Football Hobby</h1>
+           <div class="header">
             <nav>
                 <ul>
-                    <a href="#what">Home</a>
+                    <a href="#what">Home &nbsp</a> <!--after googling I discovered &nbsp adds a space just like <br><br> does-->
                     🏈
-                    <a href="#who">Intricacies / About</a>
+                    <a href="#who">&nbsp Intricacies / About &nbsp</a>
                     🏈
-                    <a href="#when">Season</a>
+                    <a href="#when">&nbsp Season &nbsp</a>
                     🏈
-                    <a href="#where">Best Locations</a>
+                    <a href="#where">&nbsp Best Locations &nbsp</a>
                     🏈
-                    <a href="#how">Best Apps</a>
+                    <a href="#how">&nbsp Best Apps &nbsp</a>
                     🏈
-                    <a href="#why">Inspiration</a>
+                    <a href="#why">&nbsp Inspiration &nbsp</a>
                     🏈
-                    <a href="#AIprompt">AI Prompts</a>
+                    <a href="#AIprompt">&nbsp AI Prompts</a>
                 </ul>
             </nav>
+        </div>
         </header>
         <main>
+            <div class="first-line"></div>
             <section id="what">
                 <h2>Home</h2>
                 <h3>Fantasy Football Lifer</h3>
@@ -218,7 +285,7 @@ img {
                     <tr><td>RunningBacks</td>
                     <td>2 to 3</td></tr>
                     <tr><td>Wide Receivers</td>
-                    <td>2 to 3</td></tr>
+                    <td>2 to 3</td></tr><!--got this information to do a table from the tables assignment-->
                     <tr><td>Tight Ends</td>
                     <td>1</td></tr>
                     <tr><td >Flex / SuperFlex</td>
@@ -232,9 +299,10 @@ img {
                 </tbody>
                </table>
             </section>
-           
+    
         <section id="who">
             <h2>Intricacies / About</h2>
+            <h3>My Background and Football's Impact</h3>
             <p class="border">My name is Parker Jenkins and ever since my best friend in kindergarten introduced me to the sport of football, I have been a diehard follower of all that happens in league. My friend's font-family
                 is originally from Wisconsin, which means that they are Packers fans, and because I was always was at their house, I became one too. Though following one team was not enough for me as I wanted to keep track of all the teams while feeling emersed in the sport.
             </p>
@@ -248,9 +316,10 @@ img {
             to players though quarterbacks get a little less since they are normally throwing them in. However Qb's do not get credit if they hand the ball off for a run. Defenses gain points by positive plays for them but lose some if they are scored on and kickers only get points if they make it.
             </p>
         </section>
-        
+       
         <section id="when">
             <h2>Season</h2>
+            <h3>Games starting from the beginning of the season to the End</h3>
             <p class="border"><em>The season begins around the month of September before the start of the actual League season, giving people time to prepare and get the best possible team assembled before
                 Week 1. In a regular NFL season there are 17 weeks, which means for fantasy football, that there are 14 weeks and the last 3 are for playoffs.
                 Every Wednesday players can try to pick up free agents, available players, if they had not already put in a bid for them.
@@ -270,9 +339,10 @@ img {
                 <button type="button" onclick="loadTeam()">Click to Upload Team</button>
                 <div id="result">Displays Team Here:</div>
             </section>
-        
+           
         <section id="where">
             <h2>Best Locations</h2>
+            <h3>Prime hangout spots to sit and watch the Games</h3>
             <div class="container"></div>
             <figure class="fig1">
                 <img src="images/Designer (3).jpeg" alt="AI-generated Kickback Jacks Sports Bar">
@@ -284,7 +354,6 @@ img {
                 <figcaption>AI-Image (Prompt: "Nfl redzone channel  on tv at home")</figcaption>
                 <p><i>"AI-generated of Nfl redzone channel from the comforts at home with family just as I would be on Sundays."</i></p>
             </figure>
-        </div>
         <p class="border">Location is important when watching your team play as each location can help emerse you and make your GameDay Experince even better.
         An easy spot to be with your friends and watch multiple games are at places like sports bars and one that I go most often with my fantasy football friends
         is KickBack Jacks as the food is also great there. Another option is home as the Nfl provides a great channel that is specifically made for fantasy football lover called
@@ -294,25 +363,60 @@ img {
 
         <section id="why">
             <h2>Passion For Sport</h2>
-            <figure class="fig2">
-                <img src="images/Designer (5).jpeg" alt="AI-generated Yahoo Fantasy app">
-                <figcaption>AI-Image (Prompt: "yahoo fantasy football app")</figcaption>
-                <p><i>"AI-generated Yahoo Fantasy football app accessibility the same app I use."</i></p>
+            <h3>A Deeper Meaning to Me </h3>
+            <figure>
+                <img src="images/Designer (6).jpeg" alt="AI-generated Fantasy Football Friends">
+                <figcaption>AI-Image (Prompt: "fantasy football friends enjoy fantasy football nfl")</figcaption>
+                <p><i>"AI-generated prompt being specific that this is football and not a medival fantasy game, but this shows the comradery between friends over the game."</i></p>
             </figure>
-            <p>Fantasy Football gets a fan out of their comfort zone by not only following their favorite team. I used to only know 
+            <p class="border1">Fantasy Football gets a fan out of their comfort zone by not only following their favorite team. I used to only know 
              news happening to the Packers, but now I can follow all 32 teams as the game made it fun to learn about the rest of the teams. 
              It is a great way to bond with others who share your passion for football and since I've started fantasy football I still draft my favorite Packers players
              as there is nothing wrong with sticking to what you know.
             </p>
+            <p class="border2">The best part is that you can be a part of multiple leagues, though be careful to not stretch yourself thin.
+            It allows me to be a part of different friend groups, who live in different areas, and the chance to stay in touch with them as I do with my Highschool friends.
+            Fantasy Football makes the game more interesting as now each game that is going on may mean more to you, as you may have a favorite player from your team playing at the moment.
+            </p>
         </section>
-
+ 
         <section id="how">
             <h2>Best Apps</h2>
-         <figure class="fig2">
-            <img src="images/Designer (5).jpeg" alt="AI-generated Yahoo Fantasy app">
-            <figcaption>AI-Image (Prompt: "yahoo fantasy football app")</figcaption>
-            <p><i>"AI-generated Yahoo Fantasy football app accessibility the same app I use."</i></p>
-        </figure>
+            <h3>Most useful tools to Download</h3>
+            <figure class="fig1">
+                <img src="images/Designer (5).jpeg" alt="AI-generated Yahoo Fantasy app">
+                <figcaption>AI-Image (Prompt: "yahoo fantasy football app")</figcaption>
+                <p><i>"AI-generated Yahoo Fantasy football app accessibility the same app I use."</i></p>
+            </figure>
+            <figure class="fig2">
+                <img src="images/Designer (7).jpeg" alt="AI-generated ESPN Fantasy app">
+                <figcaption>AI-Image (Prompt: "espn fantasy football app")</figcaption>
+                <p><i>"AI-generated ESPN Fantasy football which is another of many useful apps that provide the game for free."</i></p>
+            </figure>
+            <p class="border">There are many apps provided in the app store of any Apple and Samsung phone which almost all are free to download and play with friends.
+                This past year I managed two fanatsy football teams, one with my family who used the Yahoo app, and another 
+                with my friends who used the ESPN one. Both are very useful in their own ways, providing their own way to manage the game with their own statistics and graphics.
+                Either way they all provide a fun service to enjoy the game for free with friends while also getting live game updates and news notifications of players you may have rostered.
+               </p>
+        </section>
+        <section id="AIprompt">
+            <h2>AI Prompt</h2>
+            <h3>Prompts I used</h3>
+            <figure>
+                <img src="images/Midterm.png" alt="AI used chat about section">
+                <p><i>AI-Prompt (Prompt: "how to get a section style to display none all except the first one with a foreach loop")</i></p>
+                <p>I used this code to help change the dislays of each section so that in when the page loads first it shows the first page, which is the home page.
+                By using an if statment to determine if the index of the section is 0, the home page, it will make the rest of the displays none to not show.
+                With query selector all, I was able to gather the "nav" and "a" elements in one variable , navLinks acting as and array to hold all the links. Then after using a for each loop and setting the parameters to be each link and their index,
+                I used which ever link selected to have an event listener called when clicked to help display the right page.
+                </p>
+            </figure>
+            <figure>
+                <img src="images/AICode.png" alt="AI-generated prompt about spacing">
+                <figcaption>AI-Prompt (Prompt: "how to space between words")</figcaption>
+                <p><i>"AI generated response to a great way to easily add a space"</i></p>
+                <p>I used this to easily just add spacing in the header between the links.</p>
+            </figure>
         </section>
         </main>
         <footer>
@@ -339,9 +443,31 @@ img {
     const teamDiv = document.createElement('div');
     teamDiv.classList.add('users-team');
     teamDiv.textContent = teamName; 
-    teamDiv.appendChild(logoImg);   
+    teamDiv.appendChild(logoImg);   //changed it down here to just attatch name then image then put that into result
     resultDiv.appendChild(teamDiv);
 }
+
+const navLinks = document.querySelectorAll("nav a");
+const sections = document.querySelectorAll("section");//gathers section elements in sections and nav a in navLinks
+
+sections.forEach((section, index) => {
+    if (index !== 0) {//0 is the first page, home page
+        section.style.display = "none";//if not turns display to none to not show
+    }
+});
+
+navLinks.forEach((link, index) => {//link is each link and their following index starting with the link "Home" and index 0
+    link.addEventListener("click", function() {//this is if you click the links this function will also happen
+        sections.forEach((section, i) => {//parameters are each section and their index
+            if (i !== index) {//compares if the index checked "i" matches the index selected "index"
+                section.style.display = "none"; //if not a match turns display to none to not show
+            }
+        });
+
+        // Show the clicked section
+        sections[index].style.display = "block";//selects the specific index selected in the array to display, with "block" rather than "none"
+    });
+});
             </script>
             <script>
                 const validationLinkHTML = document.getElementById("validation_link_html");
@@ -358,5 +484,6 @@ img {
                 }
             </script>
         </footer>     
+    </div>
 	</body>
 </html>
