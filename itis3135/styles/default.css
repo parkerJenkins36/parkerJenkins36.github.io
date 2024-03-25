@@ -1,8 +1,10 @@
-body{
+body,html{
     background-color:darkolivegreen;
     text-align: center;
     color:rgb(11, 195, 211);
     font-family: monospace;
+    margin: 1%;
+    padding: 0;
 }
 p{
     text-align:center;
@@ -30,11 +32,11 @@ h1,h2{
 }
 li{
     padding: 15px;
-    font-size: 20px;
+    font-size: 22px;
 }
 .Aaron{
-    width: 60%;
-    margin: 2% 20%; 
+    width: 40%;
+    margin-left: 30%; 
 }
 img{
     width: 100px;
@@ -45,11 +47,11 @@ figure{
     font-family: sans-serif;
 }
 .no_CS{
-    height: 1%;
-    display: grid;
-    margin: 0 auto;
+    height: 3%;
+    position: fixed;
+    top: 1%; 
+    left: 10px;
     border-radius: 20%;
-    padding: 1%;
     background-color:burlywood;
     font-size: 100%;
     font-family:'Courier New', Courier, monospace ;
