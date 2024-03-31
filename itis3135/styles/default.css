@@ -49,16 +49,16 @@ figure{
     text-align: center;
     font-family: sans-serif;
 }
-.no_CS{
+.no_CS {
     height: 3%;
-    position: fixed;
-    top: 1%; 
-    left: 10px;
+    display:flex;
+    margin:1%;
+    margin-left:45%;
     border-radius: 20%;
-    background-color:burlywood;
+    background-color: burlywood;
     font-size: 100%;
-    font-family:'Courier New', Courier, monospace ;
-  }
+    font-family: 'Courier New', Courier, monospace;
+}
   h3{
     text-align: center;
     font-size: 25px;

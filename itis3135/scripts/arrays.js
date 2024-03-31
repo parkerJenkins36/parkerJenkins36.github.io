@@ -31,33 +31,39 @@ person.forEach((name, index) => {
 }
 
 function modifySalary() {
-    const selectedEmployee = document.getElementById("selectWorker").selectedIndex;
-    if (selectedEmployee === -1) {
+    const selectedEmployeeIndex = document.getElementById("selectWorker").value;
+    if (selectedEmployeeIndex === "") {
         alert("Please select an employee to modify.");
         return;
     }
+
     const newSalary = parseFloat(document.getElementById("newSalary").value);
     if (isNaN(newSalary) || newSalary <= 0) {
         alert("Please enter a valid salary value.");
         return;
     }
-    salaries[selectedEmployee] = newSalary;
-    document.getElementById("selectWorker").selectedIndex = -1;
-    document.getElementById("newSalary").value = "";
+
+    salaries[selectedEmployeeIndex] = newSalary;
     alert("Salary modified successfully.");
+    displayResults(); 
 }
 
 function displayResults() {
+    if (salaries.length === 0) {
+        alert("No data available.");
+        return;
+    }
+
     const totalSalary = salaries.reduce((acc, curr) => acc + curr, 0);
     const averageSalary = totalSalary / salaries.length;
     const highestSalary = Math.max(...salaries);
+
     const resultsDiv = document.getElementById("results");
-    const content = `
+    resultsDiv.innerHTML = `
         <h3>Results</h3>
         <p>Average Salary: $${averageSalary.toFixed(2)}</p>
         <p>Highest Salary: $${highestSalary.toFixed(2)}</p>
     `;
-    resultsDiv.innerHTML = content;
 }
 
 function displaySalary() {
