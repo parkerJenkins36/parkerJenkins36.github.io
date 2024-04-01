@@ -1,0 +1,58 @@
+{
+    "navigation":[
+        [
+            {"name": "Charlotte.edu", "url": "https://webpages.charlotte.edu/pjenki17/"},
+            {"name": "Github", "url": "https://github.com/parkerJenkins36"},
+            {"name": "Github.io", "url": "https://github.com/parkerJenkins36/parkerJenkins36.github.io/tree/main/itis3135"},
+            {"name": "freeCodeCamp", "url": "https://www.freecodecamp.org/ParkerJenkins"},
+            {"name": "Codecademy", "url": "https://www.codecademy.com/profiles/parker.jenkins"},
+            {"name": "LinkedIn", "url": "https://www.linkedin.com/in/parker-jenkins-6618112a9/"}
+        ]
+    ],
+    "button": {
+        "text": "Toggle: No CSS",
+        "onclick": "document.querySelectorAll('link[rel=stylesheet]').forEach(function(e) { e.setAttribute('href', ''); });"
+    },
+    "paragraphs": [
+        "Page Built By ",
+        {
+            "link": {
+                "href": "../pjenkiproduction.co",
+                "text": "PointyJabbySabers",
+                "copyright": "2024"
+            }
+        },
+        " Certified in RWD. ",
+        {
+            "link": {
+                "href": "https://www.freecodecamp.org/certification/ParkerJenkins/responsive-web-design",
+                "text": "Certified in RWD."
+            }
+        },
+        "/ ",
+        {
+            "link": {
+                "href": "https://www.freecodecamp.org/certification/ParkerJenkins/javascript-algorithms-and-data-structures-v8",
+                "text": "Certified in JS."
+            }
+        }
+    ],
+    "additional_paragraph": "Surf the WWWeb",
+    "validation_links": [
+        {
+            "href": "https://validator.w3.org/check?uri=referer",
+            "img_src": "https://jigsaw.w3.org/css-validator/images/vh40.gif",
+            "img_alt": "Valid HTML"
+        },
+        {
+            "href": "https://jigsaw.w3.org/css-validator/check/referer",
+            "img_src": "https://jigsaw.w3.org/css-validator/images/vcss-blue",
+            "img_alt": "Valid CSS"
+        },
+        {
+            "href": "https://wave.webaim.org/report#/",
+            "img_src": "images/button_validation_wcag.png",
+            "img_alt": "Wave Accessibility"
+        }
+    ]
+}

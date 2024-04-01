@@ -51,9 +51,9 @@ figure{
 }
 .no_CS {
     height: 3%;
-    display:flex;
-    margin:1%;
-    margin-left:45%;
+    display: flex;
+    margin: 1%;
+    margin-left: 45%;
     border-radius: 20%;
     background-color: burlywood;
     font-size: 100%;
