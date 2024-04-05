@@ -1,0 +1,11 @@
+{
+    "navigation":[
+        [
+    {"name": "Mens", "url": "mens.html"},
+    {"name": "About", "url": "about.html"},
+    {"name": "Female Style", "url": "female.html"},
+    {"name": "Makeup", "url": "makeup.html"},
+    {"name": "Location", "url": "location.html"}
+        ]
+    ]
+}
