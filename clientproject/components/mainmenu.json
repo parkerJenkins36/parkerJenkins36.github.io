@@ -1,8 +1,8 @@
 {
     "navigation":[
         [
-    {"name": "Mens Style", "url": "mens.html"},
-    {"name": "Female Style", "url": "female.html"},
+    {"name": "Men's Selction", "url": "mens.html"},
+    {"name": "Women's Options", "url": "female.html"},
     {"name": "About", "url": "about.html"},
     {"name": "Makeup", "url": "makeup.html"},
     {"name": "Location", "url": "location.html"}
