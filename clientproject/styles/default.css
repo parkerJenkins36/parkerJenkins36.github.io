@@ -3,9 +3,20 @@ body {
     margin: 0;
     padding-top: 100px; /* Adjust according to header height */
     margin-top: 0; /* Remove default margin */
+    background-color: rgb(210, 245, 249);
+}
+.headerlink{
+    color: #280400;
+}
+footer{
+    text-align: center;
+    color: rgb(2, 122, 118);
+    font-size: 80%;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode',Verdana, sans-serif;
+    padding: 1%;
 }
 h1 {
-    font-family: 'Your Fancy Font', cursive; /* Specify your fancy font */
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode',Verdana, sans-serif;
     background: #f53c28;
     background: radial-gradient(circle farthest-side at bottom left, #eeeae9 1%, #e61375 20%);
     -webkit-text-fill-color: transparent;
@@ -15,7 +26,7 @@ h1 {
     font-size: 2rem; /* Adjust font size as needed */
 }
 a {
-    text-decoration: none; 
+    text-decoration:none;
     font-size: 120%;
     color: black;
     font-weight: bold;
@@ -69,7 +80,8 @@ header {
 .social-links img {
     width: 40px;
     height: auto;
-    margin-left: 10px;
+    margin-left: 8px;
+    margin-right: 3px;
 }
 .social-links {
     margin-left: 80%; 
@@ -92,7 +104,15 @@ nav ul li {
 }
 
 .enlarge-link {
-    transition: transform 0.3s ease-in-out, box-shadow 0.4s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 50%; /* Set border-radius to 50% to make it a circle */
+}
+
+/* Add the following CSS for the hover effect */
+/* Add the following CSS for the hover effect */
+.enlarge-link:hover {
+    transform: scale(1.2);
+    box-shadow: 10px 10px 20px 10px rgba(32, 212, 206, 0.8); /* Adjusted box-shadow values */
 }
 
 .social-links a:nth-child(1):hover, /* Instagram */
@@ -101,10 +121,30 @@ nav ul li {
     transform: scale(1.2);
     box-shadow: 5px 10px 5px rgb(32, 212, 206); /* Glow effect */
     margin-left: 1px;
+    border-radius: 100%;
 }
 /* Media query to adjust padding-top for smaller screens */
 @media screen and (max-width: 800px) {
     body {
         padding-top: 40px; /* Adjust according to header height for smaller screens */
+    }
+    .social-links {
+        display: none; /* Hide the social links on smaller screens */
+    }
+}
+@media screen and (max-width: 375px) {
+    body {
+        padding-top: 4%; /* Adjust according to header height for smaller screens */
+    }
+    .motto {
+        background-color: rgb(2, 122, 118);
+        margin-left: -6%;
+        margin-right: -5%;
+        margin-top: -1%;
+        text-align: center;
+        display: flex;
+        align-items: center; /* Align items vertically */
+        justify-content: center; /* Align items horizontally */
+        max-height: 100px; /* Adjust the maximum height as needed */
     }
 }
