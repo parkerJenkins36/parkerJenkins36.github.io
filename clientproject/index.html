@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Before 'N After Salon</title>
     <link rel="stylesheet" href="styles/default.css">
-    <link rel="icon" type="image/png" href="images/C & K (1).png"/>
+    <link rel="icon" type="image/png" href="images/C K (1).png"/>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
@@ -20,6 +20,9 @@
     </header>
     <main>
         <h2>Welcome to Before 'N After Styling Salon</h2>
+        <footer>
+
+        </footer>
     </main>
     <script>
         $(document).ready(function(){
@@ -37,6 +40,61 @@
             });
         });
     </script>
+    <script>
+        $(document).ready(function(){
+        // Load footer content from JSON file
+        $.getJSON("components/secondmenu.json", function(footerData){
+            // Insert navigation links
+            let footerNavigation = $("#footer-navigation");
+            $.each(footerData.navigation[0], function(index, item){
+                footerNavigation.append(`<a href="${item.url}">${item.name}</a>`);
+                if (index < footerData.navigation[0].length - 1) {
+                    footerNavigation.append(" || ");
+                }
+            });
+    
+            // Insert paragraphs
+            let footerParagraphs = $("#footer-paragraphs");
+            $.each(footerData.paragraphs, function(index, item){
+                if (typeof item === "string") {
+                    footerParagraphs.append(item);
+                } else if (item.link) {
+                    footerParagraphs.append(`<a href="${item.link.href}">${item.link.text}</a>`);
+                    if (item.link.copyright) {
+                        footerParagraphs.append(` &copy;${item.link.copyright}`);
+                    }
+                }
+            });
+    
+            // Insert additional paragraph
+            $("#additional-paragraph").text(footerData.additional_paragraph);
+    
+            // Insert validation links
+            let validationLinks = $("#validation-links");
+            $.each(footerData.validation_links, function(index, item){
+                validationLinks.append(`<a href="${item.href}"><img src="${item.img_src}" alt="${item.img_alt}"></a>`);
+            });
+            // Insert button
+            let button = $("<button>")
+        .text(footerData.button.text)
+        .attr("type", "button")
+        .click(function(){
+            eval(footerData.button.onclick); 
+        })
+        .css({
+            "height": "3%",
+            "display": "flex",
+            "margin": "1%",
+            "margin-left": "45%",
+            "border-radius": "20%",
+            "background-color": "burlywood",
+            "font-size": "100%",
+            "font-family": "'Courier New', Courier, monospace"
+        });
+    $("footer").append(button);
+        });
+    });
+       </script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </body>

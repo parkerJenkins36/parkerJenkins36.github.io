@@ -1,0 +1,26 @@
+{
+"paragraphs": [
+    "Page Built By ",
+    {
+        "link": {
+            "href": "../pjenkiproduction.co",
+            "text": "PointyJabbySabers",
+            "copyright": "2024"
+        }
+    },
+    " Certified in RWD. ",
+    {
+        "link": {
+            "href": "https://www.freecodecamp.org/certification/ParkerJenkins/responsive-web-design",
+            "text": "Certified in RWD."
+        }
+    },
+    "/ ",
+    {
+        "link": {
+            "href": "https://www.freecodecamp.org/certification/ParkerJenkins/javascript-algorithms-and-data-structures-v8",
+            "text": "Certified in JS."
+        }
+    }
+]
+}
