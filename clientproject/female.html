@@ -5,18 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Before 'N After Salon</title>
     <link rel="stylesheet" href="styles/default.css">
-    <link rel="icon" type="image/png" href="images/C & K (1).png"/>
+    <link rel="icon" type="image/png" href="images/c&k.png"/>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
     <header>
+        <div class="motto"> <img  class="curly_brace_left" src="images/curl-line.png" alt="Curly Brace"><p>Schedule a Visit Today</p><img  class="curly_brace_right" src="images/curl-line.png" alt="Curly Brace"></div>
         <h1>Before 'N After Salon</h1>
         <div class="social-links">
-            <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/cwalsh80/" class="enlarge-link"> <img src="images/instagram (2).png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/profile.php?id=100054511238295&mibextid=LQQJ4d" class="enlarge-link"><img src="images/facebook (1).png" alt="Facebook"></a>
+            <a href="https://www.threads.net/@cwalsh80" class="enlarge-link"><img src="images/thread.png" alt="Threads"></a>
         </div>
     </header>
     <main>
+        <h2>Welcome to Before 'N After Styling Salon</h2>
+        
+        <p>Before:
+           <img src=" https://www.instagram.com/p/Ca-hoPZOcFlTkAtCkHSQFL6PpG1ysfCiiizgO80/?img_index=1">
+        </p>
+        
+        <p>After:
+
+        </p>
+        
+        
+        <footer>
+        <div class="foooter-divider"></div>
+        </footer>
     </main>
     <script>
         $(document).ready(function(){
@@ -24,15 +40,39 @@
             $.getJSON("components/mainmenu.json", function(headerData){
                 let headerNav = $("<nav>");
                 $.each(headerData.navigation[0], function(index, item){
-                    let link = $("<a>").attr("href", item.url).text(item.name);
+                    let link = $("<a>").attr("href", item.url).text(item.name).addClass("headerlink");
                     headerNav.append(link);
                     if (index < headerData.navigation[0].length - 1) {
-                        headerNav.append("🪮 ");
+                        headerNav.append(" 🪮 ");
                     }
                 });
                 $("header").append(headerNav);
             });
         });
     </script>
+   <script>
+    $(document).ready(function(){
+        // Load footer content from JSON file
+        $.getJSON("components/secondmenu.json", function(footerData){
+            // Create footer paragraph
+            let footerParagraph = $("<p>");
+            $.each(footerData.paragraph, function(index, item){
+                // If it's a string, append it and add a line break
+                if (typeof item === "string") {
+                    footerParagraph.append(item + "<br>");
+                } 
+                // If it's an object (for copyright), handle accordingly
+                else if (item.copy) {
+                    footerParagraph.append(` &copy;${item.copy['copyright']}<br>`);
+                }
+            });
+            // Append the footer paragraph to the footer
+            $("footer").append(footerParagraph);
+        });
+    });
+</script>
+<script src="scripts/client.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </body>
 </html>
