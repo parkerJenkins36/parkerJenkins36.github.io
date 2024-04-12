@@ -190,8 +190,8 @@ nav ul li {
     }
     .more-details-button {
         display: inline-block; /* Ensures the button only occupies the necessary width */
-        margin-left: 87%;
-        margin-top: -20%;
+        margin-left: 85%;
+        margin-top: -50%;
     }
     .dropdown-content {
         display:none;
