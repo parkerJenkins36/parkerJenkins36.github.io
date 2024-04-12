@@ -268,5 +268,11 @@ nav ul li {
         justify-content: center; /* Align items horizontally */
         max-height: 60px; /* Adjust the maximum height as needed */
     }
-    
+    footer{
+        text-align: center;
+        color: rgb(0, 16, 16);
+        font-size: 60%;
+        font-family: 'Lucida Grande', 'Lucida Sans Unicode',Verdana, sans-serif;
+        padding: 1%;
+    }
 }
