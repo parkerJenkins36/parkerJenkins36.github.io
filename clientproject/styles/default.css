@@ -17,12 +17,11 @@ footer{
     padding: 1%;
 }
 h1 {
-    font-family: 'Lucida Grande', 'Lucida Sans Unicode',Verdana, sans-serif;
-    background: #f53c28;
-    background: radial-gradient(circle farthest-side at bottom left, #eeeae9 1%, #e61375 20%);
-    -webkit-text-fill-color: transparent;
+    color: black;
+    text-align: center;
     background-clip: text;
     -webkit-background-clip: text;
+    font-family: 'Pacifico', cursive;
     font-weight: bold;
     font-size: 2rem; /* Adjust font size as needed */
 }
@@ -152,8 +151,6 @@ nav ul li {
     .headerlink{
         display: none;
     }
-
-
     header {
         position: -webkit-sticky;
         position: sticky;
@@ -191,9 +188,12 @@ nav ul li {
         margin-bottom: 5px; /* Adjust spacing between lines */
         border-radius: 20px;
     }
-
+    .more-details-button {
+        display: inline-block; /* Ensures the button only occupies the necessary width */
+        margin-left: 87%;
+    }
     .dropdown-content {
-        display: none;
+        display:none;
         position: absolute;
         background-color: rgb(210, 245, 249);
         min-width: 50px;
@@ -232,6 +232,16 @@ nav ul li {
         padding-top: 4%; /* Adjust according to header height for smaller screens */
     }
    
+    h1 {
+        color: black;
+        text-align: center;
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-family: 'Pacifico', cursive;
+        font-weight: bold;
+        font-size: 35px; /* Adjust font size as needed */
+    }
+
     .foooter-divider {
         margin: 0 auto;
         height: 3px; /* Adjust the height of the divider line */
