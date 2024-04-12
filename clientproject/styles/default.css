@@ -195,7 +195,7 @@ nav ul li {
     .dropdown-content {
         display: none;
         position: absolute;
-        background-color: #e0c26e;
+        background-color: rgb(210, 245, 249);
         min-width: 50px;
         margin-left: 55%;
         border-radius: 10%;
@@ -224,13 +224,6 @@ nav ul li {
         background-color: gray;
         border-radius: 20%;
     }
-
-
-
-
-
-
-
 
 }
 
