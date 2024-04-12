@@ -17,6 +17,19 @@
             <a href="https://www.facebook.com/profile.php?id=100054511238295&mibextid=LQQJ4d" class="enlarge-link"><img src="images/facebook (1).png" alt="Facebook"></a>
             <a href="https://www.threads.net/@cwalsh80" class="enlarge-link"><img src="images/thread.png" alt="Threads"></a>
         </div>
+        <div class='more-details-button' onclick="toggleDropdown()">
+            <span class="line" ></span>
+            <span class="line"></span>
+            <span class="line" ></span>
+        </div>
+        <div id="dropdown" class="dropdown-content">
+            <div class="dropdown-item"><a href="index.html">Home</a></div>
+            <div class="dropdown-item"><a href="female.html">Woman's Style</a></div>
+            <div class="dropdown-item"><a href="mens.html">Mens</a></div>
+            <div class="dropdown-item"><a href="makeup.html">Makeup Magic</a></div>
+            <div class="dropdown-item"><a href="location.html">Location</a></div>
+            <div class="dropdown-item"><a href="about.html">About</a></div>
+        </div>
     </header>
     <main>
         <h2>Welcome to Before 'N After Styling Salon</h2>
@@ -35,21 +48,33 @@
         </footer>
     </main>
     <script>
-        $(document).ready(function(){
-            // Load header navigation
-            $.getJSON("components/mainmenu.json", function(headerData){
-                let headerNav = $("<nav>");
-                $.each(headerData.navigation[0], function(index, item){
-                    let link = $("<a>").attr("href", item.url).text(item.name).addClass("headerlink");
-                    headerNav.append(link);
-                    if (index < headerData.navigation[0].length - 1) {
-                        headerNav.append(" 🪮 ");
-                    }
-                });
-                $("header").append(headerNav);
+       $(document).ready(function(){
+    function loadHeaderNavigation() {
+        $.getJSON("components/mainmenu.json", function(headerData){
+            let headerNav = $("<nav>");
+            $.each(headerData.navigation[0], function(index, item){
+                let link = $("<a>").attr("href", item.url).text(item.name).addClass("headerlink");
+                headerNav.append(link);
+                // Check if screen width is greater than 800px
+                if ($(window).width() > 800 && index < headerData.navigation[0].length - 1) {
+                    headerNav.append(" 🪮 ");
+                }
             });
+            $("header").append(headerNav);
         });
+    }
+    
+    // Initial loading of header navigation
+    loadHeaderNavigation();
+
+    // Reload header navigation on window resize
+    $(window).resize(function(){
+        $("header nav").remove(); // Remove existing navigation
+        loadHeaderNavigation(); // Reload header navigation
+    });
+});
     </script>
+
    <script>
     $(document).ready(function(){
         // Load footer content from JSON file

@@ -137,6 +137,19 @@ nav ul li {
     background: rgba(81, 78, 78, 0.5);
     border-radius: 50%;
 }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e0c26e;
+    min-width: 50px;
+    margin-left: 65%;
+    border-radius: 10%;
+    font-size: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 10px;
+    z-index: 1;
+}
+
 /* Media query to adjust padding-top for smaller screens */
 @media screen and (max-width: 800px) {
     body {
@@ -145,6 +158,11 @@ nav ul li {
     .social-links {
         display: none; /* Hide the social links on smaller screens */
     }
+    .headerlink{
+        display: none;
+    }
+
+
     header {
         position: -webkit-sticky;
         position: sticky;
@@ -172,6 +190,59 @@ nav ul li {
         background: rgba(81, 78, 78, 0.5);
         border-radius: 80%;
     }
+
+    .line {
+        display: block;
+        margin-left: 80%;
+        width: 30px; /* Adjust thickness of lines */
+        height: 4px; /* Adjust height of lines */
+        background-color: black; /* Adjust color of lines */
+        margin-bottom: 5px; /* Adjust spacing between lines */
+        border-radius: 20px;
+    }
+
+
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #e0c26e;
+        min-width: 50px;
+        margin-left: 65%;
+        border-radius: 10%;
+        font-size: 15px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        padding: 10px;
+        z-index: 1;
+    }
+    
+    .dropdown-item {
+        margin-bottom: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: -2px;
+    }
+    
+    .dropdown-item a {
+        display: block;
+        margin-left: -20%;
+        padding: 5px;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .dropdown-item a:hover {
+        background-color: gray;
+        border-radius: 20%;
+    }
+
+
+
+
+
+
+
+
 }
 
 @media screen and ( min-width: 370px ) and ( max-width: 600px ){
