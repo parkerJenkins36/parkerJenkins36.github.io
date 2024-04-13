@@ -357,7 +357,7 @@ nav ul li {
     }
     .more-details-button {
         display: inline-block; /* Ensures the button only occupies the necessary width */
-        margin-left: 85%;
+        margin-left: 83%;
         margin-top: -100%;
     }
     .dropdown-content {
