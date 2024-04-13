@@ -6,6 +6,14 @@ body {
     margin-top: 0; /* Remove default margin */
     background-color: rgb(210, 245, 249);
 }
+.header-icon{
+    display: block;
+    width:50px;
+    border-radius: 50%;
+    margin-left: 63%;
+    margin-top: -72px;
+    margin-bottom: 2%;
+}
 a:hover{
     text-decoration:underline;
 }
