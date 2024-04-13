@@ -8,11 +8,11 @@ body {
 }
 .header-icon{
     display: block;
-    width:50px;
+    width:55px;
     border-radius: 50%;
-    margin-left: 33%;
-    margin-top: -60px;
-    margin-bottom: 2%;
+    margin-left: 20%;
+    margin-top: -35px;
+    margin-bottom: -2%;
 }
 a:hover{
     text-decoration:underline;
