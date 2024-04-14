@@ -1,5 +1,5 @@
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:Georgia, 'Cambria', Times, serif;
     margin: 0;
     padding-right: 39px;
     padding-top: 7.5%; /* Adjust according to header height */
@@ -379,6 +379,70 @@ nav ul li {
     font-size: 17px;
   }
 
+
+  /*Starting the Stylist CSS*/
+  .body-icon{
+    display: block;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 48.5%;
+    margin-top: -230px;
+    margin-bottom: 20%;
+  }
+  
+  .stylist-image{
+    border: 10px solid white;
+    width: 30%;
+    margin-left: 36%;
+    border-radius: 15px; 
+    box-shadow: 0px 2px 5px rgba(38, 2, 2, 0.2);
+  }
+
+  .stylist-name{
+    margin-left: 40%;
+    font-family:'Merienda';
+    font-size: 50px;
+    font-weight: bold;
+  }
+  h3{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    font-size: 6rem; /* Adjust font size as needed */
+    margin-top: -10%;
+
+  }
+  .and {
+    font-size: 5rem; 
+    color: blue; 
+    font-family: cursive; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    animation: bounce 1s infinite alternate; 
+    margin-left: 50%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.stylist-links img {
+    width: 40px;
+    height: auto;
+    margin-left: 8px;
+    margin-right: 3px;
+    padding-bottom: 5%;
+}
+.stylist-links {
+    margin-left: 45%; 
+    margin-top: 1%;
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
 /* Media query to adjust padding-top for smaller screens */
 @media screen and (max-width: 800px) {
     body {
