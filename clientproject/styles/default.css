@@ -6,6 +6,9 @@ body {
     margin-top: 0; /* Remove default margin */
     background-color: rgb(210, 245, 249);
 }
+.schedule:hover{
+    color: #000000;
+}
 .header-icon{
     display: block;
     width:55px;
