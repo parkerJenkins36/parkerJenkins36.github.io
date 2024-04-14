@@ -41,3 +41,15 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+const images = document.querySelectorAll('.stylist-image');
+
+images.forEach(image => {
+  image.addEventListener('mouseenter', () => {
+    image.classList.add('enlarge');
+  });
+
+  image.addEventListener('mouseleave', () => {
+    image.classList.remove('enlarge');
+  });
+});
