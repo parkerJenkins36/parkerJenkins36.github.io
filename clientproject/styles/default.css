@@ -360,11 +360,12 @@ nav ul li {
     column-gap: 100;
     row-gap: 0;
     margin-left: 40%;
+    padding-bottom: 5%;
   }
   
   .grid-item {
     background-color: transparent;
-    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Arial Narrow Bold', sans-serif;
     color: #000000;
     padding: 10px;
     margin: 0;
