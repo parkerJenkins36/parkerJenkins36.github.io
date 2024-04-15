@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/png" href="https://img.icons8.com/papercut/60/lightsaber.png">
+    <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Load header navigation
+            $.getJSON("components/mainmenu.json", function(headerData){
+                let headerNav = $("<nav>");
+                $.each(headerData.navigation[0], function(index, item){
+                    let link = $("<a>").attr("href", item.url).text(item.name);
+                    headerNav.append(link);
+                    if (index < headerData.navigation[0].length - 1) {
+                        headerNav.append(" ⚔️ ");
+                    }
+                });
+                $("header").append(headerNav);
+            });
+            // Load bottom navigation
+            $.getJSON("components/mainmenu.json", function(bottomData){
+                let bottomNav = $("<nav>");
+                $.each(bottomData.navigation2[0], function(index, item){
+                    let link = $("<a>").attr("href", item.url).text(item.name);
+                    bottomNav.append(link);
+                    if (index < bottomData.navigation2[0].length - 1) {
+                        bottomNav.append(" ⚔️ ");
+                    }
+                });
+                $("header").append(bottomNav);
+            });
+        });
+    </script>
+</head>
+<body>
+<h1>Parker Jenkins Patient Jackal ⚔️ ITIS 3135</h1>
+<header></header>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/slideshow.js"></script>
+    <main>
+
+        <div class="container">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+                <img src="images/Designer.jpeg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+                <img src="images/Designer (1).jpeg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+                <img src="images/Designer (2).jpeg"" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+                <img src="images/Designer (3).jpeg"" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+                <img src="images/Designer (4).jpeg"" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+                <img src="images/Designer (5).jpeg"" style="width:50%">
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+            <!-- Image text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="images/Designer.jpeg"" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/Designer (1).jpeg"" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/Designer (2).jpeg"" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/Designer (3).jpeg"" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/Designer (4).jpeg"" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/Designer (5).jpeg"" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+    </main>
+    <footer>
+        <p>Designed By <a href="../pjenkiproduction.co">PointyJabbySabers <span>&copy;2024</span></a><a href="https://www.freecodecamp.org/certification/ParkerJenkins/responsive-web-design"> Certified in RWD.</a></p>
+        <p>Surf the WWWeb</p>
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+            <img src="https://jigsaw.w3.org/css-validator/images/vh40.gif" width="88" height="31" alt="Valid HTML">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+            <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" width="88" height="31" alt="Valid CSS">
+        </a>
+        <a href="https://wave.webaim.org/report#" id="validation_accessibility">
+            <img  width="88" height="31" src="images/button_validation_wcag.png" alt="Wave Accessibility">
+        </a>
+        <script>
+            function loadTeam() {
+const teamName = document.getElementById("team").value;
+const image = document.getElementById('teamImage').files[0]; 
+const imageUrl = URL.createObjectURL(image); 
+const resultDiv = document.getElementById('result'); //I got this information from the byo_intro assignment
+const logoImg = document.createElement('img');
+logoImg.src = imageUrl;
+logoImg.alt = 'Users Logo';
+const teamDiv = document.createElement('div');
+teamDiv.classList.add('users-team');
+teamDiv.textContent = teamName; 
+teamDiv.appendChild(logoImg);   //changed it down here to just attatch name then image then put that into result
+resultDiv.appendChild(teamDiv);
+}
+
+const navLinks = document.querySelectorAll("nav a");
+const sections = document.querySelectorAll("section");//gathers section elements in sections and nav a in navLinks
+
+sections.forEach((section, index) => {
+if (index !== 0) {//0 is the first page, home page
+    section.style.display = "none";//if not turns display to none to not show
+}
+});
+
+navLinks.forEach((link, index) => {//link is each link and their following index starting with the link "Home" and index 0
+link.addEventListener("click", function() {//this is if you click the links this function will also happen
+    sections.forEach((section, i) => {//parameters are each section and their index
+        if (i !== index) {//compares if the index checked "i" matches the index selected "index"
+            section.style.display = "none"; //if not a match turns display to none to not show
+        }
+    });
+
+    // Show the clicked section
+    sections[index].style.display = "block";//selects the specific index selected in the array to display, with "block" rather than "none"
+});
+});
+        </script>
+        <script>
+            const validationLinkHTML = document.getElementById("validation_link_html");
+            if (validationLinkHTML) {
+                validationLinkHTML.setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            }
+            const validationLinkCSS = document.getElementById("validation_link_css");
+            if (validationLinkCSS) {
+                validationLinkCSS.setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+            }
+            const validationAccessibility = document.getElementById("validation_accessibility");
+            if (validationAccessibility) {
+                validationAccessibility.setAttribute("href", "https://wave.webaim.org/report#/" + location.href);
+            }
+        </script>
+    </footer>     
+</div>
+</body>
+</html>
