@@ -19,7 +19,8 @@
     "navigation2":[
         [
     {"name": "Junk", "url": "stuff/BAdex@mple+.html"},
-    {"name": "Drawing", "url": "drawing.html"}
+    {"name": "Drawing", "url": "drawing.html"},
+    {"name": "Slideshow", "url": "slideshow.html"}
         ]
     ]
 }
