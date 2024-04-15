@@ -184,9 +184,11 @@ figure{
   .next {
     cursor: pointer;
     position: absolute;
-    top: 130%;
+    top: 55%;
     width: auto;
-    padding: 16px;
+    padding-left: 50px;
+    margin-left: -10%;
+    margin-right: -9%;
     margin-top: -50px;
     color: rgb(0, 247, 255);
     font-weight: bold;
