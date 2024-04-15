@@ -1,7 +1,6 @@
 body {
     margin: 0;
-    padding-right: 39px;
-    padding-top: 7.5%; /* Adjust according to header height */
+    padding-right: -10%;
     margin-top: 0; /* Remove default margin */
     background-color: rgb(210, 245, 249);
 }
@@ -10,12 +9,31 @@ body {
 }
 .header-icon{
     display: block;
-    width:55px;
+    width: 80px;
     border-radius: 50%;
-    margin-left: 20%;
-    margin-top: -35px;
+    margin-left: 5%;
+    margin-right: 6%;
+    margin-top: -23px;
     margin-bottom: -2%;
 }
+    .more-details-button{
+  margin-left:110%;
+}
+.motto {
+  background-color: rgb(2, 122, 118);
+  padding-top: 7%;
+  padding-bottom: 1%;
+  margin-right: -22px;
+  margin-left: -21.9px;
+  font-size: 60%;
+  text-align: center;
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Align items horizontally */
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); /* Add box shadow */
+
+}
+
 a:hover{
     text-decoration:underline;
 }
@@ -24,7 +42,7 @@ h2 {
     padding-bottom: 10px;
     text-align: center;
     font-size: 40px;
-    font-family: 'Chalkduster', sans-serif;
+    font-family: 'Pacifico', cursive; 
     color: #000000; /* Set text color to white */
     text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff; /* Add a cool glow effect */
 }
@@ -55,7 +73,7 @@ footer{
 h1 {
     color: rgb(255, 255, 255);
     text-align: center;
-    font-family: 'Chalkduster', sans-serif;
+    font-family: 'Pacifico', cursive; 
     font-weight: bold;
     font-size: 1.8rem; /* Adjust font size as needed */
     margin-bottom: -1%;
@@ -72,20 +90,17 @@ header {
     position: sticky;
     margin-top: -7%;
     margin-bottom: 1%;
-    margin-right: 2%;
-    width: 100%;
     background: rgb(169, 160, 160);
     color: white;
-    padding: 10px 20px;
+    padding: 10px 22px;
     box-shadow: 0px 2px 5px rgba(38, 2, 2, 0.2);
     z-index: 1;
 }
 
-.motto {
+.motto-end {
     background-color: rgb(2, 122, 118);
-    margin-left: -3%;
-    margin-right: -20px;
-    margin-top: -2%;
+    margin-top: 5%;
+    margin-bottom: 2%;
     padding-top: 11px;
     padding-bottom: 9px;
     text-align: center;
@@ -96,22 +111,23 @@ header {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
 
-
-.motto a {
+.motto-end a {
     background: #eeeae9;
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    font-family: 'Pacifico', cursive; /* Pretty font style */
-    font-size: 200%; /* Adjust font size as needed */
+    font-family: 'Pacifico', cursive; 
+    font-size: 200%; 
     padding-left: 5%;
     padding-right: 5%;
 }
 
 .curly_brace_left,
 .curly_brace_right {
-    width: 11%; /* Adjust the size as needed */
-    height: 8%;
+    width: 14%; /* Adjust the size as needed */
+    height: 3%;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 
 .curly_brace_right {
@@ -300,7 +316,7 @@ nav ul li {
 
 
 
-/* Starting active CSS */
+/* Starting about CSS */
 
 
 .image-container {
@@ -350,10 +366,9 @@ nav ul li {
 
 .line{
     margin-top: 5%;
-    height: 3px; /* Adjust the height of the line */
-    background-color: #ccc; /* Gray color */
+    height: 3px; 
+    background-color: #ccc;
     width: 100%; 
-    margin-left: 1%;
     border-radius: 50%;
     opacity: 70%;
     box-shadow: #eeeae9;
@@ -484,9 +499,6 @@ nav ul li {
     transform: scale(1.05); /* Enlarge the image by 5% on hover */
   }
 
-
-
-
   .female-container {
     display: flex;
     justify-content: center;
@@ -577,8 +589,79 @@ nav ul li {
 
   /*Starting Mens CSS*/
 .mens-text{
-    font-family:Georgia, 'Cambria', Times, serif;
+  font-family:'Arial Narrow Bold', sans-serif;
     font-size: 21px;
+}
+
+.mens-title{
+  position:absolute;
+  color: black;
+  padding-left: 5%;
+  padding-top: 6%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: -280px;
+  font-family: 'Pacifico', cursive;
+  font-weight: bold;
+  font-size: 2rem; 
+  background-color: #eeeae9;
+  border-radius: 10%;
+}
+.men-title{
+  font-family: 'Pacifico', cursive;
+  background-color: #eeeae9;
+  font-size: 2rem; 
+  margin-bottom: -2%;
+  text-align: center;
+
+}
+.celeb-container{
+  display: flex;
+  position: relative;
+  padding-bottom: 5%;
+}
+.celeb {
+  width: 10%;
+  box-shadow: 0px 2px 5px rgba(38, 2, 2, 0.2);
+  margin-left: 4%;
+  margin-top: 5%;
+  height: 250px;
+}
+
+/* Now Starting MakeUp CSS */
+
+.makeup-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%; /* Adjusted width to fill the container */
+  border-radius: 15px;
+  margin-left: 30%; /* Center the row */
+  margin-top: -5%;
+  margin-bottom: 10%;
+}
+
+.makeup-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  
+  padding-left: 1%;
+  box-sizing: border-box;
+}
+
+.makeup-column img {
+  width: calc(80% - 19em); /* Adjust based on the number of images */
+  margin-top: 4%;
+  margin-bottom: -3%;
+  padding-bottom: -8%;
+  height: 55%; /* Make all images the same height */
+  margin-bottom: 1px; /* Adjust spacing between images */
+  border-radius: 15px; /* Add border radius */
+  transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+}
+.makeup-column img:hover {
+  transform: scale(1.05); /* Enlarge the image by 5% on hover */
 }
 
 /* Media query to adjust padding-top for smaller screens */
