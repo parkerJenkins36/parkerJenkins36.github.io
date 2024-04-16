@@ -436,7 +436,7 @@ nav ul li {
   }
   .and {
     font-size: 5rem; 
-    color: blue; 
+    color: rgb(2, 122, 118); 
     font-family: cursive; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     animation: bounce 1s infinite alternate; 
@@ -649,6 +649,10 @@ nav ul li {
   padding-left: 1%;
   box-sizing: border-box;
 }
+.makeup-text{
+  font-family:'Arial Narrow Bold', sans-serif;
+    font-size: 21px;
+}
 
 .makeup-column img {
   width: calc(80% - 19em); /* Adjust based on the number of images */
@@ -662,6 +666,11 @@ nav ul li {
 }
 .makeup-column img:hover {
   transform: scale(1.05); /* Enlarge the image by 5% on hover */
+}
+
+
+.dropdown-item a {
+  display: none;
 }
 
 /* Media query to adjust padding-top for smaller screens */
