@@ -359,12 +359,12 @@ nav ul li {
 
 .paint_divider1 img {
   position: absolute;
+  pointer-events: none;
   margin-left: 10%;
   margin-top: -60px;
   padding-top: 1%;
   width: 80%; /* Adjust the width as needed */
   height: 250px; /* Adjust the height as needed */
-  object-fit: cover;
   z-index: -1;
   opacity: 0.5; /* Adjust the opacity of the image to make text more visible */
 }
