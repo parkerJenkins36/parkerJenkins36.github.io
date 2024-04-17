@@ -229,7 +229,6 @@ nav ul li {
 
 .paint_divider p {
     position: relative;
-    z-index: 1;
     text-align: center;
 }
 
@@ -241,7 +240,7 @@ nav ul li {
     width: 55em;
     height: 185px;
     object-fit: cover;
-    z-index: -1;
+    pointer-events: none;
     opacity: 0.5; /* Adjust the opacity of the image to make text more visible */
 }
 
