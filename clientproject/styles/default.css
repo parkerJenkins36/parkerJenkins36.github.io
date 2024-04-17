@@ -4,6 +4,16 @@ body {
     margin-top: 0; /* Remove default margin */
     background-color: rgb(210, 245, 249);
 }
+.line{
+  padding-left: -5%;
+  margin-top: 5%;
+  height: 3px; 
+  background-color: #ccc;
+  width: 100%; 
+  border-radius: 50%;
+  opacity: 70%;
+  box-shadow: #eeeae9;
+}
 .schedule:hover{
     color: #000000;
 }
@@ -38,13 +48,28 @@ a:hover{
     text-decoration:underline;
 }
 
+.home-text{
+  font-family:'Arial Narrow Bold', sans-serif;
+}
+
+.home-about{
+  text-decoration:none;
+  font-size: 110%;
+  color: black;
+  font-weight: bold;
+  z-index: 1;
+}
+.home-about:hover{
+  color: rgb(2, 122, 118);
+}
+
 h2 {
     padding-bottom: 10px;
     text-align: center;
     font-size: 40px;
     font-family: 'Pacifico', cursive; 
     color: #000000; /* Set text color to white */
-    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff; /* Add a cool glow effect */
+    text-shadow: 0 0 10px rgb(2, 122, 118), 0 0 20px #00ffff, 0 0 30px rgb(2, 122, 118); 
 }
 
 .headerlink{
@@ -71,7 +96,7 @@ footer{
     border-radius: 10%;
 }
 h1 {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     font-family: 'Pacifico', cursive; 
     font-weight: bold;
@@ -90,7 +115,7 @@ header {
     position: sticky;
     margin-top: -7%;
     margin-bottom: 1%;
-    background: rgb(169, 160, 160);
+    background: rgb(201, 194, 194);
     color: white;
     padding: 10px 22px;
     box-shadow: 0px 2px 5px rgba(38, 2, 2, 0.2);
@@ -99,7 +124,7 @@ header {
 
 .motto-end {
     background-color: rgb(2, 122, 118);
-    margin-top: 5%;
+    margin-top: -20px;
     margin-bottom: 2%;
     padding-top: 11px;
     padding-bottom: 9px;
@@ -316,6 +341,36 @@ nav ul li {
 
 
 
+  .paint_divider1 {
+    position: relative;
+    padding-top: 1%;
+    padding-bottom: 4%;
+    margin-bottom: 40px; /* Increase margin-bottom for more space between dividers */
+    color: rgb(0, 0, 0);
+    font-size: 20px; 
+}
+
+.paint_divider1 p {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+
+.paint_divider1 img {
+  position: absolute;
+  margin-left: 10%;
+  margin-top: -60px;
+  padding-top: 1%;
+  width: 80%; /* Adjust the width as needed */
+  height: 250px; /* Adjust the height as needed */
+  object-fit: fill;
+  z-index: -1;
+  opacity: 0.5; /* Adjust the opacity of the image to make text more visible */
+}
+
+
+
 /* Starting about CSS */
 
 
@@ -364,15 +419,7 @@ nav ul li {
     border-radius: 10%;
 }
 
-.line{
-    margin-top: 5%;
-    height: 3px; 
-    background-color: #ccc;
-    width: 100%; 
-    border-radius: 50%;
-    opacity: 70%;
-    box-shadow: #eeeae9;
-}
+
 
 .grid-container {
     display: grid;
@@ -430,8 +477,9 @@ nav ul li {
     text-align: center;
     font-family: 'Pacifico', cursive;
     font-weight: bold;
-    font-size: 6rem; /* Adjust font size as needed */
+    font-size: 5rem; /* Adjust font size as needed */
     margin-top: -10%;
+    margin-right: -60px;
 
   }
   .and {
@@ -590,27 +638,12 @@ nav ul li {
     font-size: 21px;
 }
 
-.mens-title{
-  position:absolute;
-  color: black;
-  padding-left: 5%;
-  padding-top: 6%;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-bottom: -280px;
-  font-family: 'Pacifico', cursive;
-  font-weight: bold;
-  font-size: 2rem; 
-  background-color: #eeeae9;
-  border-radius: 10%;
-}
 .men-title{
   font-family: 'Pacifico', cursive;
   background-color: #eeeae9;
   font-size: 2rem; 
   margin-bottom: -2%;
   text-align: center;
-
 }
 .celeb-container{
   display: flex;
@@ -684,7 +717,7 @@ nav ul li {
     header {
         position: -webkit-sticky;
         position: sticky;
-        background: rgb(169, 160, 160);
+        background: rgb(201, 194, 194);
         color: white;
         padding: 10px 20px;
         box-shadow: 0px 2px 5px rgba(38, 2, 2, 0.2);
@@ -712,7 +745,6 @@ nav ul li {
 
     .line {
         display: block;
-        margin-left: 90%;
         width: 30px; /* Adjust thickness of lines */
         height: 4px; /* Adjust height of lines */
         background-color: black; /* Adjust color of lines */
@@ -721,7 +753,7 @@ nav ul li {
     }
     .more-details-button {
         display: inline-block; /* Ensures the button only occupies the necessary width */
-        margin-left: 83%;
+        margin-left: 87%;
         margin-top: -100%;
     }
     .dropdown-content {
@@ -742,6 +774,7 @@ nav ul li {
         padding-left: 10px;
         padding-right: 10px;
         margin-bottom: -2px;
+        z-index: 400;
     }
     
     .dropdown-item a {
@@ -780,19 +813,28 @@ nav ul li {
         font-size: 25px; /* Adjust font size as needed */
     }
 
-    .foooter-divider {
-        margin: 0 auto;
-        height: 3px; /* Adjust the height of the divider line */
-        width: 200px; /* Adjust the width or length of the divider line */
-        background: rgba(81, 78, 78, 0.5);
-        border-radius: 50%;
-    }
+    .line {
+      display: block;
+      width: 30px; /* Adjust thickness of lines */
+      height: 4px; /* Adjust height of lines */
+      background-color: black; /* Adjust color of lines */
+      margin-bottom: 5px; /* Adjust spacing between lines */
+      border-radius: 20px;
+  }
+
+  .foooter-divider {
+    margin: 0 auto;
+    height: 3px; /* Adjust the height of the divider line */
+    width: 200px; /* Adjust the width or length of the divider line */
+    background: rgba(81, 78, 78, 0.5);
+    border-radius: 50%;
+}
     header {
         position: -webkit-sticky;
         position: sticky;
         margin-top: -7%;
         margin-bottom: 1%;
-        background-color: gray;
+        background: rgb(201, 194, 194);
         color: white;
         padding: 10px 20px;
         padding-bottom: 1px;
@@ -817,4 +859,5 @@ nav ul li {
         font-family: 'Lucida Grande', 'Lucida Sans Unicode',Verdana, sans-serif;
         padding: 1%;
     }
+
 }
