@@ -83,7 +83,7 @@ footer{
 .title{
     color: black;
     text-align: center;
-    font-family:'Pacifico',cursive;
+    font-family:'Pacifico', cursive;
     font-weight: bold;
     font-size: 2rem; 
     margin-left:30%;
@@ -167,6 +167,7 @@ header {
 }
 nav {
     text-align: center;
+    font-family:'Arial Narrow Bold', sans-serif;
 }
 
 nav ul {
@@ -178,6 +179,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
+    font-family:'Arial Narrow Bold', sans-serif;
     margin: 0 10px;
 }
 
@@ -211,6 +213,7 @@ nav ul li {
 }
 .dropdown-content {
     display: none;
+    font-family:'Arial Narrow Bold', sans-serif;
 }
 
 
@@ -594,7 +597,7 @@ justify-content: center;
   }
   
 .female-text{
-    font-family:Georgia, 'Cambria', Times, serif;
+  font-family:'Arial Narrow Bold', sans-serif;
 }
 
   .vertical-line {
@@ -638,14 +641,9 @@ justify-content: center;
   }
 
   /*Starting Mens CSS*/
-.mens-text{
-  font-family:'Arial Narrow Bold', sans-serif;
-    font-size: 21px;
-    margin-top: -1%;
-}
 
 .men-title{
-  font-family: 'Pacifico', cursive;
+  font-family: "Zeyada", cursive;
   font-size: 2rem; 
   margin-bottom: -2%;
   text-align: center;
