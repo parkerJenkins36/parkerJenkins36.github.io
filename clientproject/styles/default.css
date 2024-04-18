@@ -64,6 +64,7 @@ a:hover{
 }
 
 h2 {
+  font-family:  "Ubuntu Condensed", sans-serif;
     padding-bottom: 10px;
     text-align: center;
     font-size: 40px;
@@ -83,7 +84,7 @@ footer{
 .title{
     color: black;
     text-align: center;
-    font-family: "Zeyada", cursive;
+    font-family:  "Ubuntu Condensed", sans-serif;
     font-weight: bold;
     font-size: 2rem; 
     margin-left:30%;
@@ -398,9 +399,10 @@ nav ul li {
     display: flex; /* Use "flex" instead of "flexbox" */
     width: 50%;
     transform: rotate(90deg);
-    margin-left: 50%;
+    margin-left: 35%;
     position: relative; /* Add position relative */
     top: -250px; /* Adjust top position to move the arrow higher */
+    padding-top: -5%;
 }
 .title-about{
     color: black;
@@ -410,7 +412,7 @@ nav ul li {
     margin-right: 25%;
     margin-top: 15%;
     margin-bottom: -280px;
-    font-family: 'Pacifico', cursive;
+    font-family:  "Ubuntu Condensed", sans-serif;
     font-weight: bold;
     font-size: 5rem; 
     border-radius: 10%;
@@ -578,7 +580,7 @@ justify-content: center;
   .female-caption {
     margin-top: 10px;
     font-size: 50px;
-    font-family: 'Pacifico', cursive;
+    font-family:  "Ubuntu Condensed", sans-serif;
     margin-left: 22%;
   }
 
@@ -647,6 +649,7 @@ justify-content: center;
   font-size: 2rem; 
   margin-bottom: -2%;
   text-align: center;
+  padding-top: 8%;
 }
 .celeb-container{
   display: flex;
