@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/png" href="https://img.icons8.com/papercut/60/lightsaber.png">
+    <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Load header navigation
+            $.getJSON("components/mainmenu.json", function(headerData){
+                let headerNav = $("<nav>");
+                $.each(headerData.navigation[0], function(index, item){
+                    let link = $("<a>").attr("href", item.url).text(item.name);
+                    headerNav.append(link);
+                    if (index < headerData.navigation[0].length - 1) {
+                        headerNav.append(" ⚔️ ");
+                    }
+                });
+                $("header").append(headerNav);
+            });
+
+            // Load bottom navigation
+            $.getJSON("components/mainmenu.json", function(bottomData){
+                let bottomNav = $("<nav>");
+                $.each(bottomData.navigation2[0], function(index, item){
+                    let link = $("<a>").attr("href", item.url).text(item.name);
+                    bottomNav.append(link);
+                    if (index < bottomData.navigation2[0].length - 1) {
+                        bottomNav.append(" ⚔️ ");
+                    }
+                });
+                $("header").append(bottomNav);
+            });
+        });
+    </script>
+</head>
+<body>
+<h1>Parker Jenkins Patient Jackal ⚔️ ITIS 3135</h1>
+    <header></header>
+    <script src="scripts/include.js"></script>
+    <main>
+     <h2>Peer Review 1</h2>
+     <p>1. Ochsner, Nick</p>
+      <a href="https://webpages.charlotte.edu/nochsner/itis3135/project/" ><img src="images/review-website1.png" alt="website1" style="width: 50%;">
+   </a>
+   <br>
+   <a href="https://webpages.charlotte.edu/nochsner/itis3135/project/">https://webpages.charlotte.edu/nochsner/itis3135/project/</a>
+    </main>
+   <footer>
+    <div id="footer-navigation"></div> 
+    <p id="footer-paragraphs"></p> 
+    <p id="additional-paragraph"></p>
+    <div id="validation-links"></div> 
+</footer>
+   <script src="scripts/include.js"></script>
+   <script>
+    $(document).ready(function(){
+    // Load footer content from JSON file
+    $.getJSON("components/secondmenu.json", function(footerData){
+        // Insert navigation links
+        let footerNavigation = $("#footer-navigation");
+        $.each(footerData.navigation[0], function(index, item){
+            footerNavigation.append(`<a href="${item.url}">${item.name}</a>`);
+            if (index < footerData.navigation[0].length - 1) {
+                footerNavigation.append(" || ");
+            }
+        });
+
+        // Insert paragraphs
+        let footerParagraphs = $("#footer-paragraphs");
+        $.each(footerData.paragraphs, function(index, item){
+            if (typeof item === "string") {
+                footerParagraphs.append(item);
+            } else if (item.link) {
+                footerParagraphs.append(`<a href="${item.link.href}">${item.link.text}</a>`);
+                if (item.link.copyright) {
+                    footerParagraphs.append(` &copy;${item.link.copyright}`);
+                }
+            }
+        });
+
+        // Insert additional paragraph
+        $("#additional-paragraph").text(footerData.additional_paragraph);
+
+        // Insert validation links
+        let validationLinks = $("#validation-links");
+        $.each(footerData.validation_links, function(index, item){
+            validationLinks.append(`<a href="${item.href}"><img src="${item.img_src}" alt="${item.img_alt}"></a>`);
+        });
+        // Insert button
+        let button = $("<button>")
+    .text(footerData.button.text)
+    .attr("type", "button")
+    .click(function(){
+        eval(footerData.button.onclick); 
+    })
+    .css({
+        "height": "3%",
+        "display": "flex",
+        "margin": "1%",
+        "margin-left": "45%",
+        "border-radius": "20%",
+        "background-color": "burlywood",
+        "font-size": "100%",
+        "font-family": "'Courier New', Courier, monospace"
+    });
+$("footer").append(button);
+    });
+});
+   </script>
+</body>
+</html>
