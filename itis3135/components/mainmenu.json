@@ -20,7 +20,10 @@
         [
     {"name": "Junk", "url": "stuff/BAdex@mple+.html"},
     {"name": "Drawing", "url": "drawing.html"},
-    {"name": "Slideshow", "url": "slideshow.html"}
+    {"name": "Slideshow", "url": "slideshow.html"},
+    {"name": "Review 1", "url": "review1.html"},
+    {"name": "Review 2", "url": "review2.html"}
+
         ]
     ]
 }
