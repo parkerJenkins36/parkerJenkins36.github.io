@@ -116,9 +116,16 @@
 
 
         <div class="motto-end"> <img  class="curly_brace_left" src="images/curl-line.png" alt="Curly Brace"><a class="schedule" href="about.html#details">Schedule a Visit Today</a><img  class="curly_brace_right" src="images/curl-line.png" alt="Curly Brace"></div>
+       
+       
+       
         <footer>
-        <div class="foooter-divider"></div>
+            <div class="footer-divider"></div>
+            <!-- Link for JavaScript validation -->
+            <a href="#" id="js-validation">JS</a>
         </footer>
+
+
     </main>
     <script>
        $(document).ready(function(){
@@ -148,7 +155,10 @@
 });
     </script>
 
-   <script>
+
+
+
+<script>
     $(document).ready(function(){
         // Load footer content from JSON file
         $.getJSON("components/secondmenu.json", function(footerData){
@@ -166,9 +176,27 @@
             });
             // Append the footer paragraph to the footer
             $("footer").append(footerParagraph);
+
+            // Check AIM validation
+            if (AIMValidationPassed()) {
+                console.log("AIM validation passed!");
+            } else {
+                console.error("AIM validation failed!");
+            }
         });
+
+        // Function to check AIM validation
+        function AIMValidationPassed() {
+            // Perform validation here, for example:
+            // Make an AJAX request to AIM validation service and check the response
+            // Here I'm just returning true for demonstration
+            return true;
+        }
     });
 </script>
+
+
+
 <script src="scripts/client.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
