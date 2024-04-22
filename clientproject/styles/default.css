@@ -68,7 +68,7 @@ h2 {
   font-family:  "Ubuntu Condensed", sans-serif;
     padding-bottom: 10px;
     text-align: center;
-    font-size: 40px;
+    font-size: 32px;
     color: #000000; /* Set text color to white */
 }
 
@@ -80,7 +80,7 @@ footer{
     color: rgb(0, 16, 16);
     font-size: 75%;
     font-family:'Arial Narrow Bold', sans-serif;   
-    padding: 1%;
+    padding: 2%;
 }
 .title{
     color: black;
@@ -98,8 +98,8 @@ h1 {
     color: rgb(0, 0, 0);
     text-align: center;
     font-family: "Zeyada", cursive;
-    font-size: 3rem; /* Adjust font size as needed */
-    margin-bottom: -1%;
+    font-size: 3.2rem; /* Adjust font size as needed */
+    margin-bottom: -5%;
 }
 a {
     text-decoration:none;
@@ -165,7 +165,7 @@ header {
 }
 .social-links {
     margin-left: 80%; 
-    margin-top: -3%;
+    margin-top: 1%;
 }
 nav {
     text-align: center;
