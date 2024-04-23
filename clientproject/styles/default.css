@@ -874,4 +874,18 @@ justify-content: center;
         padding: 1%;
     }
 
+    .motto-end {
+      background-color: rgb(2, 122, 118);
+      font-size: 70%;
+      margin-top: -18px;
+      padding-top: 11px;
+      padding-bottom: 6px;
+      text-align: center;
+      display: flex;
+      align-items: center; /* Align items vertically */
+      justify-content: center; /* Align items horizontally */
+      max-height: 100px; /* Adjust the maximum height as needed */
+      box-shadow: 1px 5px 5px rgba(0.8, .8, 0, .5); /* Add box shadow */
+  }
+
 }
