@@ -816,15 +816,39 @@ justify-content: center;
     body {
         padding-top: 4%; /* Adjust according to header height for smaller screens */
     }
+
+
+    .header-icon{
+      display: block;
+      width: 8%;
+      border-radius: 50%;
+      margin-left: 5%;
+      margin-right: 6%;
+      margin-top: -23px;
+      margin-bottom: -2%;
+  }
+
+
+  .curly_brace_left,
+  .curly_brace_right {
+      width: 15%; /* Adjust the size as needed */
+      height: 2.7%;
+      margin-left: 4%;
+      margin-right: 4%;
+  }
    
     h1 {
         color: black;
-        text-align: center;
+        margin-right: 20%;
         background-clip: text;
         -webkit-background-clip: text;
         font-family: 'Pacifico', cursive;
         font-weight: bold;
         font-size: 25px; /* Adjust font size as needed */
+    }
+    h2{
+      font-size: 22px;
+      padding-bottom: 2%;
     }
 
     .line {
