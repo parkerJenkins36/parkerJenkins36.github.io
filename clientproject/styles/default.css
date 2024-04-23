@@ -871,14 +871,13 @@ justify-content: center;
         color: rgb(0, 16, 16);
         font-size: 60%;
         font-family: 'Lucida Grande', 'Lucida Sans Unicode',Verdana, sans-serif;
-        padding: 1%;
+        padding: 2% 1%;
     }
 
     .motto-end {
       background-color: rgb(2, 122, 118);
       font-size: 70%;
-      margin-top: -18px;
-      padding-top: 11px;
+      margin-top: -8px;
       padding-bottom: 6px;
       text-align: center;
       display: flex;
