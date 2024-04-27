@@ -123,14 +123,13 @@ header {
 .motto-end {
     background-color: rgb(2, 122, 118);
     font-size: 17px;
-    margin-top: -18px;
-    padding-top: 11px;
+    margin-top: 9px;
+    padding-top: 9px;
     padding-bottom: 6px;
     text-align: center;
     display: flex;
     align-items: center; /* Align items vertically */
     justify-content: center; /* Align items horizontally */
-    max-height: 100px; /* Adjust the maximum height as needed */
     box-shadow: 1px 5px 5px rgba(0.8, .8, 0, .5); /* Add box shadow */
 }
 
@@ -143,6 +142,7 @@ header {
     font-size: 200%; 
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: -1%;
 }
 
 .curly_brace_left,
@@ -223,7 +223,6 @@ nav ul li {
     position: relative;
     padding-top: 5%;
     padding-bottom: 110px;
-    margin-bottom: 40px; /* Increase margin-bottom for more space between dividers */
     color: rgb(0, 0, 0); 
     margin-top: 11px; /* Add padding to create space between text and edges of the div */
 }
@@ -236,13 +235,13 @@ nav ul li {
 
 .paint_divider img {
     position: absolute;
-    margin-left: 340px;
+    margin-left:-10px;
     margin-top: -50px;
-    width: 55em;
-    height: 185px;
+    width: 92em;
+    height: 90px;
     object-fit: cover;
     pointer-events: none;
-    opacity: 0.5; /* Adjust the opacity of the image to make text more visible */
+    opacity: .3; /* Adjust the opacity of the image to make text more visible */
 }
 
   /* Position the image container (needed to position the left and right arrows) */
