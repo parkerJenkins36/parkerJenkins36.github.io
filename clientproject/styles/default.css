@@ -90,7 +90,7 @@ footer{
     font-size: 2rem; 
     margin-left:30%;
     margin-right:30%;
-    margin-bottom: -8px;
+    margin-bottom: 5px;
     margin-top: 1%;
     border-radius: 10%;
 }
@@ -98,8 +98,9 @@ h1 {
     color: rgb(0, 0, 0);
     text-align: center;
     font-family: "Zeyada", cursive;
-    font-size: 3.2rem; /* Adjust font size as needed */
-    margin-bottom: -5%;
+    font-size: 5.2rem; /* Adjust font size as needed */
+    margin-bottom: -8%;
+    margin-top: -0.2%;
 }
 a {
     text-decoration:none;
@@ -147,8 +148,8 @@ header {
 
 .curly_brace_left,
 .curly_brace_right {
-    width: 14%; /* Adjust the size as needed */
-    height: 3%;
+    width: 20%; /* Adjust the size as needed */
+    height: 90px;
     margin-left: 4%;
     margin-right: 4%;
 }

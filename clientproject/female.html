@@ -1,121 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
+    <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     
-        <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      
-       
-        <link rel="stylesheet" href="styles/default.css">
-        <link rel="icon" type="image/png" href="images/c&k.png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Zeyada&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Ubuntu+Condensed&family=Zeyada&display=swap" rel="stylesheet">
-      
-       
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Before 'N After Salon</title>
-    </head>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/png" href="images/c&k.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Zeyada&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Ubuntu+Condensed&family=Zeyada&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C K Studio</title>
+</head>
 <body>
-    <header>
-        <div class="motto"> <img  class="curly_brace_left" src="images/curl-line.png" alt="Curly Brace"><img class="header-icon" src="images/c&k.png" alt="buisness-icon"><img  class="curly_brace_right" src="images/curl-line.png" alt="Curly Brace"></div>      
-        <h1>Before 'N After Salon</h1>
-        <div class="social-links">
-            <a href="https://www.instagram.com/cwalsh80/" class="enlarge-link"> <img src="images/instagram(2).png" alt="Instagram"></a>
-            <a href="https://www.facebook.com/profile.php?id=100054511238295&mibextid=LQQJ4d" class="enlarge-link"><img src="images/facebook(1).png" alt="Facebook"></a>
-            <a href="https://www.threads.net/@cwalsh80" class="enlarge-link"><img src="images/thread.png" alt="Threads"></a>
+<header>
+    <div class="motto">
+        <img class="curly_brace_left" src="images/curl-line.png" alt="Curly Brace">
+        <img class="header-icon" src="images/c&k.png" alt="business-icon">
+        <img class="curly_brace_right" src="images/curl-line.png" alt="Curly Brace">
+    </div>
+    <h1>C K Studio</h1>
+    <div class="social-links">
+        <a href="https://www.instagram.com/cwalsh80/" class="enlarge-link">
+            <img src="images/instagram(2).png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100054511238295&mibextid=LQQJ4d" class="enlarge-link">
+            <img src="images/facebook(1).png" alt="Facebook">
+        </a>
+        <a href="https://www.threads.net/@cwalsh80" class="enlarge-link">
+            <img src="images/thread.png" alt="Threads">
+        </a>
+    </div>
+    <div class='more-details-button' onclick="toggleDropdown()">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </div>
+    <div id="dropdown" class="dropdown-content">
+        <div class="dropdown-item"><a href="index.html">Home</a></div>
+        <div class="dropdown-item"><a href="female.html">Womens</a></div>
+        <div class="dropdown-item"><a href="mens.html">Mens</a></div>
+        <div class="dropdown-item"><a href="stylists.html">Stylists</a></div>
+        <div class="dropdown-item"><a href="about.html">About</a></div>
+    </div>
+</header>
+<main>
+    <h2>Women's Features</h2>
+    <div class="paint_divider" style="z-index: -1; margin-bottom: -3%;">
+        <img src="images/brushstroke2.png" alt="water paint">
+    <p class="female-text">Here at CK Studio, our selections are limitless as we work together on your perfect vision of your desired hairstyle or color.</p>
+</div>
+    <div class="stylist-row" id="stylist-row">
+        <div class="stylist-column">
+            <img src="images/womens_hair1.jpg" alt="woman-hair">
+            <img src="images/womens_hair2.jpg" alt="woman-hair">
+            <img src="images/womens_hair3.jpg" alt="woman-hair">
+            <img src="images/womens_hair4.jpg" alt="woman-hair">
+            <img src="images/womens_hair5.jpg" alt="woman-hair">
+            <img src="images/womens_hair6.jpg" alt="woman-hair">
         </div>
-        <div class='more-details-button' onclick="toggleDropdown()">
-            <span class="line" ></span>
-            <span class="line"></span>
-            <span class="line" ></span>
+    </div>
+    <div class="female-container">
+        <div class="female-wrapper">
+            <div class="female-caption">Before</div>
+            <img style="width: 50%" src="images/hair_image7.jpg" alt="Before" class="before-image">
         </div>
-        <div id="dropdown" class="dropdown-content">
-            <div class="dropdown-item"><a href="index.html">Home</a></div>
-            <div class="dropdown-item"><a href="female.html">Womens</a></div>
-            <div class="dropdown-item"><a href="mens.html">Mens</a></div>
-            <div class="dropdown-item"><a href="makeup.html">Makeup</a></div>
-            <div class="dropdown-item"><a href="stylists.html">Stylists</a></div>
-            <div class="dropdown-item"><a href="about.html">About</a></div>
+        <div class="female-wrapper">
+            <div class="female-caption">After</div>
+            <img style="width: 50%" src="images/hair_image6.jpg" alt="After" class="after-image">
         </div>
-    </header>
-    <main>
-        <h2>Women's Features</h2>
-        <div class="paint_divider" style="z-index: -1; margin-bottom: -3%;">
-            <img src="images/brushstroke2.png" alt="water paint">
-        <p class="female-text">Here at Before 'N After, our selections are limitless as we work together on your perfect vision of your desired hairstyle or color.</p>
     </div>
 
-        <div class="stylist-row" id="stylist-row">
-            <div class="stylist-column">
-              <img src="images/womens_hair1.jpg" alt="woman-hair">
-              <img src="images/womens_hair2.jpg" alt="woman-hair">
-              <img src="images/womens_hair3.jpg" alt="woman-hair">
-              <img src="images/womens_hair4.jpg" alt="woman-hair">
-              <img src="images/womens_hair5.jpg" alt="woman-hair">
-              <img src="images/womens_hair6.jpg" alt="woman-hair">
-            </div>
-            </div>
-          <div class="female-container">
-            <div class="female-wrapper">
-               <div class="female-caption">Before</div>
-              <img style="width: 50%" src="images/hair_image7.jpg" alt="Before" class="before-image">
-            </div>
-            <div class="female-wrapper">
+    <div class="ba-container">
+        <img style="width: 20%" src="images/beforeafter1.jpg" class="before-after" alt="After">
+        <div class="vertical-line"></div>
+        <img style="width: 20%" src="images/beforeafter2.jpg" class="before-after" alt="After">
+        <div class="vertical-line1"></div>
+        <img style="width: 20%" src="images/beforeafter3.jpg" class="before-after" alt="After">
+        <div class="vertical-line2"></div>
+        <img style="width: 20%" src="images/beforeafter4.jpg" class="before-after" alt="After">
+    </div>
 
-                <div class="female-caption">After</div>
-              <img style="width: 50%" src="images/hair_image6.jpg" alt="After" class="after-image">
-            </div>
-          </div>
-         
-          <div class="ba-container">
-            <img style="width: 20%" src="images/beforeafter1.jpg" class="before-after" alt="After">
-            <div class="vertical-line"></div>
-            <img style="width: 20%" src="images/beforeafter2.jpg" class="before-after" alt="After">
-            <div class="vertical-line1"></div>
-            <img style="width: 20%" src="images/beforeafter3.jpg" class="before-after" alt="After">
-            <div class="vertical-line2"></div>
-            <img style="width: 20%" src="images/beforeafter4.jpg" class="before-after" alt="After">
-          </div>
-        
-          <div class="motto-end"> <img  class="curly_brace_left" src="images/curl-line.png" alt="Curly Brace"><a class="schedule" href="about.html#details">Schedule a Visit Today</a><img  class="curly_brace_right" src="images/curl-line.png" alt="Curly Brace"></div>
-          <footer>
-        <div class="foooter-divider"></div>
-        </footer>
-    </main>
-    <script>
-       $(document).ready(function(){
-    function loadHeaderNavigation() {
-        $.getJSON("components/mainmenu.json", function(headerData){
-            let headerNav = $("<nav>");
-            $.each(headerData.navigation[0], function(index, item){
-                let link = $("<a>").attr("href", item.url).text(item.name).addClass("headerlink");
-                headerNav.append(link);
-                // Check if screen width is greater than 800px
-                if ($(window).width() > 800 && index < headerData.navigation[0].length - 1) {
-                    headerNav.append(" 🪮 ");
-                }
+    <div class="motto-end">
+        <img class="curly_brace_left" src="images/curl-line.png" alt="Curly Brace">
+        <a class="schedule" href="about.html#details">Schedule a Visit Today</a>
+        <img class="curly_brace_right" src="images/curl-line.png" alt="Curly Brace">
+    </div>
+    <footer>
+        <div class="footer-divider"></div>
+    </footer>
+</main>
+<script>
+    $(document).ready(function(){
+        function loadHeaderNavigation() {
+            $.getJSON("components/mainmenu.json", function(headerData){
+                let headerNav = $("<nav>");
+                $.each(headerData.navigation[0], function(index, item){
+                    let link = $("<a>").attr("href", item.url).text(item.name).addClass("headerlink");
+                    headerNav.append(link);
+                    // Check if screen width is greater than 800px
+                    if ($(window).width() > 800 && index < headerData.navigation[0].length - 1) {
+                        headerNav.append(" 🪮 ");
+                    }
+                });
+                $("header").append(headerNav);
             });
-            $("header").append(headerNav);
+        }
+        
+        // Initial loading of header navigation
+        loadHeaderNavigation();
+
+        // Reload header navigation on window resize
+        $(window).resize(function(){
+            $("header nav").remove(); // Remove existing navigation
+            loadHeaderNavigation(); // Reload header navigation
         });
-    }
-    
-    // Initial loading of header navigation
-    loadHeaderNavigation();
-
-    // Reload header navigation on window resize
-    $(window).resize(function(){
-        $("header nav").remove(); // Remove existing navigation
-        loadHeaderNavigation(); // Reload header navigation
     });
-});
-    </script>
+</script>
 
-   <script>
+<script>
     $(document).ready(function(){
         // Load footer content from JSON file
         $.getJSON("components/secondmenu.json", function(footerData){
@@ -137,7 +142,6 @@
     });
 </script>
 <script src="scripts/client.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </body>
 </html>
