@@ -140,7 +140,7 @@ header {
     background-clip: text;
     -webkit-background-clip: text;
     font-family: "Zeyada", cursive;
-    font-size: 200%; 
+    font-size: 220%; 
     padding-left: 5%;
     padding-right: 5%;
     padding-top: -1%;
@@ -555,9 +555,11 @@ justify-content: center;
   border-radius: 5px;
   transition: transform 0.3s ease;
 }
+
 .stylist-column img:hover {
   transform: scale(1.05); /* Enlarge the image by 5% on hover */
 }
+
   .female-container {
     display: flex;
     justify-content: center;
