@@ -90,7 +90,7 @@ footer{
     font-size: 2rem; 
     margin-left:30%;
     margin-right:30%;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-top: 1%;
     border-radius: 10%;
 }
@@ -278,7 +278,7 @@ nav ul li {
     top: 100%;
     width: auto;
     padding: 16px;
-    margin-top: -50px;
+    margin-top: -3%;
     color: rgb(0, 247, 255);
     font-weight: bold;
     font-size: 20px;
@@ -289,7 +289,7 @@ nav ul li {
   
   /* Position the "next button" to the right */
   .next {
-    right: 35.6%;
+    right: 35.65%;
     border-radius: 3px 0 0 3px;
   }
   
@@ -343,30 +343,30 @@ nav ul li {
 
   .paint_divider1 {
     position: relative;
-    padding-top: 1%;
-    padding-bottom: 4%;
-    margin-bottom: 40px; /* Increase margin-bottom for more space between dividers */
-    color: rgb(0, 0, 0);
-    font-size: 20px; 
+    padding-top: 2%;
+    padding-bottom: 100px;
+    color: rgb(0, 0, 0); 
+    margin-top: 12px; /* Add padding to create space between text and edges of the div */
 }
 
 .paint_divider1 p {
     position: relative;
     z-index: 1;
     text-align: center;
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-size: 23px;
 }
 
 
 .paint_divider1 img {
   position: absolute;
+  margin-left:-10px;
+  margin-top: -50px;
+  width: 92em;
+  height: 160px;
+  object-fit: cover;
   pointer-events: none;
-  margin-left: 10%;
-  margin-top: -60px;
-  padding-top: 1%;
-  width: 80%; /* Adjust the width as needed */
-  height: 250px; /* Adjust the height as needed */
-  z-index: -1;
-  opacity: 0.5; /* Adjust the opacity of the image to make text more visible */
+  opacity: .3; /* Adjust the opacity of the image to make text more visible */
 }
 
 
@@ -426,7 +426,7 @@ nav ul li {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 9em);
-    column-gap: 100;
+    column-gap: 1px;
     row-gap: 0;
     margin-left: 40%;
     padding-bottom: 5%;
@@ -434,8 +434,8 @@ nav ul li {
   
   .grid-item {
     background-color: transparent;
-    font-family:'Arial Narrow Bold', sans-serif;
-    color: #000000;
+    font-family: 'Arial Narrow Bold', sans-serif;  
+    color: #000000; 
     padding: 10px;
     margin: 0;
   }
