@@ -1,0 +1,192 @@
+
+
+main {
+    background-image: url("images/leather.jpg"); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 20px; /* Adds some padding to the content inside the main */
+    color: rgb(255, 255, 255); /* Sets the text color to white for better readability */
+}
+
+/* Additional styling for text readability */
+main h1, main p {
+    background-color: rgba(0, 0, 0, 0.8); /* Adds a semi-transparent background behind text */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+body{
+    background-color: #000000;
+}
+
+
+header {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Spread out the items */
+    padding: 15px;
+    background-color: #000000; /* Optional: Add background color */
+}
+
+/* Image styling */
+header img {
+    margin-left: 45px;
+    height: 80px; /* Adjust the height of the image */
+    width: auto;  /* Keep the aspect ratio */
+    border-radius: 20%;
+}
+
+/* Form styling */
+header form {
+    flex-grow: 1; /* Make the search bar grow to fill available space */
+    margin-left: 30%;
+     /* Align search input and button horizontally */
+    align-items: center; /* Align the search input and button vertically */
+}
+
+/* Search input styling */
+header form input[type="text"] {
+    width: 400px;
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Search button styling */
+header form button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    background-color: #c69f4a;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+header form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Navigation link styling */
+header a {
+    margin-left: 25px;
+    padding-right: 1%;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Image styling */
+.left-img {
+    margin-left: 10%;
+    width: 30%;
+    max-width: 200px; /* Adjust the maximum width as needed */
+}
+
+.right-img {
+    margin-right: 10%;
+    width: 30%;
+    max-width: 200px; /* Adjust the maximum width as needed */
+}
+
+/* Text content styling */
+.text-content {
+    width: 40%;
+    text-align: center;
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+/* Bottom image styling */
+.bottom-img {
+    display: block;
+    margin: 5px auto;
+    width: 40%;
+    max-width: 300px; /* Adjust the maximum width as needed */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-img, .right-img, .text-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-content {
+        padding: 10px 0;
+    }
+
+    .bottom-img {
+        width: 80%;
+    }
+}
+
+
+footer {
+    background-color: #000000; /* Dark background for footer */
+    padding: 10px;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    color: #ffffff; /* White text color */
+}
+/* Styling for link images in footer */
+footer .link {
+    width: 30px; /* Adjust the size of the images */
+    height: 30px; /* Ensure the images are square */
+    margin: 0 10px; /* Space between images */
+    vertical-align: middle; /* Aligns images with text */
+}
+
+/* Ensure images are displayed in a row */
+footer img{
+    display: inline-block;
+}
+
+footer p{
+    padding-right: 80%;
+}
+
+.btn-collections {
+    display:inline;
+    align-items: center;
+    margin-top: 20px; /* Space above the button */
+    padding: 10px 20px; /* Padding inside the button */
+    background-color: #c69f4a; /* Background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; 
+    font-size: 24px; 
+    font-weight: bold; 
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.6);
+}
+
+.btn-collections span {
+    margin-left: 10px; 
+    font-size: 60px;
+   vertical-align:sub;
+}
+
+.btn-collections:hover {
+    background-color: #a57c3d; /* Darker background on hover */
+}
