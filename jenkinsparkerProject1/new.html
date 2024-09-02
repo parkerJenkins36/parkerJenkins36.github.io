@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Iem</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="football card">
+        <form action="/search" method="GET">
+            <input type="text" name="query" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+        <a href="items.html">Browse</a>
+        <a href="item.html">Sell</a>
+        <a href="#">Sign Up</a>
+        <a href="#">Login</a>
+    </header>
+    <main style="background-image: url('images/leather.jpg'); padding-top: 5%; padding-bottom: 2%;">
+        <div class="form-container">
+            <h2>Create New Listing</h2>
+            <form action="#" method="post" enctype="multipart/form-data">
+                
+                <!-- Condition Field -->
+                <div class="form-group">
+                    <label for="condition">Condition</label>
+                    <select name="condition" id="condition" required>
+                        <option value="">Select Condition</option>
+                        <option value="new">New</option>
+                        <option value="like-new">Like New</option>
+                        <option value="used-good">Used - Good</option>
+                        <option value="used-fair">Used - Fair</option>
+                        <option value="for-parts">For Parts</option>
+                    </select>
+                </div>
+    
+                <!-- Title Field -->
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" placeholder="Enter item title" required>
+                </div>
+    
+                <!-- Seller Field -->
+                <div class="form-group">
+                    <label for="seller">Seller</label>
+                    <input type="text" id="seller" name="seller" placeholder="Enter seller's name" required>
+                </div>
+    
+                <!-- Price Field -->
+                <div class="form-group">
+                    <label for="price">Price</label>
+                    <input type="number" id="price" name="price" placeholder="Enter price in USD" step="0.01" min="0" required>
+                </div>
+    
+                <!-- Details Field -->
+                <div class="form-group">
+                    <label for="details">Details</label>
+                    <textarea id="details" name="details" rows="4" placeholder="Enter item details" required></textarea>
+                </div>
+    
+                <!-- Image Upload Field -->
+                <div class="form-group">
+                    <label for="image">Upload Image</label>
+                    <input type="file" id="image" name="image" accept="image/*" required>
+                </div>
+    
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <button type="submit">Submit Listing</button>
+                </div>
+            </form>
+        </div>
+    
+    </main>
+    </html>
+    
