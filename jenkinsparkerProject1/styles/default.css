@@ -94,12 +94,16 @@ header a:hover {
 
 /* Image styling */
 .left-img {
+    border-radius: 5%;
+    border: 5px solid rgba(0, 0, 0, 0.5);
     margin-left: 10%;
     width: 30%;
     max-width: 200px; /* Adjust the maximum width as needed */
 }
 
 .right-img {
+    border-radius: 5%;
+    border: 5px solid rgba(0, 0, 0, 0.5);
     margin-right: 10%;
     width: 30%;
     max-width: 200px; /* Adjust the maximum width as needed */
@@ -115,6 +119,8 @@ header a:hover {
 
 /* Bottom image styling */
 .bottom-img {
+    border-radius: 5%;
+    border: 5px solid rgba(0, 0, 0, 0.5);
     display: block;
     margin: 5px auto;
     width: 40%;
@@ -189,4 +195,87 @@ footer p{
 
 .btn-collections:hover {
     background-color: #a57c3d; /* Darker background on hover */
+}
+
+
+
+
+.card-row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 10px;
+    overflow-x: auto; /* Allows horizontal scrolling if items exceed the container width */
+}
+
+.card-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px; /* Adds a small gap between items */
+    width: 100%;
+}
+
+.card-item {
+    flex: 0 0 13%; /* Adjust the width of each item */
+    max-width: 13%; /* Ensures the item does not exceed the set width */
+    text-decoration: none;
+    color: #000;
+    border: 5px solid rgba(0, 0, 0, 0.8);
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 10px; /* Adds space between each item */
+}
+
+.card-item:last-child {
+    margin-right: 0; /* Removes the margin on the last item to avoid extra space */
+}
+
+.card-item img {
+    width: 100%;
+    height: auto;
+    padding-bottom: -20%;
+}
+
+.card-content {
+    padding: 1px; /* Adjust padding as needed */
+    text-align: center;
+    background-color: #fff;
+    border-top: 5px solid rgba(0, 0, 0, 0.8);
+    margin: 0; /* Reset any margin to avoid extra spacing */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+.card-content p {
+    margin: 10px 0;
+    background: none;
+}
+
+.card-content p.inline {
+    display: inline-block;
+    margin: 5px 1px; 
+    margin-right: 10px;
+}
+
+.card-content p.name {
+   margin-left: -55px;
+   color: #1300c2;
+   font-size: 18px;
+}
+
+.card-content p.grade {
+    margin-top: -12%;
+    margin-left: 60%;
+ }
+
+ .separator {
+    flex-grow: 1;
+    height: 1px;
+    border-radius: 20%;
+    background-color: rgba(98, 98, 98, 0.5); ;
+    margin: 0 10px; /* Adjusts the spacing between the line and text */
+}
+
+.price {
+    font-weight: bold;
 }
