@@ -1,17 +1,15 @@
 
-
 main {
-    background-image: url("images/leather.jpg"); /* Path to your image */
+    background-image: url("images/leather.jpg"); 
     background-size: cover; /* Ensures the image covers the entire area */
-    background-position: center; /* Centers the image */
+    background-position: center; 
     background-repeat: no-repeat; /* Prevents the image from repeating */
-    padding: 20px; /* Adds some padding to the content inside the main */
-    color: rgb(255, 255, 255); /* Sets the text color to white for better readability */
+    padding: 20px; 
+    color: rgb(255, 255, 255); 
 }
 
-/* Additional styling for text readability */
 main h1, main p {
-    background-color: rgba(0, 0, 0, 0.8); /* Adds a semi-transparent background behind text */
+    background-color: rgba(0, 0, 0, 0.8); 
     padding: 10px;
     border-radius: 5px;
 }
@@ -26,26 +24,22 @@ header {
     align-items: center; /* Align items vertically */
     justify-content: space-between; /* Spread out the items */
     padding: 15px;
-    background-color: #000000; /* Optional: Add background color */
+    background-color: #000000; 
 }
 
-/* Image styling */
 header img {
     margin-left: 45px;
-    height: 80px; /* Adjust the height of the image */
-    width: auto;  /* Keep the aspect ratio */
+    height: 80px; 
+    width: auto;  /* Keeps the aspect ratio */
     border-radius: 20%;
 }
 
-/* Form styling */
 header form {
-    flex-grow: 1; /* Make the search bar grow to fill available space */
+    flex-grow: 1; /* Spaces Away from Browse*/
     margin-left: 30%;
-     /* Align search input and button horizontally */
-    align-items: center; /* Align the search input and button vertically */
+    align-items: center; 
 }
 
-/* Search input styling */
 header form input[type="text"] {
     width: 400px;
     flex-grow: 1;
@@ -54,7 +48,6 @@ header form input[type="text"] {
     border-radius: 10px;
 }
 
-/* Search button styling */
 header form button {
     padding: 5px 10px;
     margin-left: 5px;
@@ -66,10 +59,9 @@ header form button {
 }
 
 header form button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3; 
 }
 
-/* Navigation link styling */
 header a {
     margin-left: 25px;
     padding-right: 1%;
@@ -92,13 +84,12 @@ header a:hover {
     margin: 20px 0;
 }
 
-/* Image styling */
 .left-img {
     border-radius: 5%;
     border: 5px solid rgba(0, 0, 0, 0.5);
     margin-left: 10%;
     width: 30%;
-    max-width: 200px; /* Adjust the maximum width as needed */
+    max-width: 200px; 
 }
 
 .right-img {
@@ -106,10 +97,9 @@ header a:hover {
     border: 5px solid rgba(0, 0, 0, 0.5);
     margin-right: 10%;
     width: 30%;
-    max-width: 200px; /* Adjust the maximum width as needed */
+    max-width: 200px;
 }
 
-/* Text content styling */
 .text-content {
     width: 40%;
     text-align: center;
@@ -117,7 +107,6 @@ header a:hover {
     font-size: 20px;
 }
 
-/* Bottom image styling */
 .bottom-img {
     border-radius: 5%;
     border: 5px solid rgba(0, 0, 0, 0.5);
@@ -127,7 +116,6 @@ header a:hover {
     max-width: 300px; /* Adjust the maximum width as needed */
 }
 
-/* Responsive adjustments */
 @media screen and (max-width: 768px) {
     .content-wrapper {
         flex-direction: column;
@@ -150,21 +138,20 @@ header a:hover {
 
 
 footer {
-    background-color: #000000; /* Dark background for footer */
+    background-color: #000000; 
     padding: 10px;
     display: flex;
-    align-items: center; /* Center items vertically */
-    color: #ffffff; /* White text color */
-}
-/* Styling for link images in footer */
-footer .link {
-    width: 30px; /* Adjust the size of the images */
-    height: 30px; /* Ensure the images are square */
-    margin: 0 10px; /* Space between images */
-    vertical-align: middle; /* Aligns images with text */
+    align-items: center;
+    color: #ffffff; 
 }
 
-/* Ensure images are displayed in a row */
+footer .link {
+    width: 30px; 
+    height: 30px; 
+    margin: 0 10px; 
+    vertical-align: middle;
+}
+
 footer img{
     display: inline-block;
 }
@@ -197,22 +184,19 @@ footer p{
     background-color: #a57c3d; /* Darker background on hover */
 }
 
-
-
-
 .card-row {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     margin: 10px;
-    overflow-x: auto; /* Allows horizontal scrolling if items exceed the container width */
+    overflow-x: auto; 
 }
 
 .card-column {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 10px; /* Adds a small gap between items */
+    gap: 10px; /* Adding a small gap between items */
     width: 100%;
 }
 
@@ -273,19 +257,12 @@ footer p{
     height: 1px;
     border-radius: 20%;
     background-color: rgba(98, 98, 98, 0.5); ;
-    margin: 0 10px; /* Adjusts the spacing between the line and text */
+    margin: 0 10px; 
 }
 
 .price {
     font-weight: bold;
 }
-
-
-
-
-
-
-
 
 .item-container {
     display: flex;
@@ -350,8 +327,6 @@ footer p{
     background-color: #a57c3d;
 }
 
-/* Responsive Adjustments for Item Detail Page */
-
 @media screen and (max-width: 992px) {
     .item-container {
         flex-direction: column;
@@ -380,4 +355,68 @@ footer p{
     }
 }
 
+h2 {
+ margin-left: 25%;
+}
 
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    position: relative;
+    margin: 40px 0;
+}
+
+/* Form styling */
+form {
+    background-color: #000; /* Black background */
+    padding: 40px 20px;
+    border-radius: 10px;
+    width: 400px; /* Set width for the form */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5); /* Optional: add shadow */
+}
+
+/* Form group styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Labels are left-aligned */
+.form-group label {
+    align-self: flex-start;
+    color: #fff; /* White text for labels */
+    margin-bottom: 5px;
+}
+
+/* Input fields are centered */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-button {
+    width: 100%; /* Full width button */
+    padding: 15px;
+    background-color: #c69f4a; /* Gold color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Space above the button */
+}
+
+form button:hover {
+    background-color: #a57c3d; /* Darker gold on hover */
+}
