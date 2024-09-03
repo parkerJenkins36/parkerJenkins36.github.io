@@ -24,6 +24,7 @@ header {
     align-items: center; /* Align items vertically */
     justify-content: space-between; /* Spread out the items */
     padding: 15px;
+    padding-top: 1px;
     background-color: #000000; 
 }
 
