@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content=" width=device-width, initial-scalr=1.0">
+        <title>Student</title>
+    </head>
+    <body>
+        <h2>Student Details</h2>
+        <% if(student) {%>
+        <p>Name: <%=student.name%></p>
+        <p>Major: <%=student.major%></p>
+        <p>Gpa: <%=student.gpa%></p>
+        <%} else {%>
+            <p>No student matches the ID</p>
+        <%}%>
+    
+    </body>
+</html>

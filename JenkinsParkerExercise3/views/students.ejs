@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content=" width=device-width, initial-scalr=1.0">
+        <link rel="stylesheet" href="/styles/default.css">
+        <title>Students</title>
+    </head>
+    <body>
+        <h2>Students</h2>
+    
+        <% if (students.length > 0) { %>
+            <div class="students-list">
+                <% students.forEach(student => { %>
+                    <div class="student-item">
+                        <img src="<%= student.profile %>" alt="Profile Picture">
+                        <p><%= student.name %></p>
+                    </div>
+                <% }) %>
+            </div>
+        <% } else { %>
+            <p>There is no student to display.</p>
+        <% } %>
+    
+    </body>
+    </body>
+</html>
