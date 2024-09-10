@@ -1,10 +1,15 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: hsl(0, 0%, 92%);
+    color: hsl(210, 8%, 14%);
+    padding: 2rem;
 }
 
 h2 {
     font-family: 'Franklin Gothic Medium';
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .students-list {
@@ -25,15 +30,54 @@ h2 {
     text-align: center;
 }
 
-.students-name img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
 
 .students-name p {
     font-size: 16px;
     font-weight: bold;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.student-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.opacity-70 {
+    opacity: 70%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input {
+    font: inherit;
+    line-height: 3;
+    border-radius: 4px;
+    border: 1px solid hsl(220, 46%, 48%);
+    padding-left: 1em;
+}
+
+input:last-of-type {
+    background-color: hsl(220, 46%, 48%);
+    color: #fff;
+    cursor: pointer;
+    border-color: transparent; 
+    align-self: end;
+    line-height: 1.5;
+    padding: 0.2em 1em;
 }
