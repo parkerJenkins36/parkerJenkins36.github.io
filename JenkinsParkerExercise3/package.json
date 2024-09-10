@@ -2,7 +2,7 @@
   "name": "parkerjenkins36.github.io",
   "version": "1.0.0",
   "description": "A simple Express App",
-  "main": "index.js",
+  "main": "index.ejs",
   "scripts": {
     "dev": "nodemon server",
      "start": "node server"
