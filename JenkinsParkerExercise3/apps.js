@@ -10,9 +10,9 @@ app.set('view engine', 'ejs');
 
 
 let students = [
-    { id: '1', name: 'Alice', major: 'Computer Science', gpa: 3.2 },
-    { id: '2', name: 'Bob', major: 'Biology', gpa: 3.0 },
-    { id: '3', name: 'Charlie', major: 'Physics', gpa: 3.8 }
+    { id: '1', name: 'Alice', major: 'Computer Science', gpa: 3.2 , profile: '/images/alice.jpg'},
+    { id: '2', name: 'Bob', major: 'Biology', gpa: 3.0 ,  profile: '/images/bob.jpg'},
+    { id: '3', name: 'Charlie', major: 'Physics', gpa: 3.8 ,  profile: '/images/charlie.jpg'}
 ];
 
 
