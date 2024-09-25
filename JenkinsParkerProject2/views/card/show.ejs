@@ -1,0 +1,23 @@
+<%- include('../partials/header.ejs') %>
+<main style="background-image: url('/images/leather.jpg'); padding-top: 5%; padding-bottom: 2%;">
+    <div class="item-container">
+        <div class="item-image">
+            <img src="<%= card.image %>" alt="<%= card.title %>" style="width: 65%">
+        </div>
+        <div class="item-details">
+            <h2 class="card-name"><%= card.title %></h2>
+            <p><strong>Condition:</strong> <%= card.condition %></p>
+            <p><strong>Price:</strong> $<%= card.price %></p>
+            <p><strong>Seller:</strong> <%= card.seller %></p>
+            <p><strong>Details:</strong> <%= card.details %></p>
+            <div class="actions">
+                <form>
+                 <button type="submit" formmethod="GET" formaction="/cards/<%= card.id %>/edit" >Edit</button>
+                 <button type="submit" formmethod="POST" formaction="/cards/<%= card.id %>?_method=DELETE" >Delete</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%- include('../partials/footer.ejs') %>

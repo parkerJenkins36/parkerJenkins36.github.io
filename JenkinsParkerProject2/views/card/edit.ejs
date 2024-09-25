@@ -1,0 +1,47 @@
+<%- include('../partials/header.ejs') %>
+<div class="content">
+    <h2>Edit Card: <%= card.title %></h2>
+    <form action="/cards/<%= card.id %>?_method=PUT" method="POST" enctype="multipart/form-data" class="edit-form">
+        <div class="form-group">
+            <label for="seller">Seller</label>
+            <input type="text" id="seller" name="seller" value="<%= card.seller %>" required>
+        </div>
+
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" value="<%= card.title %>" required>
+        </div>
+
+        <div class="form-group">
+            <label for="condition">Condition</label>
+            <select name="condition" id="condition" required>
+                <option value="">Select Your Card's Condition</option>
+                <option value="High-End" <%= card.condition === 'High-End' ? 'selected' : '' %>>High-End</option>
+                <option value="Like-New" <%= card.condition === 'Like-New' ? 'selected' : '' %>>Like New</option>
+                <option value="used-good" <%= card.condition === 'used-good' ? 'selected' : '' %>>Used - Good</option>
+                <option value="used-fair" <%= card.condition === 'used-fair' ? 'selected' : '' %>>Used - Fair</option>
+                <option value="Low-End" <%= card.condition === 'Low-End' ? 'selected' : '' %>>Low-End</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="price">Price</label>
+            <input type="number" id="price" name="price" value="<%= card.price %>" step="0.01" min="0" required>
+        </div>
+
+        <div class="form-group">
+            <label for="details">Details</label>
+            <textarea id="details" name="details" rows="4" required><%= card.details %></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="image">Upload New Image</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="form-button">Update Card</button>
+        </div>
+    </form>
+</div>
+<%- include('../partials/footer.ejs') %>

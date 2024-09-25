@@ -1,0 +1,47 @@
+<%- include('../partials/header.ejs') %>
+<div class="content">
+    <h2>Got A Card to Sell!</h2>
+    <form action="/cards" method="POST" enctype="multipart/form-data" class="new-form">
+        <div class="form-group">
+            <label for="condition">Condition</label>
+            <select name="condition" id="condition" required>
+                <option value="">Select Your Card's Condition</option>
+                <option value="High-End">High-End</option>
+                <option value="Like-New">Like New</option>
+                <option value="used-good">Used - Good</option>
+                <option value="used-fair">Used - Fair</option>
+                <option value="Low-End">Low-End</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" placeholder="Enter Card's Title" required>
+        </div>
+
+        <div class="form-group">
+            <label for="seller">Seller</label>
+            <input type="text" id="seller" name="seller" placeholder="Enter seller's / your name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="price">Price</label>
+            <input type="number" id="price" name="price" placeholder="Enter your starting price: USD" step="0.01" min="0" required>
+        </div>
+
+        <div class="form-group">
+            <label for="details">Details</label>
+            <textarea id="details" name="details" rows="4" placeholder="..." required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="image">Upload Image</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="form-button">Submit Your Card!</button>
+        </div>
+    </form>
+</div>
+<%- include('../partials/footer.ejs') %>

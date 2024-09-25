@@ -1,0 +1,24 @@
+<%- include('../partials/header.ejs') %>
+<main style="background-image: url('images/leather.jpg'); padding-top: 5%; padding-bottom: 2%;">
+    <div class="card-row" id="card-row">
+        <div class="card-column">
+            <% if (cards.length) { %>
+                <% cards.forEach(card => { %>
+                    <a href="/cards/<%= card.id %>" class="card-item">
+                        <img src="<%= card.image %>" alt="<%= card.title %>">
+                        <div class="card-content">
+                            <p class="name"><%= card.title %></p>
+                            <p class="grade"><%= card.condition %></p>
+                            <div class="separator"></div>
+                            <p class="inline price">$<%= card.price.toFixed(2) %></p>
+                            <p class="inline"><%= card.offers %> offers</p>
+                        </div>
+                    </a>
+                <% }) %>
+            <% } else { %>
+                <p>No cards are available at the moment.</p>
+            <% } %>
+        </div>
+    </div>
+</main>
+<%- include('../partials/footer.ejs') %>
