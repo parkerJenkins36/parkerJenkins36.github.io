@@ -1,6 +1,7 @@
 <%- include('../partials/header.ejs') %>
-<div class="content">
+<main style="background-image: url('/images/leather.jpg'); padding-top: 5%; padding-bottom: 2%;">
     <h2>Edit Card: <%= card.title %></h2>
+    <div class="form-container">
     <form action="/cards/<%= card.id %>?_method=PUT" method="POST" enctype="multipart/form-data" class="edit-form">
         <div class="form-group">
             <label for="seller">Seller</label>
@@ -44,4 +45,5 @@
         </div>
     </form>
 </div>
+</main>
 <%- include('../partials/footer.ejs') %>

@@ -1,6 +1,7 @@
 <%- include('../partials/header.ejs') %>
-<div class="content">
-    <h2>Got A Card to Sell!</h2>
+<main style="background-image: url('/images/leather.jpg'); padding-top: 5%; padding-bottom: 2%;">
+    <h2>Got A Card to Sell !</h2>
+    <div class="form-container">
     <form action="/cards" method="POST" enctype="multipart/form-data" class="new-form">
         <div class="form-group">
             <label for="condition">Condition</label>
@@ -44,4 +45,5 @@
         </div>
     </form>
 </div>
+</main>
 <%- include('../partials/footer.ejs') %>

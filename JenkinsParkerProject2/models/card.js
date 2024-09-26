@@ -1,8 +1,8 @@
-let currentId = 6;  
+
 const { v4: uuidv4 } = require('uuid');
 const cards = [
     {
-        id: 1,
+        id: '1',
         title: 'Aaron Rodgers',
         seller: 'Mark Murphy',
         condition: 'High End',
@@ -12,7 +12,7 @@ const cards = [
         active: true
     },
     {
-        id: 2,
+        id: '2',
         title: 'Marvin Harrison',
         seller: 'Jim Irsay',
         condition: 'Low End',
@@ -22,7 +22,7 @@ const cards = [
         active: true
     },
     {
-        id: 3,
+        id: '3',
         title: 'Barry Sanders',
         seller: 'Shiela Ford',
         condition: 'Medium Grade',
@@ -32,7 +32,7 @@ const cards = [
         active: true
     },
     {
-        id: 4,
+        id: '4',
         title: 'Brock Purdy',
         seller: 'John Lynch',
         condition: 'Mint - New',
@@ -42,7 +42,7 @@ const cards = [
         active: true
     },
     {
-        id: 5,
+        id: '5',
         title: 'Tom Brady',
         seller: 'Robert Kraft',
         condition: 'High Grade',
@@ -52,13 +52,13 @@ const cards = [
         active: true
     },
     {
-        id: 6,
+        id: '6',
         title: 'Peyton Manning',
         seller: 'John Elway',
         condition: 'Great Grade',
         price: 950,
         details: 'One of a kind Superbowl winner.',
-        image: 'images/peyton.jpg',
+        image: '/images/peyton.jpg',
         active: true
     }
 ];
@@ -71,7 +71,7 @@ exports.findByID = id => cards.find(card => card.id === id);
 
 
 exports.save = function (card) {
-    card.id = ++currentId;  // Increment currentId and assign to the new card
+    card.id = uuidv4();
     card.active = true;  
     cards.push(card);   
 };
