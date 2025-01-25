@@ -10,7 +10,7 @@
                             <p class="name"><%= card.title %></p>
                             <p class="grade"><%= card.condition %></p>
                             <div class="separator"></div>
-                            <p class="inline price">$<%= card.price.toFixed(2) %></p>
+                            <p class="inline price">$<%= card.price ? card.price : 'N/A' %></p>
                             <p class="inline"><%= card.offers %> offers</p>
                         </div>
                     </a>

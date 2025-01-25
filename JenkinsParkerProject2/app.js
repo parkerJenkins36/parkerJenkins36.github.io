@@ -1,5 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
+const { upload } = require('./middleware/fileUpload');
 const methodOverride = require('method-override');
 const cardRoutes = require('./routes/cardRoutes'); 
 
@@ -47,4 +48,3 @@ app.use((err, req, res, next) => {
 app.listen(port, host, () => {
     console.log('Server is running on port', port);
 });
-

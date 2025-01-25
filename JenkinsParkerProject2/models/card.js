@@ -1,5 +1,6 @@
-
 const { v4: uuidv4 } = require('uuid');
+const { DateTime } = require("luxon"); 
+
 const cards = [
     {
         id: '1',
@@ -9,7 +10,8 @@ const cards = [
         price: 1000,
         details: 'Rare card from the 2010 season.',
         image: '/images/aaron.jpg',
-        active: true
+        active: true,
+        createdAt: DateTime.now().toLocaleString(DateTime.DATETIME_SHORT) // Add createdAt property
     },
     {
         id: '2',
@@ -19,7 +21,8 @@ const cards = [
         price: 675,
         details: 'Limited edition card from the 2000s.',
         image: '/images/marvin.jpg',
-        active: true
+        active: true,
+        createdAt: DateTime.now().toLocaleString(DateTime.DATETIME_SHORT) // Add createdAt property
     },
     {
         id: '3',
@@ -29,7 +32,8 @@ const cards = [
         price: 850,
         details: 'A card with vintage from the 1980s.',
         image: '/images/barry.jpg',
-        active: true
+        active: true,
+        createdAt: DateTime.now().toLocaleString(DateTime.DATETIME_SHORT) // Add createdAt property
     },
     {
         id: '4',
@@ -39,7 +43,8 @@ const cards = [
         price: 120,
         details: 'Pristine card with no damage.',
         image: '/images/brock.jpg',
-        active: true
+        active: true,
+        createdAt: DateTime.now().toLocaleString(DateTime.DATETIME_SHORT) // Add createdAt property
     },
     {
         id: '5',
@@ -49,7 +54,8 @@ const cards = [
         price: 1230,
         details: 'A card that highlights one of the best.',
         image: '/images/tombrady.jpg',
-        active: true
+        active: true,
+        createdAt: DateTime.now().toLocaleString(DateTime.DATETIME_SHORT) // Add createdAt property
     },
     {
         id: '6',
@@ -59,23 +65,24 @@ const cards = [
         price: 950,
         details: 'One of a kind Superbowl winner.',
         image: '/images/peyton.jpg',
-        active: true
+        active: true,
+        createdAt: DateTime.now().toLocaleString(DateTime.DATETIME_SHORT) // Add createdAt property
     }
 ];
 
 // Function to find all cards
 exports.find = () => cards;
 
+// Find card by ID
+exports.findByID = (id) => cards.find(card => card.id === id); 
 
-exports.findByID = id => cards.find(card => card.id === id);
-
-
+// Save a new card
 exports.save = function (card) {
-    card.id = uuidv4();
-    card.active = true;  
-    cards.push(card);   
+    card.id = uuidv4(); // Generate a unique ID
+    card.active = true;  // Set active status
+    card.createdAt = DateTime.now().toLocaleString(DateTime.DATETIME_SHORT); 
+    cards.push(card);    
 };
-
 
 exports.updateById = function (id, newCard) {
     let card = cards.find(card => card.id === id);
@@ -86,18 +93,19 @@ exports.updateById = function (id, newCard) {
         card.price = newCard.price;
         card.details = newCard.details;
         card.image = newCard.image;
-    } else {
-        return false;
+    
+        return true; 
     }
+    return false; // Card not found
 };
 
-
+// Delete card by ID
 exports.deleteById = function (id) {
-    let index = cards.findIndex(card => card.id === id);
+    let index = cards.findIndex(card => card.id === id); 
     if (index !== -1) {
-        cards.splice(index, 1);  // Remove the card from the array
-        return true;
+        cards.splice(index, 1); 
+        return true; 
     } else {
-        return false;
+        return false; 
     }
-};
+};  
